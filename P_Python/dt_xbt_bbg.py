@@ -18,6 +18,7 @@ print(os.getcwd())
 
 def main():
     print("First Module's Name: {}".format(__name__))
+    print("Module Name: {}".format(__name__))
     print('OS:', os.name)
     os.chdir('..')
 
@@ -27,21 +28,21 @@ def main():
         sl = '\\'
 
     ## INPUT
-    ## Name of Data File (WIKIPEDIA)
-    dt_csv_wiki = 'pageviews-20150701-20171025.csv'
+    ## Name of Data File (Bloomberg)
+    dt_csv_xbt_bbg = 'XBT_clean.csv'
 
-    dt_pd_wiki = pd.read_csv(os.path.abspath(os.curdir) + sl + "D_Data" + sl + "W_Wikipedia" + sl + dt_csv_wiki)
-    dt_pd_wiki['Date'] = pd.to_datetime(dt_pd_wiki['Date'], errors='raise', format='%Y-%m-%d', exact='True')
-    dt_pd_wiki.set_index('Date', inplace=True, drop=True, append=False, verify_integrity=True)
-    dt_pd_wiki.columns = ['Wikipedia']
-    dt_pd_wiki['Wikipedia_fd'] = dt_pd_wiki['Wikipedia'].diff(periods=1)
-    dt_pd_wiki['Wikipedia_MAVG30'] = round(dt_pd_wiki['Wikipedia'].rolling(window=30).mean(),0)
+    dt_pd_xbt_bbg = pd.read_csv(os.path.abspath(os.curdir) + sl + "D_Data" + sl + "B_Bloomberg" + sl + dt_csv_xbt_bbg)
+    dt_pd_xbt_bbg['date'] = pd.to_datetime(dt_pd_xbt_bbg['date'], errors='raise', format='%d-%m-%y', exact='True')
+    dt_pd_xbt_bbg.set_index('date', inplace=True, drop=True, append=False, verify_integrity=True)
+    dt_pd_xbt_bbg.columns = ['weekday', 'price_usd']
+    dt_pd_xbt_bbg['price_usd_fd'] = dt_pd_xbt_bbg['price_usd'].diff(periods=1)
+    dt_pd_xbt_bbg['price_usd_MAVG30'] = round(dt_pd_xbt_bbg['price_usd'].rolling(window=30).mean(),0)
 
     # dt_pd_wiki.sort_index(inplace=True, ascending=False)
 
     # Store pickle to disk
     os.chdir(os.path.abspath(os.curdir) + "\P_Python\\")
-    dt_pd_wiki.to_pickle('dt_pd_wiki.pickle')
+    dt_pd_xbt_bbg.to_pickle('dt_pd_xbt_bbg.pickle')
 
 if __name__ == '__main__':
     main()
