@@ -44,9 +44,16 @@ kw_list = ["Bitcoin"]
 pytrends.build_payload(kw_list, cat=0, timeframe='2010-01-01 2017-10-31', geo='', gprop='')
 dt_pd_google = pytrends.interest_over_time()
 
+dt_pd_google = pd.read_pickle('dt_pd_google.pickle')
+
+dt_pd_google.rename(columns={'Bitcoin': 'google_tr'}, inplace=True)
+
+
 # dt_pd_google.to_pickle('dt_pd_google_v0.pickle')
 # plt.plot(dt_pd_google['Bitcoin'])
 # dt_pd_google.rename(columns={'Date': 'date'}, inplace=True)
+
+
 dt_pd_google.to_pickle('dt_pd_google.pickle')
 
 print('Google Trend Download Done')

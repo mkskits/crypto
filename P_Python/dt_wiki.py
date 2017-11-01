@@ -41,7 +41,7 @@ def main():
     # dt_pd_wiki.sort_index(inplace=True, ascending=False)
 
     # Store pickle to disk
-    os.chdir(os.path.abspath(os.curdir) + "\P_Python\\")
+    os.chdir(os.path.abspath(os.curdir) + sl +"P_Python" + sl)
     dt_pd_wiki.to_pickle('dt_pd_wiki.pickle')
 
 if __name__ == '__main__':
