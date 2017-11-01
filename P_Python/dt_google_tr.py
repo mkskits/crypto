@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 print('pandas: %s' % pd.__version__)
 import sklearn
-import statsmodels
+# import statsmodels
 from pandas import Series
 import datetime as dt
 import pickle
@@ -23,6 +23,11 @@ def main():
     print("First Module's Name: {}".format(__name__))
     print('OS:', os.name)
     os.chdir('..')
+
+    # os.environ['http_proxy'] = "http://gate-zrh.swissre.com:8080"
+    # os.environ['HTTP_PROXY'] = "http://gate-zrh.swissre.com:8080"
+    # os.environ['https_proxy'] = "http://gate-zrh.swissre.com:8080"
+    # os.environ['HTTPS_PROXY'] = "http://gate-zrh.swissre.com:8080"
 
     if os.name == 'posix':
         sl = '/'
@@ -40,7 +45,9 @@ pytrends.build_payload(kw_list, cat=0, timeframe='2010-01-01 2017-10-31', geo=''
 dt_pd_google = pytrends.interest_over_time()
 
 # dt_pd_google.to_pickle('dt_pd_google_v0.pickle')
-plt.plot(dt_pd_google['Bitcoin'])
+# plt.plot(dt_pd_google['Bitcoin'])
+# dt_pd_google.rename(columns={'Date': 'date'}, inplace=True)
+dt_pd_google.to_pickle('dt_pd_google.pickle')
 
 print('Google Trend Download Done')
 

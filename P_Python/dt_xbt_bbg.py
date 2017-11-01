@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 print('pandas: %s' % pd.__version__)
 import sklearn
-import statsmodels
+# import statsmodels
 from pandas import Series
 import datetime as dt
 import pickle
@@ -30,8 +30,9 @@ def main():
     ## INPUT
     ## Name of Data File (Bloomberg)
     dt_csv_xbt_bbg = 'XBT_clean.csv'
-
     dt_pd_xbt_bbg = pd.read_csv(os.path.abspath(os.curdir) + sl + "D_Data" + sl + "B_Bloomberg" + sl + dt_csv_xbt_bbg)
+    # Code to rename single column
+    # dt_pd_xbt_bbg.rename(columns={'date': 'Date'}, inplace=True)
     dt_pd_xbt_bbg['date'] = pd.to_datetime(dt_pd_xbt_bbg['date'], errors='raise', format='%d-%m-%y', exact='True')
     dt_pd_xbt_bbg.set_index('date', inplace=True, drop=True, append=False, verify_integrity=True)
     dt_pd_xbt_bbg.columns = ['weekday', 'price_usd']

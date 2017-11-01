@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 print('pandas: %s' % pd.__version__)
 import sklearn
-import statsmodels
+# import statsmodels
 from pandas import Series
 import datetime as dt
 import pickle
