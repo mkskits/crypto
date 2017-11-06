@@ -24,11 +24,6 @@ def main():
     print('OS:', os.name)
     os.chdir('..')
 
-    # os.environ['http_proxy'] = "http://gate-zrh.swissre.com:8080"
-    # os.environ['HTTP_PROXY'] = "http://gate-zrh.swissre.com:8080"
-    # os.environ['https_proxy'] = "http://gate-zrh.swissre.com:8080"
-    # os.environ['HTTPS_PROXY'] = "http://gate-zrh.swissre.com:8080"
-
     if os.name == 'posix':
         sl = '/'
     elif os.name == 'nt':
@@ -41,14 +36,15 @@ kw_list = ["Bitcoin"]
 # Specific time is UTC
 # pytrends.build_payload(kw_list, cat=0, timeframe='2017-02-06T10 2017-02-12T07', geo='', gprop='')
 # date format YYYY-DD-MM
-pytrends.build_payload(kw_list, cat=0, timeframe='2010-01-01 2017-31-10', geo='', gprop='')
+# pytrends.build_payload(kw_list, cat=0, timeframe='2010-01-01 2017-12-31', geo='', gprop='')
+pytrends.build_payload(kw_list, cat=0, timeframe='2009-01-01 2017-12-31', geo='', gprop='')
 dt_pd_google = pytrends.interest_over_time()
 
 dt_pd_google.rename(columns={'Bitcoin': 'google_tr'}, inplace=True)
 dt_pd_google['google_tr_fd'] = dt_pd_google['google_tr'].diff(periods=1)
 dt_pd_google['google_tr_MAVG30'] = round(dt_pd_google['google_tr'].rolling(window=30).mean(), 0)
 
-dt_pd_google.to_pickle('dt_pd_google.pickle')
+dt_pd_google.to_pickle('dt_pd_google_v2.pickle')
 
 print('Google Trend Download Done')
 

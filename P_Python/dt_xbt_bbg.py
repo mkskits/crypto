@@ -46,6 +46,12 @@ def main():
     dt_pd_xbt_bbg.to_pickle('dt_pd_xbt_bbg.pickle')
 
 if __name__ == '__main__':
+
+
+
+
+
+
     main()
 else:
     print("Run From Import")

@@ -25,24 +25,24 @@ def main():
     elif os.name == 'nt':
         sl = '\\'
 
-    dt_pd_wiki = pd.read_pickle('dt_pd_wiki.pickle')
+    dt_pd_google = pd.read_pickle('dt_pd_google_daily.pickle')
 
     top = plt.subplot2grid((4,4), (0,0), rowspan=3, colspan=4)
-    top.plot(dt_pd_wiki.index, dt_pd_wiki['wikipedia'])
-    top.plot(dt_pd_wiki.index, dt_pd_wiki['wikipedia_MAVG30'])
+    top.plot(dt_pd_google.index, dt_pd_google['google_tr'])
+    top.plot(dt_pd_google.index, dt_pd_google['google_tr_MAVG30'])
     top.legend()
     # plt.gcf().set_size_inches(8, 8)
-    plt.title('Wikipedia Bitcoin Article Retrievals per day and First Differences')
+    plt.title('Daily Bitcoin Google Trend Index and First Differences')
     bottom = plt.subplot2grid((4,4), (3,0), rowspan=1, colspan=4)
-    bottom.bar(dt_pd_wiki.index, dt_pd_wiki['wikipedia_fd'])
+    bottom.bar(dt_pd_google.index, dt_pd_google['google_tr_fd'])
     plt.gcf().set_size_inches(15, 8)
 
     os.chdir('..')
-    os.chdir(os.path.abspath(os.curdir) + sl + "F_Figs" +sl)
-    plt.savefig('pt_wiki.pdf')
+    os.chdir(os.path.abspath(os.curdir) + sl + "F_Figs" + sl)
+    plt.savefig('pt_google_tr_daily.pdf')
     plt.show()
 
-    print('Plotting Wikipedia Data done')
+    print('Plotting Google Trend daily done')
     # dt_pd_wiki.dtypes.index
     # dt_pd_wiki.dtypes
     # dt_pd_wiki.select_dtypes(include=[np.datetime64])

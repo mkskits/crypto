@@ -2,13 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f33df4d-d923-4c87-8ead-3836aa1d8afb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/P_Python/dt_google_tr_amend.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/P_Python/dt_aggr.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/P_Python/dt_google_tr_daily.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/P_Python/dt_google_tr_monthly.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/P_Python/dt_google_tr_v2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/P_Python/pt_google.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/P_Python/pt_google_daily.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/P_Python/pt_google_monthly.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/F_Figs/pt_wiki.pdf" afterPath="$PROJECT_DIR$/F_Figs/pt_wiki.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/F_Figs/pt_xbt_bbg.pdf" afterPath="$PROJECT_DIR$/F_Figs/pt_xbt_bbg.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/P_Python/dt_pd_google.pickle" afterPath="$PROJECT_DIR$/P_Python/dt_pd_google.pickle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/P_Python/dt_pd_wiki.pickle" afterPath="$PROJECT_DIR$/P_Python/dt_pd_wiki.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/P_Python/dt_pd_xbt_bbg.pickle" afterPath="$PROJECT_DIR$/P_Python/dt_pd_xbt_bbg.pickle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/G_GIT.iml" afterPath="$PROJECT_DIR$/.idea/G_GIT.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/P_Python/dt_google_tr.py" afterPath="$PROJECT_DIR$/P_Python/dt_google_tr.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/P_Python/dt_wiki.py" afterPath="$PROJECT_DIR$/P_Python/dt_wiki.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/P_Python/dt_xbt_bbg.py" afterPath="$PROJECT_DIR$/P_Python/dt_xbt_bbg.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/P_Python/pt_wiki.py" afterPath="$PROJECT_DIR$/P_Python/pt_wiki.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/P_Python/pt_xbt_bbg.py" afterPath="$PROJECT_DIR$/P_Python/pt_xbt_bbg.py" />
@@ -25,38 +34,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dt_wiki.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/P_Python/dt_wiki.py">
+      <file leaf-file-name="dt_xbt_bbg.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P_Python/dt_xbt_bbg.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="61" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dt_google_tr.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/P_Python/dt_google_tr.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="51" column="24" lean-forward="false" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dt_google_tr_amend.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/P_Python/dt_google_tr_amend.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="748">
+              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -64,21 +47,12 @@
       <file leaf-file-name="pt_wiki.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/P_Python/pt_wiki.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="44" column="28" lean-forward="true" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
+            <state relative-caret-position="595">
+              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
+                <marker date="1509798195000" expanded="true" signature="1274:1435" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dt_xbt_bbg.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/P_Python/dt_xbt_bbg.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="34" column="4" lean-forward="false" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="66" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -86,8 +60,80 @@
       <file leaf-file-name="pt_xbt_bbg.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/P_Python/pt_xbt_bbg.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="37" column="14" lean-forward="true" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+            <state relative-caret-position="345">
+              <caret line="36" column="66" lean-forward="true" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adf_test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../P_Python/adf_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="import.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../P_Python/import.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dt_google_tr_v2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P_Python/dt_google_tr_v2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pt_google_monthly.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P_Python/pt_google_monthly.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dt_google_tr_monthly.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P_Python/dt_google_tr_monthly.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pt_google_daily.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P_Python/pt_google_daily.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dt_google_tr_daily.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/P_Python/dt_google_tr_daily.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="174" column="22" lean-forward="true" selection-start-line="174" selection-start-column="22" selection-end-line="174" selection-end-column="22" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -106,11 +152,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>port</find>
-      <find>_proxy</find>
-      <find>class:`urllib3.connectionpool.ProxyManager</find>
-      <find>urllib3.connectionpool.ProxyManager</find>
-      <find>proxy</find>
+      <find>google_tr</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -120,21 +162,23 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/dt_wiki.py" />
-        <option value="C:/Program Files/Python36/Lib/site-packages/urllib3/connectionpool.py" />
-        <option value="$PROJECT_DIR$/P_Python/pt_xbt_bbg.py" />
         <option value="$PROJECT_DIR$/P_Python/pt_wiki.py" />
         <option value="$PROJECT_DIR$/P_Python/dt_wiki.py" />
-        <option value="$PROJECT_DIR$/P_Python/dt_google_tr.py" />
+        <option value="$PROJECT_DIR$/P_Python/pt_xbt_bbg.py" />
         <option value="$PROJECT_DIR$/P_Python/dt_xbt_bbg.py" />
-        <option value="$PROJECT_DIR$/P_Python/dt_google_tr_amend.py" />
+        <option value="$PROJECT_DIR$/P_Python/dt_google_tr_v2.py" />
+        <option value="$PROJECT_DIR$/P_Python/pt_google_monthly.py" />
+        <option value="$PROJECT_DIR$/P_Python/dt_google_tr_monthly.py" />
+        <option value="$PROJECT_DIR$/P_Python/pt_google_daily.py" />
+        <option value="$PROJECT_DIR$/P_Python/dt_google_tr_daily.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1672" />
-    <option name="y" value="-8" />
-    <option name="width" value="1696" />
-    <option name="height" value="1066" />
+    <option name="x" value="-967" />
+    <option name="y" value="1071" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -154,6 +198,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -166,20 +211,10 @@
               <item name="G_GIT" type="462c0819:PsiDirectoryNode" />
               <item name="P_Python" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="G_GIT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="G_GIT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.6.1 (C:\Conda\Anaconda3\python.exe) &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -207,8 +242,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.dt_google_tr_amend">
-    <configuration name="dt_google_tr_amend" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.dt_google_tr_daily">
+    <configuration name="dt_google_tr_daily" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -220,12 +255,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="G_GIT" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/P_Python/dt_google_tr_amend.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/P_Python/dt_google_tr_daily.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="dt_wiki (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="dt_google_tr_monthly" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -237,12 +272,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="G_GIT" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/P_Python/dt_wiki.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/P_Python/dt_google_tr_monthly.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="dt_xbt_bbg" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="dt_google_tr_v2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -254,12 +289,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="G_GIT" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/P_Python/dt_xbt_bbg.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/P_Python/dt_google_tr_v2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="pt_wiki" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pt_google_daily" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -271,12 +306,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="G_GIT" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/P_Python/pt_wiki.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/P_Python/pt_google_daily.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="pt_xbt_bbg" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pt_google_monthly" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -288,25 +323,25 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="G_GIT" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/P_Python/pt_xbt_bbg.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/P_Python/pt_google_monthly.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.dt_wiki (1)" />
-      <item index="1" class="java.lang.String" itemvalue="Python.dt_xbt_bbg" />
-      <item index="2" class="java.lang.String" itemvalue="Python.pt_xbt_bbg" />
-      <item index="3" class="java.lang.String" itemvalue="Python.dt_google_tr_amend" />
-      <item index="4" class="java.lang.String" itemvalue="Python.pt_wiki" />
+      <item index="0" class="java.lang.String" itemvalue="Python.dt_google_tr_v2" />
+      <item index="1" class="java.lang.String" itemvalue="Python.dt_google_tr_monthly" />
+      <item index="2" class="java.lang.String" itemvalue="Python.pt_google_monthly" />
+      <item index="3" class="java.lang.String" itemvalue="Python.dt_google_tr_daily" />
+      <item index="4" class="java.lang.String" itemvalue="Python.pt_google_daily" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.dt_google_tr_amend" />
-        <item index="1" class="java.lang.String" itemvalue="Python.dt_xbt_bbg" />
-        <item index="2" class="java.lang.String" itemvalue="Python.dt_wiki (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python.pt_xbt_bbg" />
-        <item index="4" class="java.lang.String" itemvalue="Python.pt_wiki" />
+        <item index="0" class="java.lang.String" itemvalue="Python.dt_google_tr_daily" />
+        <item index="1" class="java.lang.String" itemvalue="Python.pt_google_daily" />
+        <item index="2" class="java.lang.String" itemvalue="Python.pt_google_monthly" />
+        <item index="3" class="java.lang.String" itemvalue="Python.dt_google_tr_monthly" />
+        <item index="4" class="java.lang.String" itemvalue="Python.dt_google_tr_v2" />
       </list>
     </recent_temporary>
   </component>
@@ -324,20 +359,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1672" y="-8" width="1696" height="1066" extended-state="6" />
+    <frame x="-1928" y="1063" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16428572" sideWeight="0.49295774" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16458334" sideWeight="0.49295774" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39937106" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39894179" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16458334" sideWeight="0.5070422" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30625" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -364,29 +399,29 @@
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/P_Python/dt_google_tr.py</url>
-          <line>51</line>
+          <url>file://$PROJECT_DIR$/P_Python/dt_google_tr_v2.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/P_Python/dt_google_tr_monthly.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/P_Python/pt_google_monthly.py</url>
+          <line>44</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/P_Python/dt_google_tr_amend.py</url>
-          <line>33</line>
+          <url>file://$PROJECT_DIR$/P_Python/dt_google_tr_daily.py</url>
+          <line>187</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/P_Python/pt_wiki.py</url>
-          <line>39</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/P_Python/pt_xbt_bbg.py</url>
-          <line>39</line>
+          <url>file://$PROJECT_DIR$/P_Python/pt_google_daily.py</url>
+          <line>44</line>
           <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/P_Python/dt_wiki.py</url>
-          <line>34</line>
-          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -399,17 +434,26 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="21" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../P_Python/SVM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/P_Python/dt_wiki.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="595">
+          <caret line="35" column="6" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+            <marker date="1509573785000" expanded="true" signature="1432:1479" ph="..." />
           </folding>
         </state>
       </provider>
@@ -428,6 +472,7 @@
           <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+            <marker date="1509798195000" expanded="true" signature="1274:1435" ph="..." />
           </folding>
         </state>
       </provider>
@@ -436,125 +481,229 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../P_Python/charting.py" />
-    <entry file="file://$PROJECT_DIR$/../P_Python/data_feed.py" />
-    <entry file="file://$PROJECT_DIR$/../P_Python/SVM.py" />
-    <entry file="file://$PROJECT_DIR$/../P_Python/adf_test.py" />
-    <entry file="file://$PROJECT_DIR$/../P_Python/stationarity.py" />
-    <entry file="file://$PROJECT_DIR$/../P_Python/charting_fd.py" />
-    <entry file="file://$PROJECT_DIR$/../P_Python/charting_fd_rel.py" />
-    <entry file="file://$PROJECT_DIR$/../P_Python/import.py" />
+    <entry file="file://$PROJECT_DIR$/../P_Python/adf_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../P_Python/import.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="50" lean-forward="true" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../P_Python/charting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../P_Python/data_feed.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../P_Python/SVM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../P_Python/adf_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../P_Python/stationarity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../P_Python/charting_fd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../P_Python/charting_fd_rel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../P_Python/import.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dt_wiki.py" />
     <entry file="file://$PROJECT_DIR$/dt_wiki.py" />
-    <entry file="file://$PROJECT_DIR$/../P_Python/charting_fd_rel.py" />
-    <entry file="file://C:/Conda/Anaconda3/Lib/site-packages/colorama/ansitowin32.py" />
-    <entry file="file://$PROJECT_DIR$/../P_Python/stationarity.py" />
-    <entry file="file://$PROJECT_DIR$/../P_Python/charting.py" />
-    <entry file="file://$PROJECT_DIR$/../P_Python/data_feed.py" />
-    <entry file="file://$PROJECT_DIR$/../P_Python/SVM.py" />
-    <entry file="file://$PROJECT_DIR$/../P_Python/charting_fd.py" />
-    <entry file="file://$PROJECT_DIR$/../P_Python/adf_test.py" />
-    <entry file="file://$PROJECT_DIR$/../P_Python/import.py" />
-    <entry file="file://C:/Program Files/Python36/Lib/site-packages/requests/adapters.py">
+    <entry file="file://$PROJECT_DIR$/../P_Python/charting_fd_rel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1032">
-          <caret line="164" column="52" lean-forward="false" selection-start-line="164" selection-start-column="52" selection-end-line="164" selection-end-column="52" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Program Files/Python36/Lib/site-packages/urllib3/connection.py">
+    <entry file="file://C:/Conda/Anaconda3/Lib/site-packages/colorama/ansitowin32.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="84" column="89" lean-forward="false" selection-start-line="84" selection-start-column="84" selection-end-line="84" selection-end-column="89" />
-          <folding />
+        <state relative-caret-position="180">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Program Files/Python36/Lib/site-packages/urllib3/util/retry.py">
+    <entry file="file://$PROJECT_DIR$/../P_Python/stationarity.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-          <folding />
+        <state relative-caret-position="-250">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Program Files/Python36/Lib/site-packages/urllib3/connectionpool.py">
+    <entry file="file://$PROJECT_DIR$/../P_Python/charting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="638" column="0" lean-forward="false" selection-start-line="638" selection-start-column="0" selection-end-line="638" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="51">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Program Files/Python36/Lib/site-packages/urllib3/util/connection.py">
+    <entry file="file://$PROJECT_DIR$/../P_Python/data_feed.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1343">
-          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+        <state relative-caret-position="187">
+          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../P_Python/SVM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/P_Python/dt_wiki.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="61" />
+        <state relative-caret-position="595">
+          <caret line="35" column="6" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/P_Python/dt_google_tr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="51" column="24" lean-forward="false" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/P_Python/pt_xbt_bbg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="14" lean-forward="true" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <marker date="1509573785000" expanded="true" signature="1432:1479" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/P_Python/dt_xbt_bbg.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="34" column="4" lean-forward="false" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="66" />
+        <state relative-caret-position="748">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/P_Python/pt_wiki.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="44" column="28" lean-forward="true" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
+        <state relative-caret-position="595">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <marker date="1509798195000" expanded="true" signature="1274:1435" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../P_Python/charting_fd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../P_Python/adf_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../P_Python/import.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P_Python/pt_xbt_bbg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="36" column="66" lean-forward="true" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P_Python/dt_google_tr_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/P_Python/dt_google_tr_amend.py">
+    <entry file="file://$PROJECT_DIR$/P_Python/pt_google_monthly.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+        <state relative-caret-position="248">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P_Python/dt_google_tr_monthly.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P_Python/pt_google_daily.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P_Python/dt_google_tr_daily.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="174" column="22" lean-forward="true" selection-start-line="174" selection-start-column="22" selection-end-line="174" selection-end-column="22" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
