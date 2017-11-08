@@ -38,7 +38,6 @@ kw_list = ["Bitcoin"]
 # date format YYYY-MM-DD (trends)
 
 dt_pd_google_daily_un = pd.DataFrame(columns=['Bitcoin', 'isPartial'])
-# 2016
 single_frames = {
     # 0: '2009-12-01 2010-01-01',
     # 1: '2010-01-01 2010-02-01',
@@ -183,7 +182,7 @@ dt_pd_google_daily['google_tr_fd'] = dt_pd_google_daily['google_tr'].diff(period
 # MAVG calculation to be done after merged dataset
 dt_pd_google_daily['google_tr_MAVG30'] = round(dt_pd_google_daily['google_tr'].rolling(window=30).mean(), 0)
 
-dt_pd_google_daily.to_pickle('dt_pd_google_daily.pickle')
+dt_pd_google_daily.to_pickle('dt_pd_google.pickle')
 
 print('Google Trend Download Done')
 
