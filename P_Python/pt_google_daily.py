@@ -19,6 +19,7 @@ print(os.getcwd())
 
 def main():
     print("First Module's Name: {}".format(__name__))
+    # plt.switch_backend('macosx')
 
     if os.name == 'posix':
         sl = '/'
@@ -39,8 +40,8 @@ def main():
 
     os.chdir('..')
     os.chdir(os.path.abspath(os.curdir) + sl + "F_Figs" + sl)
-    plt.savefig('pt_google_tr_daily.pdf')
     plt.show()
+    plt.savefig('pt_google_tr_daily.pdf')
 
     print('Plotting Google Trend daily done')
     # dt_pd_wiki.dtypes.index
