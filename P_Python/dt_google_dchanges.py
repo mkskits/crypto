@@ -41,21 +41,33 @@ def main():
 pytrends = TrendReq(hl='en-US', tz=360)
 kw_list = ["Bitcoin"]
 
-# start = dt.date(2010, 7, 19)
-# end = (dt.date(2010, 7, 19) + dt.timedelta(days=0))
-# # end = (dt.date.today() + dt.timedelta(days=-5))
-#
-# t = 0
-# single_frames = []
-# for date in daterange(start, end):
-#     single_frames.append(date.isoformat() + ' ' + (date + dt.timedelta(days=1)).isoformat())
-#     t = t + 1
+start = dt.date(2010, 7, 18)
+# end = (dt.date(2012, 7, 18) + dt.timedelta(days=0))
+end = (dt.date.today() + dt.timedelta(days=-5))
+ddates = daterange(start, end)
 
-# for x in single_frames:
-pytrends.build_payload(kw_list, cat=0, timeframe='2009-09-01 2009-09-30', geo='', gprop='')
-dt_pd_google_testing = pytrends.interest_over_time()
-print(dt_pd_google_testing.iloc[1]-dt_pd_google_testing.iloc[0])
+t = 0
+single_frames = []
+
+dt_pd_google_dchanges = pd.DataFrame(index=pd.DatetimeIndex(ddates), columns = ['Bitcoin'])
+dt_pd_google_dchanges.index.names = ['date']
+
+for date in daterange(start, end):
+    single_frames.append(date.isoformat() + ' ' + (date + dt.timedelta(days=1)).isoformat())
+    t = t + 1
+
+p = 1
+for x in single_frames:
+    pytrends.build_payload(kw_list, cat=0, timeframe=x, geo='', gprop='')
+    dt_pd_google_testing = pytrends.interest_over_time()
+    dt_pd_google_dchanges.loc[dt_pd_google_testing.iloc[1].name] =\
+        (dt_pd_google_testing.iloc[1]-dt_pd_google_testing.iloc[0])/dt_pd_google_testing.iloc[0]
+    # print((dt_pd_google_testing.iloc[1]-dt_pd_google_testing.iloc[0])/dt_pd_google_testing.iloc[0])
+    print('retrieve frame', x, 'done', int(p)/int(t)/100,'%')
+    p = p + 1
+
 dt_pd_google_testing.rename(columns={'Bitcoin': 'google_tr'}, inplace=True)
+dt_pd_google_dchanges.rename(columns={'Bitcoin': 'google_tr_dchanges'}, inplace=True)
 
 # top = plt.subplot2grid((1,1), (0,0))
 # top.plot(dt_pd_google_testing.index, dt_pd_google_testing['google_tr'])
