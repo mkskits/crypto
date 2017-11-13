@@ -31,7 +31,6 @@ def main():
     top.plot(dt_pd_google_daily_iplt.index, dt_pd_google_daily_iplt['google_tr'])
     top.plot(dt_pd_google_daily_iplt.index, dt_pd_google_daily_iplt['google_tr_MAVG30'])
     top.legend()
-    # plt.gcf().set_size_inches(8, 8)
     bottom = plt.subplot2grid((4,4), (3,0), rowspan=1, colspan=4)
     bottom.bar(dt_pd_google_daily_iplt.index, dt_pd_google_daily_iplt['google_tr_fd'])
     plt.gcf().set_size_inches(15, 8)

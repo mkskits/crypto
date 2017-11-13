@@ -46,7 +46,6 @@ def main():
     # dt_pd_wiki.dtypes.index
     # dt_pd_wiki.dtypes
     # dt_pd_wiki.select_dtypes(include=[np.datetime64])
-    # encoding='utf-8-sig'
     # data = data.iloc[::-1]
 if __name__ == '__main__':
     main()

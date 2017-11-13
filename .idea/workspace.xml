@@ -2,17 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f33df4d-d923-4c87-8ead-3836aa1d8afb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/P_Python/dt_google_dchanges.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/P_Python/dt_google_segments_adj.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/P_Python/dt_google_segments_ex_unadj.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/P_Python/dt_google_segments_unadj.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/P_Python/pt_google_ex_unadj1.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/P_Python/pt_google_ex_unadj2.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/P_Python/pt_google_segments_adj.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/P_Python/pt_google_segments_scatter.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/P_Python/pt_google_segments_unadj.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/F_Figs/pt_google_tr_segments_adj.pdf" afterPath="$PROJECT_DIR$/F_Figs/pt_google_tr_segments_adj.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/F_Figs/pt_google_tr_segments_ex_unadj1.pdf" afterPath="$PROJECT_DIR$/F_Figs/pt_google_tr_segments_ex_unadj1.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/F_Figs/pt_google_tr_segments_ex_unadj2.pdf" afterPath="$PROJECT_DIR$/F_Figs/pt_google_tr_segments_ex_unadj2.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/F_Figs/pt_google_tr_segments_unadj.pdf" afterPath="$PROJECT_DIR$/F_Figs/pt_google_tr_segments_unadj.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/G_GIT.iml" afterPath="$PROJECT_DIR$/.idea/G_GIT.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/P_Python/dt_google_testing.py" afterPath="$PROJECT_DIR$/P_Python/dt_google_testing.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/P_Python/pt_google_daily_iplt.py" afterPath="$PROJECT_DIR$/P_Python/pt_google_daily_iplt.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/P_Python/pt_google_ex_unadj2.py" afterPath="$PROJECT_DIR$/P_Python/pt_google_ex_unadj2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/P_Python/pt_google_monthly.py" afterPath="$PROJECT_DIR$/P_Python/pt_google_monthly.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/P_Python/pt_google_segments_adj.py" afterPath="$PROJECT_DIR$/P_Python/pt_google_segments_adj.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/P_Python/pt_google_segments_scatter.py" afterPath="$PROJECT_DIR$/P_Python/pt_google_segments_scatter.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/P_Python/pt_google_segments_unadj.py" afterPath="$PROJECT_DIR$/P_Python/pt_google_segments_unadj.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,61 +29,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pt_google_ex_unadj1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/P_Python/pt_google_ex_unadj1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="740">
-              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pt_google_ex_unadj2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/P_Python/pt_google_ex_unadj2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dt_google_segments_ex_unadj.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/P_Python/dt_google_segments_ex_unadj.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="65" column="26" lean-forward="true" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pt_google_segments_unadj.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/P_Python/pt_google_segments_unadj.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+            <state relative-caret-position="986">
+              <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pt_google_segments_adj.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dt_google_segments_unadj.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P_Python/dt_google_segments_unadj.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="474">
+              <caret line="55" column="32" lean-forward="true" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pt_google_segments_scatter.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P_Python/pt_google_segments_scatter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pt_google_daily_idx.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P_Python/pt_google_daily_idx.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="34" column="56" lean-forward="true" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pt_google_segments_adj.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/P_Python/pt_google_segments_adj.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="43" column="25" lean-forward="false" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+            <state relative-caret-position="187">
+              <caret line="42" column="37" lean-forward="true" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dt_google_testing.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/P_Python/dt_google_testing.py">
+      <file leaf-file-name="pt_google_monthly.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P_Python/pt_google_monthly.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+            <state relative-caret-position="782">
+              <caret line="47" column="55" lean-forward="false" selection-start-line="47" selection-start-column="55" selection-end-line="47" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pt_google_daily_iplt.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P_Python/pt_google_daily_iplt.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="32" column="16" lean-forward="false" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dt_google_segments_adj.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P_Python/dt_google_segments_adj.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="55" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pt_google_ex_unadj1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P_Python/pt_google_ex_unadj1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pt_google_ex_unadj2.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/P_Python/pt_google_ex_unadj2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="38" column="43" lean-forward="true" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -123,17 +166,12 @@
         <option value="$PROJECT_DIR$/P_Python/dt_google_tr_daily.py" />
         <option value="$PROJECT_DIR$/P_Python/pt_google.py" />
         <option value="$PROJECT_DIR$/P_Python/pt_google_daily_idx.py" />
-        <option value="$PROJECT_DIR$/P_Python/pt_google_monthly.py" />
-        <option value="$PROJECT_DIR$/P_Python/pt_google_daily_iplt.py" />
         <option value="$PROJECT_DIR$/P_Python/dt_google_daily_iplt.py" />
         <option value="$PROJECT_DIR$/P_Python/pt_google_daily.py" />
         <option value="$PROJECT_DIR$/P_Python/dt_google_dchanges.py" />
-        <option value="$PROJECT_DIR$/P_Python/pt_google_segments_scatter.py" />
         <option value="$PROJECT_DIR$/P_Python/dt_google_segments_v2.py" />
         <option value="$PROJECT_DIR$/P_Python/pt_google_segments.py" />
         <option value="$PROJECT_DIR$/P_Python/dt_google_segments.py" />
-        <option value="$PROJECT_DIR$/P_Python/pt_google_segments_adj.py" />
-        <option value="$PROJECT_DIR$/P_Python/pt_google_segments_unadj.py" />
         <option value="$PROJECT_DIR$/P_Python/dt_google_segments_unadj.py" />
         <option value="$PROJECT_DIR$/P_Python/dt_google_segments_adj.py" />
         <option value="$PROJECT_DIR$/P_Python/dt_google_daily_15AUG_15OCT.py" />
@@ -141,16 +179,21 @@
         <option value="$PROJECT_DIR$/P_Python/dt_google_segments_ex_unadj.py" />
         <option value="$PROJECT_DIR$/P_Python/pt_google_ex_unadj.py" />
         <option value="$PROJECT_DIR$/P_Python/dt_google_testing.py" />
-        <option value="$PROJECT_DIR$/P_Python/pt_google_ex_unadj2.py" />
         <option value="$PROJECT_DIR$/P_Python/pt_google_ex_unadj1.py" />
+        <option value="$PROJECT_DIR$/P_Python/pt_google_segments_scatter.py" />
+        <option value="$PROJECT_DIR$/P_Python/pt_google_segments_unadj.py" />
+        <option value="$PROJECT_DIR$/P_Python/pt_google_segments_adj.py" />
+        <option value="$PROJECT_DIR$/P_Python/pt_google_monthly.py" />
+        <option value="$PROJECT_DIR$/P_Python/pt_google_daily_iplt.py" />
+        <option value="$PROJECT_DIR$/P_Python/pt_google_ex_unadj2.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1897" />
-    <option name="y" value="1070" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="1708" />
+    <option name="y" value="44" />
+    <option name="width" value="1696" />
+    <option name="height" value="1066" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -170,24 +213,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="G_GIT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="G_GIT" type="462c0819:PsiDirectoryNode" />
+              <item name="c_crypto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="c_crypto" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="G_GIT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="G_GIT" type="462c0819:PsiDirectoryNode" />
+              <item name="c_crypto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="c_crypto" type="462c0819:PsiDirectoryNode" />
               <item name="P_Python" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -214,24 +257,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.pt_google_segments_adj">
-    <configuration name="dt_google_segments_ex_unadj" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/P_Python" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="G_GIT" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/P_Python/dt_google_segments_ex_unadj.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.pt_google_ex_unadj2">
     <configuration name="pt_google_ex_unadj1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -283,6 +309,23 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="pt_google_segments_scatter" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/P_Python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="G_GIT" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/P_Python/pt_google_segments_scatter.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="pt_google_segments_unadj" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -301,19 +344,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.dt_google_segments_ex_unadj" />
-      <item index="1" class="java.lang.String" itemvalue="Python.pt_google_ex_unadj1" />
-      <item index="2" class="java.lang.String" itemvalue="Python.pt_google_ex_unadj2" />
-      <item index="3" class="java.lang.String" itemvalue="Python.pt_google_segments_unadj" />
-      <item index="4" class="java.lang.String" itemvalue="Python.pt_google_segments_adj" />
+      <item index="0" class="java.lang.String" itemvalue="Python.pt_google_ex_unadj1" />
+      <item index="1" class="java.lang.String" itemvalue="Python.pt_google_segments_unadj" />
+      <item index="2" class="java.lang.String" itemvalue="Python.pt_google_segments_adj" />
+      <item index="3" class="java.lang.String" itemvalue="Python.pt_google_segments_scatter" />
+      <item index="4" class="java.lang.String" itemvalue="Python.pt_google_ex_unadj2" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.pt_google_segments_adj" />
+        <item index="0" class="java.lang.String" itemvalue="Python.pt_google_ex_unadj2" />
         <item index="1" class="java.lang.String" itemvalue="Python.pt_google_segments_unadj" />
-        <item index="2" class="java.lang.String" itemvalue="Python.dt_google_segments_ex_unadj" />
-        <item index="3" class="java.lang.String" itemvalue="Python.pt_google_ex_unadj1" />
-        <item index="4" class="java.lang.String" itemvalue="Python.pt_google_ex_unadj2" />
+        <item index="2" class="java.lang.String" itemvalue="Python.pt_google_segments_adj" />
+        <item index="3" class="java.lang.String" itemvalue="Python.pt_google_segments_scatter" />
+        <item index="4" class="java.lang.String" itemvalue="Python.pt_google_ex_unadj1" />
       </list>
     </recent_temporary>
   </component>
@@ -331,27 +374,40 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="1063" width="1936" height="1056" extended-state="6" />
+    <frame x="1672" y="-8" width="1696" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16458334" sideWeight="0.48677248" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16428572" sideWeight="0.49295774" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16458334" sideWeight="0.5070422" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39937106" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297619" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32873806" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16458334" sideWeight="0.48677248" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39872748" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16458334" sideWeight="0.5132275" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30625" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -412,7 +468,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/P_Python/pt_google_daily_iplt.py</url>
-          <line>43</line>
+          <line>42</line>
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -442,7 +498,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/P_Python/pt_google_segments_adj.py</url>
-          <line>52</line>
+          <line>68</line>
           <option name="timeStamp" value="87" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -451,19 +507,19 @@
           <option name="timeStamp" value="90" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/P_Python/pt_google_ex_unadj2.py</url>
-          <line>50</line>
-          <option name="timeStamp" value="92" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/P_Python/pt_google_ex_unadj1.py</url>
           <line>47</line>
           <option name="timeStamp" value="93" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/P_Python/pt_google_segments_unadj.py</url>
-          <line>52</line>
+          <line>68</line>
           <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/P_Python/pt_google_ex_unadj2.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="95" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -476,55 +532,19 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="95" />
+      <option name="time" value="96" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/dt_wiki.py" />
     <entry file="file://$PROJECT_DIR$/dt_wiki.py" />
-    <entry file="file://$PROJECT_DIR$/../P_Python/charting_fd_rel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Conda/Anaconda3/Lib/site-packages/colorama/ansitowin32.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../P_Python/stationarity.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-250">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../P_Python/charting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../P_Python/data_feed.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../P_Python/SVM.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../P_Python/charting_fd_rel.py" />
+    <entry file="file://C:/Conda/Anaconda3/Lib/site-packages/colorama/ansitowin32.py" />
+    <entry file="file://$PROJECT_DIR$/../P_Python/stationarity.py" />
+    <entry file="file://$PROJECT_DIR$/../P_Python/charting.py" />
+    <entry file="file://$PROJECT_DIR$/../P_Python/data_feed.py" />
+    <entry file="file://$PROJECT_DIR$/../P_Python/SVM.py" />
     <entry file="file://$PROJECT_DIR$/P_Python/pt_wiki.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
@@ -532,27 +552,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../P_Python/charting_fd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../P_Python/adf_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../P_Python/import.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../P_Python/charting_fd.py" />
+    <entry file="file://$PROJECT_DIR$/../P_Python/adf_test.py" />
+    <entry file="file://$PROJECT_DIR$/../P_Python/import.py" />
     <entry file="file://$PROJECT_DIR$/P_Python/pt_xbt_bbg.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
@@ -577,7 +579,6 @@
           <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding>
             <element signature="e#0#9#0" expanded="false" />
-            <marker date="1509573785000" expanded="true" signature="1432:1479" ph="..." />
           </folding>
         </state>
       </provider>
@@ -588,7 +589,7 @@
         <state relative-caret-position="640">
           <caret line="44" column="38" lean-forward="false" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -616,56 +617,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Conda/Anaconda3/Lib/site-packages/pandas/core/generic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-228">
-          <caret line="1832" column="0" lean-forward="false" selection-start-line="1832" selection-start-column="0" selection-end-line="1832" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Conda/Anaconda3/Lib/site-packages/pandas/core/internals.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11730">
-          <caret line="760" column="0" lean-forward="false" selection-start-line="760" selection-start-column="0" selection-end-line="760" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Conda/Anaconda3/Lib/site-packages/pandas/core/indexes/datetimelike.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2856">
-          <caret line="199" column="0" lean-forward="false" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Conda/Anaconda3/Lib/site-packages/pandas/core/indexes/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20519">
-          <caret line="1260" column="0" lean-forward="false" selection-start-line="1260" selection-start-column="0" selection-end-line="1260" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Conda/Anaconda3/Lib/site-packages/pandas/core/dtypes/missing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2244">
-          <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/P_Python/pt_google_daily_iplt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <marker date="1510406726000" expanded="true" signature="416:1312" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/Conda/Anaconda3/Lib/site-packages/pandas/core/generic.py" />
+    <entry file="file://C:/Conda/Anaconda3/Lib/site-packages/pandas/core/internals.py" />
+    <entry file="file://C:/Conda/Anaconda3/Lib/site-packages/pandas/core/indexes/datetimelike.py" />
+    <entry file="file://C:/Conda/Anaconda3/Lib/site-packages/pandas/core/indexes/base.py" />
+    <entry file="file://C:/Conda/Anaconda3/Lib/site-packages/pandas/core/dtypes/missing.py" />
     <entry file="file://$PROJECT_DIR$/P_Python/pt_google_daily.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="385">
@@ -678,75 +634,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/P_Python/pt_google_segments_scatter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="37" column="46" lean-forward="false" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Conda/Anaconda3/Lib/site-packages/IPython/core/interactiveshell.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="2880" column="0" lean-forward="false" selection-start-line="2880" selection-start-column="0" selection-end-line="2880" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/P_Python/pt_google_monthly.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="6" column="48" lean-forward="true" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/P_Python/dt_google_segments.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="876">
-          <caret line="69" column="22" lean-forward="true" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/P_Python/pt_google_segments.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="35" column="56" lean-forward="false" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/P_Python/dt_google_segments_v2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="70" column="83" lean-forward="false" selection-start-line="70" selection-start-column="83" selection-end-line="70" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/P_Python/pt_google_daily_idx.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/Conda/Anaconda3/Lib/site-packages/IPython/core/interactiveshell.py" />
+    <entry file="file://$PROJECT_DIR$/P_Python/dt_google_segments.py" />
+    <entry file="file://$PROJECT_DIR$/P_Python/pt_google_segments.py" />
+    <entry file="file://$PROJECT_DIR$/P_Python/dt_google_segments_v2.py" />
     <entry file="file://$PROJECT_DIR$/P_Python/dt_google_daily_idx.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="35" selection-end-column="158" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -755,7 +653,7 @@
         <state relative-caret-position="255">
           <caret line="30" column="11" lean-forward="true" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -768,37 +666,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/P_Python/dt_google_daily_15SEP_15OCT.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="41" column="4" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/P_Python/dt_google_daily_15SEP_15OCT.py" />
     <entry file="file://$PROJECT_DIR$/P_Python/dt_google_daily.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="157" column="96" lean-forward="true" selection-start-line="157" selection-start-column="12" selection-end-line="157" selection-end-column="96" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/P_Python/dt_google_segments_adj.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="723">
-          <caret line="94" column="26" lean-forward="true" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/P_Python/dt_google_segments_unadj.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="39" column="31" lean-forward="true" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -807,24 +682,8 @@
         <state relative-caret-position="298">
           <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/P_Python/pt_google_ex_unadj2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/P_Python/pt_google_ex_unadj1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -836,19 +695,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/P_Python/dt_google_segments_adj.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="55" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P_Python/dt_google_segments_unadj.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="55" column="32" lean-forward="true" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P_Python/pt_google_daily_idx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="34" column="56" lean-forward="true" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/P_Python/pt_google_segments_unadj.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        <state relative-caret-position="986">
+          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P_Python/pt_google_monthly.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="47" column="55" lean-forward="false" selection-start-line="47" selection-start-column="55" selection-end-line="47" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P_Python/pt_google_ex_unadj1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P_Python/pt_google_daily_iplt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="32" column="16" lean-forward="false" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P_Python/pt_google_segments_scatter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/P_Python/pt_google_segments_adj.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="43" column="25" lean-forward="false" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+        <state relative-caret-position="187">
+          <caret line="42" column="37" lean-forward="true" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P_Python/pt_google_ex_unadj2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="38" column="43" lean-forward="true" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -28,10 +28,18 @@ def main():
     dt_pd_google = pd.read_pickle('dt_pd_google_ex_unadj.pickle')
 
     matplotlib.rcParams.update({'font.size': 16})
-    ax = plt.subplot(111)
+
+    gs = matplotlib.gridspec.GridSpec(2, 1,
+                           width_ratios=[4],
+                           height_ratios=[4, 0.01]
+                           )
+    ax = plt.subplot(gs[0])
+
+    # ax = plt.subplot(211)
+    # ax = plt.subplot2grid((2, 1), (0, 0))
 
     list = [2]
-    list2 = ['2017-08-01 2017-08-31', '2017-09-01 2017-09-30']
+    list2 = ['2017-08-01 - 2017-08-31', '2017-09-01 - 2017-09-30']
     dt_pd_google[dt_pd_google.segment.isin(list)].groupby('segment').plot(y='google_tr',
                                                                               kind='line', ax=ax)
     L = plt.legend()
@@ -42,9 +50,6 @@ def main():
     os.chdir('..')
     os.chdir(os.path.abspath(os.curdir) + sl + "F_Figs" + sl)
     plt.savefig('pt_google_tr_segments_ex_unadj2.pdf')
-
-    # change font size
-    # matplotlib.rcParams.update({'font.size': 30})
 
     plt.show()
 

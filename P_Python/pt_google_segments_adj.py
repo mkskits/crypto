@@ -27,22 +27,38 @@ def main():
 
     dt_pd_google = pd.read_pickle('dt_pd_google_segments_adj.pickle')
 
+    matplotlib.rcParams.update({'font.size': 16})
     ax = plt.subplot(111)
 
     list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+    list2 = ['2010-07-18 2011-04-04',
+             '2010-11-25 2011-08-12',
+             '2011-04-04 2011-12-20',
+             '2011-08-12 2012-04-28',
+             '2011-12-20 2012-09-05',
+             '2012-04-28 2013-01-13',
+             '2012-09-05 2013-05-23',
+             '2013-01-13 2013-09-30',
+             '2013-05-23 2014-02-07',
+             '2013-09-30 2014-06-17',
+             '2014-02-07 2014-10-25',
+             '2014-06-17 2015-03-04',
+             '2014-10-25 2015-07-12',
+             '2015-03-04 2015-11-19',
+             '2015-07-12 2016-03-28',
+             '2015-11-19 2016-08-05',
+             '2016-03-28 2016-12-13',
+             '2016-08-05 2017-04-22',
+             '2016-12-13 2017-08-30',
+             '2017-04-22 2018-01-07',
+    ]
+
     dt_pd_google[dt_pd_google.segment.isin(list)].groupby('segment').plot(y='google_tr',
                                                                               kind='line', ax=ax)
     L = plt.legend()
-    _ = [plt.setp(item, 'text', T) for item, T in zip(L.texts, list)]
+    _ = [plt.setp(item, 'text', T) for item, T in zip(L.texts, list2)]
 
-
-    # colors = dt_pd_google['segment']
-    # top = plt.subplot2grid((4,4), (0,0), rowspan=3, colspan=4)
-    # top.plot(dt_pd_google.index, dt_pd_google['google_tr'])
-    # top.legend()
-    # plt.gcf().set_size_inches(8, 8)
-    # plt.title('Monthly Bitcoin Google Trend Index and First Differences')
-    plt.gcf().set_size_inches(15, 8)
+    plt.gcf().set_size_inches(9, 8)
 
     os.chdir('..')
     os.chdir(os.path.abspath(os.curdir) + sl + "F_Figs" + sl)

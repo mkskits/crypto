@@ -25,13 +25,12 @@ def main():
     elif os.name == 'nt':
         sl = '\\'
 
-    dt_pd_google = pd.read_pickle('dt_pd_google_segments.pickle')
+    dt_pd_google = pd.read_pickle('dt_pd_google_segments_unadj.pickle')
 
+    matplotlib.rcParams.update({'font.size': 16})
     colors = dt_pd_google['segment']
     plt.scatter(dt_pd_google.index, dt_pd_google['google_tr'], c=colors, s=10, alpha=0.8)
-    # plt.gcf().set_size_inches(8, 8)
-    # plt.title('Monthly Bitcoin Google Trend Index and First Differences')
-    plt.gcf().set_size_inches(15, 8)
+    plt.gcf().set_size_inches(9, 8)
 
     os.chdir('..')
     os.chdir(os.path.abspath(os.curdir) + sl + "F_Figs" + sl)
