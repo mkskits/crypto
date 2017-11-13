@@ -28,7 +28,12 @@ def main():
     dt_pd_google = pd.read_pickle('dt_pd_google_segments_unadj.pickle')
 
     matplotlib.rcParams.update({'font.size': 16})
-    ax = plt.subplot(111)
+
+    gs = matplotlib.gridspec.GridSpec(2, 1,
+                           width_ratios=[4],
+                           height_ratios=[4, 6]
+                           )
+    ax = plt.subplot(gs[0])
 
     list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
     list2 = ['2010-07-18 2011-04-04',
@@ -55,7 +60,7 @@ def main():
 
     dt_pd_google[dt_pd_google.segment.isin(list)].groupby('segment').plot(y='google_tr',
                                                                               kind='line', ax=ax)
-    L = plt.legend()
+    L = plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.2), fancybox=True, shadow=True, ncol=2)
     _ = [plt.setp(item, 'text', T) for item, T in zip(L.texts, list2)]
 
     plt.gcf().set_size_inches(9, 8)
