@@ -76,7 +76,7 @@ for x in single_frames:
     z = z + 1
 
 # drop overlapping points
-dt_pd_google_segments = dt_pd_google_segments[~dt_pd_google_segments.index.duplicated(keep='first')]
+dt_pd_google_segments = dt_pd_google_segments[dt_pd_google_segments.index.duplicated(keep='first')]
 # dt_pd_google_segments.index.drop_duplicates(keep='last')
 
 # rename column
@@ -86,6 +86,10 @@ dt_pd_google_segments.rename(columns={'Bitcoin': 'google_tr'}, inplace=True)
 dt_pd_google_segments['google_tr'] = dt_pd_google_segments / \
                                       dt_pd_google_segments.loc[dt_pd_google_segments['google_tr'].idxmax()][
                                           'google_tr'] * 100
+
+# fd & mavg calculations
+dt_pd_google_segments['google_tr_fd'] = dt_pd_google_segments['google_tr'].diff(periods=1)
+dt_pd_google_segments['google_tr_MAVG30'] = round(dt_pd_google_segments['google_tr'].rolling(window=30).mean(), 0)
 
 # store to pickle
 dt_pd_google_segments.to_pickle('dt_pd_google_segments_adj.pickle')
