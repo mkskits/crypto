@@ -31,7 +31,7 @@ def main():
     elif os.name == 'nt':
         sl = '\\'
 
-    check = pd.read_pickle('dt_pd_wiki_legacy.pickle')
+    check = pd.read_pickle('dt_pd_wiki_legacy_2010-07.pickle')
 
     print('current cycle of scraping done')
 
