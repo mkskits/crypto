@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f33df4d-d923-4c87-8ead-3836aa1d8afb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/P_Python/dt_aggr_csv.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/P_Python/dt_bbg_fin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/P_Python/dt_pd_aggr.pickle" afterPath="$PROJECT_DIR$/P_Python/dt_pd_aggr.pickle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/P_Python/dt_aggr.py" afterPath="$PROJECT_DIR$/P_Python/dt_aggr.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/P_Python/dt_open_pickle.py" afterPath="$PROJECT_DIR$/P_Python/dt_open_pickle.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/P_Python/dt_wikipedia_legacy.py" afterPath="$PROJECT_DIR$/P_Python/dt_wikipedia_legacy.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/P_Python/dt_wikipedia_legacy_md5_check.py" afterPath="$PROJECT_DIR$/P_Python/dt_wikipedia_legacy_md5_check.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,31 +19,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dt_bbg_fin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/P_Python/dt_bbg_fin.py">
+      <file leaf-file-name="dt_open_pickle.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/P_Python/dt_open_pickle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="32" column="91" lean-forward="true" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="91" />
-              <folding />
+            <state relative-caret-position="296">
+              <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dt_aggr.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/P_Python/dt_aggr.py">
+      <file leaf-file-name="dt_google_segments_unadj.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P_Python/dt_google_segments_unadj.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-10">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dt_aggr_csv.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/P_Python/dt_aggr_csv.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="714">
+              <caret line="85" column="28" lean-forward="true" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -64,6 +55,7 @@
       <find>google_tr</find>
       <find>days</find>
       <find>daily_idx</find>
+      <find>heur</find>
     </findStrings>
     <replaceStrings>
       <replace>segments</replace>
@@ -107,12 +99,13 @@
         <option value="$PROJECT_DIR$/P_Python/pt_google_ex_unadj2.py" />
         <option value="$PROJECT_DIR$/P_Python/st_google_segments_adj.py" />
         <option value="$PROJECT_DIR$/../wiki/dumps.wikimedia.org/other/pagecounts-raw/2011/2011-01/dt_wikipedia_legacy_md5_check.py" />
-        <option value="$PROJECT_DIR$/P_Python/dt_wikipedia_legacy.py" />
-        <option value="$PROJECT_DIR$/P_Python/dt_wikipedia_legacy_md5_check.py" />
-        <option value="$PROJECT_DIR$/P_Python/dt_open_pickle.py" />
         <option value="$PROJECT_DIR$/P_Python/dt_bbg_fin.py" />
         <option value="$PROJECT_DIR$/P_Python/dt_aggr_csv.py" />
         <option value="$PROJECT_DIR$/P_Python/dt_aggr.py" />
+        <option value="$PROJECT_DIR$/../c2_crypto_blocks/ctc-economy_flow-b.py" />
+        <option value="$PROJECT_DIR$/P_Python/dt_wikipedia_legacy.py" />
+        <option value="$PROJECT_DIR$/P_Python/dt_wikipedia_legacy_md5_check.py" />
+        <option value="$PROJECT_DIR$/P_Python/dt_open_pickle.py" />
       </list>
     </option>
   </component>
@@ -140,6 +133,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -157,7 +151,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -185,7 +178,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.dt_aggr_csv">
+  <component name="RunManager" selected="Python.dt_open_pickle">
+    <configuration name="ctc-economy_flow-b" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../c2_crypto_blocks" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="G_GIT" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../c2_crypto_blocks/ctc-economy_flow-b.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="dt_aggr" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -254,37 +264,20 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="dt_wikipedia_legacy" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/P_Python" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="G_GIT" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/P_Python/dt_wikipedia_legacy.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.dt_open_pickle" />
-      <item index="1" class="java.lang.String" itemvalue="Python.dt_wikipedia_legacy" />
-      <item index="2" class="java.lang.String" itemvalue="Python.dt_bbg_fin" />
-      <item index="3" class="java.lang.String" itemvalue="Python.dt_aggr" />
-      <item index="4" class="java.lang.String" itemvalue="Python.dt_aggr_csv" />
+      <item index="1" class="java.lang.String" itemvalue="Python.dt_bbg_fin" />
+      <item index="2" class="java.lang.String" itemvalue="Python.dt_aggr" />
+      <item index="3" class="java.lang.String" itemvalue="Python.dt_aggr_csv" />
+      <item index="4" class="java.lang.String" itemvalue="Python.ctc-economy_flow-b" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.dt_aggr_csv" />
-        <item index="1" class="java.lang.String" itemvalue="Python.dt_aggr" />
-        <item index="2" class="java.lang.String" itemvalue="Python.dt_bbg_fin" />
-        <item index="3" class="java.lang.String" itemvalue="Python.dt_open_pickle" />
-        <item index="4" class="java.lang.String" itemvalue="Python.dt_wikipedia_legacy" />
+        <item index="0" class="java.lang.String" itemvalue="Python.dt_open_pickle" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ctc-economy_flow-b" />
+        <item index="2" class="java.lang.String" itemvalue="Python.dt_aggr_csv" />
+        <item index="3" class="java.lang.String" itemvalue="Python.dt_aggr" />
+        <item index="4" class="java.lang.String" itemvalue="Python.dt_bbg_fin" />
       </list>
     </recent_temporary>
   </component>
@@ -303,20 +296,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1672" y="-8" width="1696" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32873806" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32873806" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16428572" sideWeight="0.48677248" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3721174" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16458334" sideWeight="0.5132275" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3721174" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31964287" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3267857" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -449,7 +443,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/P_Python/dt_wikipedia_legacy.py</url>
-          <line>826</line>
+          <line>802</line>
           <option name="timeStamp" value="109" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -480,27 +474,13 @@
       </default-breakpoints>
       <option name="time" value="115" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="pp" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/P_Python/pt_wiki.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../P_Python/charting_fd.py" />
-    <entry file="file://$PROJECT_DIR$/../P_Python/adf_test.py" />
-    <entry file="file://$PROJECT_DIR$/../P_Python/import.py" />
-    <entry file="file://$PROJECT_DIR$/P_Python/pt_xbt_bbg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="36" column="66" lean-forward="false" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/P_Python/dt_google_tr_v2.py" />
     <entry file="file://$PROJECT_DIR$/P_Python/dt_google_tr_monthly.py" />
     <entry file="file://$PROJECT_DIR$/P_Python/dt_google_tr_daily.py" />
     <entry file="file://$PROJECT_DIR$/P_Python/dt_xbt_bbg.py">
@@ -600,14 +580,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/P_Python/dt_google_segments_unadj.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="55" column="32" lean-forward="false" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/P_Python/pt_google_daily_idx.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -695,41 +667,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../wiki/dumps.wikimedia.org/other/pagecounts-raw/2011/2011-01/dt_wikipedia_legacy_md5_check.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="788" column="43" lean-forward="false" selection-start-line="788" selection-start-column="43" selection-end-line="788" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/P_Python/dt_wikipedia_legacy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12784">
-          <caret line="780" column="39" lean-forward="false" selection-start-line="780" selection-start-column="39" selection-end-line="780" selection-end-column="39" />
-          <folding>
-            <marker date="1511336592690" expanded="true" signature="1328:31836" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/P_Python/dt_wikipedia_legacy_md5_check.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12444">
-          <caret line="736" column="40" lean-forward="false" selection-start-line="736" selection-start-column="40" selection-end-line="736" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/P_Python/dt_open_pickle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../wiki/dumps.wikimedia.org/other/pagecounts-raw/2011/2011-01/dt_wikipedia_legacy_md5_check.py" />
     <entry file="file://$PROJECT_DIR$/P_Python/dt_wiki.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -754,10 +692,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/P_Python/dt_bbg_fin.py">
+    <entry file="file://$PROJECT_DIR$/P_Python/dt_aggr_csv.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="32" column="91" lean-forward="true" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="91" />
+        <state relative-caret-position="163">
+          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -770,11 +708,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/P_Python/dt_aggr_csv.py">
+    <entry file="file://$PROJECT_DIR$/P_Python/dt_bbg_fin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="256">
+          <caret line="32" column="91" lean-forward="true" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="91" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../c2_crypto_blocks/block.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../c2_crypto_blocks/blockchain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="103" column="28" lean-forward="false" selection-start-line="103" selection-start-column="28" selection-end-line="103" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../c2_crypto_blocks/ctc-user_stats-b.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="408" column="19" lean-forward="false" selection-start-line="408" selection-start-column="19" selection-end-line="408" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../c2_crypto_blocks/ctc-economy_flow-b.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#129#170#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../c2_crypto_blocks/ctc-example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P_Python/dt_wikipedia_legacy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="48" lean-forward="false" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P_Python/dt_wikipedia_legacy_md5_check.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P_Python/dt_google_segments_unadj.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="85" column="28" lean-forward="true" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P_Python/dt_open_pickle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
