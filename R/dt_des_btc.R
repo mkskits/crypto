@@ -1,5 +1,6 @@
 library('stargazer')
 library('dplyr')
+library('xts')
 
 # > getwd()
 # setwd('..')
@@ -29,8 +30,23 @@ dt.btc.com$first.differences <- c(NA, diff(dt.btc.com$Bitcoin.Price,lag = 1))
 dt.btc.com$pct.changes <- dt.btc.com$Bitcoin.Price / lag(dt.btc.com$Bitcoin.Price, 1) - 1
 # dt.btc.com$pct.changes <- 0
 
+# calculate 30day annualized volatility
+dt.btc.com <- as.xts(dt.btc.com, order.by=as.Date(dt.btc.com$Date, format='%d-%m-%y'))
+dt.btc.com <- dt.btc.com[, colnames(dt.btc.com) != 'Date']
+dt.btc.com$vol_ann_30d <- rollapply(dt.btc.com$log.returns,width=30, FUN=sd)*sqrt(365)
+
+storage.mode(dt.btc.com) <- "numeric"
+
 # rename columns
-colnames(dt.btc.com) = c('Date', 'Price', 'log.return', 'first.differences', 'pct.changes')
+# colnames(dt.btc.com) = c('Date', 'Price', 'log.return', 'first.differences', 'pct.changes')
+colnames(dt.btc.com) = c('Price', 'log.return', 'first.differences', 'pct.changes', 'ann_vol_30d')
+
+stg.input <- data.frame(date = index(dt.btc.com), dt.btc.com$Price, 
+                        dt.btc.com$log.return,
+                        dt.btc.com$first.differences,
+                        dt.btc.com$pct.changes,
+                        dt.btc.com$ann_vol_30d,
+                        row.names = NULL)
 
 # print(stargazer(dt.btc.com))
 

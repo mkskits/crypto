@@ -11,21 +11,67 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dt_wikipedia_legacy_md5_check.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dt_wikipedia_legacy.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dt_wikipedia_legacy.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="802" column="97" lean-forward="false" selection-start-line="802" selection-start-column="92" selection-end-line="802" selection-end-column="97" />
+              <folding>
+                <element signature="e#824#835#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dt_wikipedia_legacy_md5_check.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dt_wikipedia_legacy_md5_check.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="779" column="39" lean-forward="false" selection-start-line="779" selection-start-column="39" selection-end-line="779" selection-end-column="39" />
+            <state relative-caret-position="324">
+              <caret line="797" column="26" lean-forward="true" selection-start-line="797" selection-start-column="26" selection-end-line="797" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dt_wikipedia_legacy.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dt_wikipedia_legacy.py">
+      <file leaf-file-name="dt_open_pickle.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dt_open_pickle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="780" column="39" lean-forward="false" selection-start-line="780" selection-start-column="39" selection-end-line="780" selection-end-column="39" />
+            <state relative-caret-position="340">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pt_google_segments_adj.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pt_google_segments_adj.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="63" column="70" lean-forward="true" selection-start-line="63" selection-start-column="70" selection-end-line="63" selection-end-column="70" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pt_xbt_com.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pt_xbt_com.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1">
+              <caret line="35" column="48" lean-forward="true" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pt_xbt_com_std.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pt_xbt_com_std.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="65" column="28" lean-forward="true" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -45,6 +91,8 @@
       <find>label</find>
       <find>append</find>
       <find />
+      <find>index</find>
+      <find>pp</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -66,15 +114,19 @@
         <option value="C:/wiki/W_wiki/check.py" />
         <option value="C:/wiki/W_wiki/dt_wikipedia_legacy.py" />
         <option value="$PROJECT_DIR$/dt_wikipedia_legacy_helper1.py" />
+        <option value="C:/wiki/W_wiki/dt_open_pickle.py" />
+        <option value="$PROJECT_DIR$/dt_open_pickle.py" />
         <option value="$PROJECT_DIR$/dt_wikipedia_legacy.py" />
         <option value="$PROJECT_DIR$/dt_wikipedia_legacy_md5_check.py" />
+        <option value="$PROJECT_DIR$/pt_xbt_com.py" />
+        <option value="$PROJECT_DIR$/pt_xbt_com_std.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1928" />
-    <option name="y" value="1076" />
-    <option name="width" value="1936" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-3840" />
+    <option name="y" value="6" />
+    <option name="width" value="3856" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
@@ -92,7 +144,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -105,6 +156,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -147,25 +199,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.dt_wikipedia_legacy_helper1">
-    <configuration name="check" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="C:/wiki/W_wiki" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="P_Python" />
-      <option name="SCRIPT_NAME" value="C:/wiki/W_wiki/check.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="dt_google_testing" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.pt_xbt_com_std">
+    <configuration name="dt_open_pickle (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -177,12 +212,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="P_Python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dt_google_testing.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dt_open_pickle.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="dt_wikipedia_legacy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="dt_open_pickle" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -194,12 +229,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="P_Python" />
-      <option name="SCRIPT_NAME" value="C:/wiki/W_wiki/dt_wikipedia_legacy.py" />
+      <option name="SCRIPT_NAME" value="C:/wiki/W_wiki/dt_open_pickle.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="dt_wikipedia_legacy_helper1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pt_google_segments_adj" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -211,42 +246,59 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="P_Python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dt_wikipedia_legacy_helper1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pt_google_segments_adj.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="twtr_search_v_0.3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pt_xbt_com" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/T_twitter/Twitter_API" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="P_Python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/T_twitter/Twitter_API/twtr_search_v_0.3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pt_xbt_com.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="pt_xbt_com_std" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="P_Python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pt_xbt_com_std.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.dt_google_testing" />
-      <item index="1" class="java.lang.String" itemvalue="Python.dt_wikipedia_legacy" />
-      <item index="2" class="java.lang.String" itemvalue="Python.check" />
-      <item index="3" class="java.lang.String" itemvalue="Python.twtr_search_v_0.3" />
-      <item index="4" class="java.lang.String" itemvalue="Python.dt_wikipedia_legacy_helper1" />
+      <item index="0" class="java.lang.String" itemvalue="Python.dt_open_pickle" />
+      <item index="1" class="java.lang.String" itemvalue="Python.dt_open_pickle (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Python.pt_xbt_com" />
+      <item index="3" class="java.lang.String" itemvalue="Python.pt_google_segments_adj" />
+      <item index="4" class="java.lang.String" itemvalue="Python.pt_xbt_com_std" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.dt_wikipedia_legacy_helper1" />
-        <item index="1" class="java.lang.String" itemvalue="Python.dt_wikipedia_legacy" />
-        <item index="2" class="java.lang.String" itemvalue="Python.check" />
-        <item index="3" class="java.lang.String" itemvalue="Python.twtr_search_v_0.3" />
-        <item index="4" class="java.lang.String" itemvalue="Python.dt_google_testing" />
+        <item index="0" class="java.lang.String" itemvalue="Python.pt_xbt_com_std" />
+        <item index="1" class="java.lang.String" itemvalue="Python.pt_xbt_com" />
+        <item index="2" class="java.lang.String" itemvalue="Python.pt_google_segments_adj" />
+        <item index="3" class="java.lang.String" itemvalue="Python.dt_open_pickle (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Python.dt_open_pickle" />
       </list>
     </recent_temporary>
   </component>
@@ -264,7 +316,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="1076" width="1936" height="1056" extended-state="6" />
+    <frame x="-1928" y="-5" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16510417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -284,18 +336,18 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977098" sideWeight="0.5048465" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977098" sideWeight="0.4951535" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28419936" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977098" sideWeight="0.4951535" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977098" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16510417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2552504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44326618" sideWeight="0.49676898" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44326618" sideWeight="0.49676898" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25833333" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18820679" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -355,12 +407,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dt_google_testing.py</url>
-          <line>53</line>
+          <line>69</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pt_google_daily_iplt.py</url>
-          <line>43</line>
+          <line>42</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -369,9 +421,29 @@
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://C:/wiki/W_wiki/dt_wikipedia_legacy.py</url>
-          <line>57</line>
-          <option name="timeStamp" value="43" />
+          <url>file://C:/wiki/W_wiki/dt_open_pickle.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dt_open_pickle.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pt_xbt_com.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pt_google_segments_adj.py</url>
+          <line>73</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pt_xbt_com_std.py</url>
+          <line>60</line>
+          <option name="timeStamp" value="58" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -381,54 +453,21 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="44" />
+      <option name="time" value="59" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="pp" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pt_google_monthly.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pt_wiki.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dt_xbt_bbg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pt_wiki.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pt_xbt_bbg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.5/site-packages/matplotlib/artist.py" />
     <entry file="file://$PROJECT_DIR$/pt_aggr_v1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="80" column="64" lean-forward="false" selection-start-line="80" selection-start-column="64" selection-end-line="80" selection-end-column="64" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -438,7 +477,7 @@
         <state relative-caret-position="373">
           <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="40" selection-end-column="32" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -465,7 +504,7 @@
         <state relative-caret-position="450">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -475,7 +514,7 @@
         <state relative-caret-position="15">
           <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -523,7 +562,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -531,7 +569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="113">
           <caret line="1025" column="0" lean-forward="false" selection-start-line="1025" selection-start-column="0" selection-end-line="1025" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -558,7 +595,7 @@
         <state relative-caret-position="476">
           <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -617,14 +654,7 @@
       </provider>
     </entry>
     <entry file="file://C:/wiki/W_wiki/check.py" />
-    <entry file="file://C:/wiki/W_wiki/dt_wikipedia_legacy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="70" column="33" lean-forward="true" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/wiki/W_wiki/dt_wikipedia_legacy.py" />
     <entry file="file://$PROJECT_DIR$/dt_wikipedia_legacy_helper2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -640,18 +670,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dt_wikipedia_legacy.py">
+    <entry file="file://C:/wiki/W_wiki/dt_open_pickle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="780" column="39" lean-forward="false" selection-start-line="780" selection-start-column="39" selection-end-line="780" selection-end-column="39" />
-          <folding />
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../C_chain/ctc-economy_flow-b.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="315" column="0" lean-forward="true" selection-start-line="315" selection-start-column="0" selection-end-line="315" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dt_wikipedia_legacy_md5_check.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="779" column="39" lean-forward="false" selection-start-line="779" selection-start-column="39" selection-end-line="779" selection-end-column="39" />
+        <state relative-caret-position="324">
+          <caret line="797" column="26" lean-forward="true" selection-start-line="797" selection-start-column="26" selection-end-line="797" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dt_wikipedia_legacy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="802" column="97" lean-forward="false" selection-start-line="802" selection-start-column="92" selection-end-line="802" selection-end-column="97" />
+          <folding>
+            <element signature="e#824#835#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pt_google_segments_adj.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="63" column="70" lean-forward="true" selection-start-line="63" selection-start-column="70" selection-end-line="63" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pt_xbt_com.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="35" column="48" lean-forward="true" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dt_open_pickle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pt_xbt_com_std.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="65" column="28" lean-forward="true" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
           <folding />
         </state>
       </provider>
