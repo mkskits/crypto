@@ -18,7 +18,7 @@ def main():
     elif os.name == 'nt':
         sl = '\\'
 
-    pp = pd.read_pickle('dt_pd_wiki_legacy_2011-12.pickle')
+    pp = pd.read_pickle('dt_pd_wiki_legacy_2012-05.pickle')
 
     plt.show()
 
