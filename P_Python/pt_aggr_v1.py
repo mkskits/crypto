@@ -31,7 +31,12 @@ def main():
         for sp in ax.spines.values():
             sp.set_visible(False)
 
+    # data source: first level aggregation created py dt_aggr.py
     dt_pd_aggr = pd.read_pickle('dt_pd_aggr.pickle')
+
+    # index google trend value starting point to 100
+    dt_pd_aggr['google_tr'] = dt_pd_aggr['google_tr']\
+                              / dt_pd_aggr['google_tr'].iloc[0] * 100
 
     fig = plt.figure()
 
@@ -61,10 +66,10 @@ def main():
     # par1.set_ylim(0, 4)
     # par2.set_ylim(1, 65)
 
-    host.set_xlabel("Date")
-    host.set_ylabel("Price_USD")
-    par1.set_ylabel("Wikipedia")
-    par2.set_ylabel("Google")
+    host.set_xlabel('')
+    host.set_ylabel('Price (USD)')
+    par1.set_ylabel('Wikipedia')
+    par2.set_ylabel('Google Trend')
 
     host.yaxis.label.set_color(p1.get_color())
     par1.yaxis.label.set_color(p2.get_color())
@@ -86,13 +91,16 @@ def main():
 
     # top.legend(loc='best')
     # plt.gcf().set_size_inches(8, 8)
-    plt.title('Social and Economic Time Series')
+    # no title, provided in TeX environment
+    # plt.title('Social and Economic Time Series')
     plt.gcf().set_size_inches(15, 8)
 
     os.chdir('..')
     os.chdir(os.path.abspath(os.curdir) + sl + "F_Figs" + sl)
-    plt.savefig('pt_aggr_v1.pdf')
-    plt.show()
+    plt.tight_layout(pad=3)
+    plt.savefig('pt_aggr_v2.pdf') # bbox_inches='tight'
+
+    # plt.show()
 
     print('plotting social and economic time series daily done')
 

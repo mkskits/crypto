@@ -18,11 +18,11 @@ def main():
     elif os.name == 'nt':
         sl = '\\'
 
-    pp = pd.read_pickle('dt_pd_wiki_legacy_2012-05.pickle')
+    pp = pd.read_pickle('dt_pd_wiki.pickle')
 
     plt.show()
 
-    print('pickle openend')
+    print(os.path.basename(__file__), 'executed')
 
 if __name__ == '__main__':
     main()

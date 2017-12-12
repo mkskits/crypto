@@ -28,17 +28,19 @@ def main():
     dt_pd_google = pd.read_pickle('dt_pd_google_segments_adj.pickle')
     dt_pd_wiki = pd.read_pickle('dt_pd_wiki.pickle')
     dt_pd_fin = pd.read_pickle('dt_pd_fin.pickle')
+    dt_pd_bitcoin_talk = pd.read_pickle('dt_pd_bitcoin_talk.pickle')
 
     dt_pd_aggr = dt_pd_xbt_bbg.merge(dt_pd_wiki, left_index=True, right_index=True, how='inner').merge(dt_pd_google,
         left_index=True, right_index=True, how='inner')
 
     dt_pd_aggr = dt_pd_aggr.merge(dt_pd_fin, left_index=True, right_index=True, how='inner')
+    dt_pd_aggr = dt_pd_aggr.merge(dt_pd_bitcoin_talk, left_index=True, right_index=True, how='inner')
     dt_pd_aggr.index.name = 'date'
 
     # store aggr data as pickle
     dt_pd_aggr.to_pickle('dt_pd_aggr.pickle')
 
-    print('data aggr run done')
+    print(os.path.basename(__file__), 'executed')
 
 if __name__ == '__main__':
         main()

@@ -69,7 +69,7 @@ def main():
     os.chdir(os.path.abspath(os.curdir) + sl + "F_Figs" + sl)
     plt.savefig('pt_google_tr_segments_adj.pdf')
 
-    plt.show()
+    # plt.show()
 
     print('Plotting Google Trend monthly done')
 

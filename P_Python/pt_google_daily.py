@@ -33,14 +33,14 @@ def main():
     top.plot(dt_pd_google.index, dt_pd_google['google_tr_MAVG30'])
     top.legend()
     # plt.gcf().set_size_inches(8, 8)
-    plt.title('Daily Bitcoin Google Trend Index and First Differences')
+    # plt.title('Daily Bitcoin Google Trend Index and First Differences')
     bottom = plt.subplot2grid((4,4), (3,0), rowspan=1, colspan=4)
     bottom.bar(dt_pd_google.index, dt_pd_google['google_tr_fd'])
     plt.gcf().set_size_inches(15, 8)
 
     os.chdir('..')
     os.chdir(os.path.abspath(os.curdir) + sl + "F_Figs" + sl)
-    plt.show()
+    # plt.show()
     plt.savefig('pt_google_tr_daily.pdf')
 
     print('Plotting Google Trend daily done')

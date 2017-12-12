@@ -53,10 +53,14 @@ single_frames = {
     16: '2016-03-28 2016-12-13',
     17: '2016-08-05 2017-04-22',
     18: '2016-12-13 2017-08-30',
-    19: '2017-04-22 2018-01-07',
+    19: '2017-04-22 2017-11-30',
 }
 
 z = 1
+# documentation:
+    # dt_pd_google_segments: final pd containing trend data
+    # dt_pd_google_tmp: temporary set contatining one single frame, that is appended to pd_google_segments
+    # lda = mean absolute deviation between
 dt_pd_google_segments = pd.DataFrame(columns = ['Bitcoin', 'segment'])
 for x in single_frames:
     pytrends.build_payload(kw_list, cat=0, timeframe=single_frames[x], geo='', gprop='')
@@ -65,8 +69,9 @@ for x in single_frames:
         print('x>0')
         dt_pd_google_tmp['segment'] = x
         lda = dt_pd_google_tmp['Bitcoin'] - dt_pd_google_segments['Bitcoin']
-        dt_pd_google_tmp['Bitcoin'] = dt_pd_google_tmp['Bitcoin'] - lda.mean(skipna=True)
-        dt_pd_google_tmp.subtract(lda.mean(skipna=True), fill_value=0)['Bitcoin']
+        # dt_pd_google_tmp['Bitcoin'] = dt_pd_google_tmp['Bitcoin'] - lda.mean(skipna=True)
+        # dt_pd_google_tmp['Bitcoin'] = dt_pd_google_tmp['Bitcoin'] - 10 * lda.mean(skipna=True)
+        dt_pd_google_tmp['Bitcoin'] = dt_pd_google_tmp.subtract(lda.mean(skipna=True), fill_value=0)['Bitcoin']
         dt_pd_google_segments = dt_pd_google_segments.append(dt_pd_google_tmp)
     else:
         print('x = 0')

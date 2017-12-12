@@ -35,30 +35,21 @@ def main():
 
     matplotlib.rcParams.update({'font.size': 16})
 
-    dt_pd_xbt_com[['price_usd', 'xbt_vol_30d_ann']].plot(subplots=True, color='blue', figsize=(8, 6))
-    # gs = matplotlib.gridspec.GridSpec(2, 1,
-    #                        width_ratios=[4],
-    #                        height_ratios=[20, 1]
-                                      # )
-    # ax = plt.subplot(gs[0])
-
-    # list2 = '2010-07-18 - ' + str(dt_pd_xbt_com.tail(1).index.strftime('%Y-%m-%d')[0])
-    # list = [1]
-
-    # dt_pd_xbt_com[dt_pd_xbt_com.segment.isin(list)].groupby('segment').plot(y='price_usd',
-    #                                                                           kind='line', ax=ax)
-    # L = plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.2), fancybox=True, shadow=True, ncol=2)
-    # L.get_texts()[0].set_text(list2)
+    dt_pd_xbt_com.index.name = ''
+    dt_pd_xbt_com[['price_usd', 'xbt_vol_30d_ann']].plot(subplots=True, color='blue', figsize=(8, 6), legend=True)
+    dt_pd_xbt_com.index.name = 'date'
 
     plt.gcf().set_size_inches(9, 8)
 
     os.chdir('..')
     os.chdir(os.path.abspath(os.curdir) + sl + "F_Figs" + sl)
+    layout = plt.tight_layout(pad=0.01)
     plt.savefig('pt_xbt_com_std.pdf')
 
-    plt.show()
+    # plt.show() not needed due to global variable setting in pyCharm
+    # plt.show()
 
-    print('Plotting xbt_com_std done')
+    print(os.path.basename(__file__), 'executed')
 
 if __name__ == '__main__':
     main()

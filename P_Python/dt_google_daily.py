@@ -176,9 +176,9 @@ dt_pd_google_daily['google_tr_fd'] = dt_pd_google_daily['google_tr'].diff(period
 # MAVG calculation to be done after merged dataset
 dt_pd_google_daily['google_tr_MAVG30'] = round(dt_pd_google_daily['google_tr'].rolling(window=30).mean(), 0)
 
-dt_pd_google_daily.to_pickle('dt_pd_google_daily_idx.pickle')
+dt_pd_google_daily.to_pickle('dt_pd_google_daily.pickle')
 
-print('Google Trend Download Done')
+print('dt_google_daily run')
 
 if __name__ == '__main__':
     main()

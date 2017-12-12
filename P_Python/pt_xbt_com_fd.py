@@ -35,16 +35,21 @@ def main():
 
     matplotlib.rcParams.update({'font.size': 16})
 
+    dt_pd_xbt_com.index.name = '' # set index column name to '' disables x_label in plot
     dt_pd_xbt_com[['xbt_fd', 'xbt_pct', 'xbt_log_ret']].plot(subplots=True, color='blue', figsize=(8, 6))
+    dt_pd_xbt_com.index.name = 'date' # re-name index column
+
     plt.gcf().set_size_inches(9, 8)
 
     os.chdir('..')
     os.chdir(os.path.abspath(os.curdir) + sl + "F_Figs" + sl)
+    layout = plt.tight_layout(pad=0.01)
     plt.savefig('pt_xbt_com_fd_pct_log_ret.pdf')
 
-    plt.show()
+    # plt.show() disabled / set by global variable in IDE
+    # plt.show()
 
-    print('Plotting xbt_com_std done')
+    print(os.path.basename(__file__), 'executed')
 
 if __name__ == '__main__':
     main()
