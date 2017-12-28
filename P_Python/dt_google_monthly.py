@@ -36,16 +36,17 @@ kw_list = ["Bitcoin"]
 # Specific time is UTC
 # pytrends.build_payload(kw_list, cat=0, timeframe='2017-02-06T10 2017-02-12T07', geo='', gprop='')
 # date format YYYY-DD-MM
-pytrends.build_payload(kw_list, cat=0, timeframe='2009-01-01 2017-12-31', geo='', gprop='')
-dt_pd_google = pytrends.interest_over_time()
+pytrends.build_payload(kw_list, cat=0, timeframe='2010-06-01 2017-11-30', geo='', gprop='')
+dt_pd_google_monthly = pytrends.interest_over_time()
 
-dt_pd_google.rename(columns={'Bitcoin': 'google_tr'}, inplace=True)
-dt_pd_google['google_tr_fd'] = dt_pd_google['google_tr'].diff(periods=1)
-dt_pd_google['google_tr_MAVG30'] = round(dt_pd_google['google_tr'].rolling(window=30).mean(), 0)
+dt_pd_google_monthly.rename(columns={'Bitcoin': 'google_tr'}, inplace=True)
+dt_pd_google_monthly = dt_pd_google_monthly.drop('isPartial', 1)
+# dt_pd_google['google_tr_fd'] = dt_pd_google['google_tr'].diff(periods=1)
+# dt_pd_google['google_tr_MAVG30'] = round(dt_pd_google['google_tr'].rolling(window=30).mean(), 0)
 
-dt_pd_google.to_pickle('dt_pd_google_monthly.pickle')
+dt_pd_google_monthly.to_pickle('dt_pd_google_monthly.pickle')
 
-print('Google Trend Download Done')
+print(os.path.basename(__file__), 'executed')
 
 if __name__ == '__main__':
     main()

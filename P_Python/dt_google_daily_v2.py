@@ -37,7 +37,7 @@ kw_list = ["Bitcoin"]
 # pytrends.build_payload(kw_list, cat=0, timeframe='2017-02-06T10 2017-02-12T07', geo='', gprop='')
 # date format YYYY-MM-DD (trends)
 
-dt_pd_google_daily_un = pd.DataFrame(columns=['Bitcoin', 'isPartial'])
+dt_pd_google_daily_un = pd.DataFrame(columns=['Bitcoin', 'isPartial', 'google_tr_log_rtn'])
 single_frames = []
 with open('google_trend_segments.ini') as f:
     single_frames = f.read().splitlines()
@@ -46,26 +46,16 @@ y=0
 for x in single_frames:
     pytrends.build_payload(kw_list, cat=0, timeframe=x, geo='', gprop='')
     dt_pd_google_tmp = pytrends.interest_over_time()
+    mask = dt_pd_google_tmp.Bitcoin == 0
+    column_name = 'Bitcoin'
+    dt_pd_google_tmp.loc[mask, column_name] = 1
+    dt_pd_google_tmp['google_tr_log_rtn'] = np.log(dt_pd_google_tmp['Bitcoin'] / dt_pd_google_tmp['Bitcoin'].shift(1))
+    dt_pd_google_daily_un = dt_pd_google_daily_un.append(dt_pd_google_tmp)
     if y > 0:
         print('x>0')
-        if dt_pd_google_tmp.head(1).index == dt_pd_google_daily_un.tail(1).index:
-            print('ix overlap ok')
-            mask = dt_pd_google_tmp.Bitcoin = 0
-            column_name = 'Bitcoin'
-            dt_pd_google_tmp.loc[mask, column_name] = 1
-            dt_pd_google_tmp['googl_tr_log_rtn'] = np.log(dt_pd_google_tmp['Bitcoin'] / dt_pd_google_tmp['Bitcoin'].shift(1))
-            j=1
-            # lda = dt_pd_google_tmp.head(1)['Bitcoin'] - dt_pd_google_daily_un.tail(1)['Bitcoin']
-            # lda = float(lda)
-            # print(lda)
-            # dt_pd_google_tmp['Bitcoin'] = dt_pd_google_tmp['Bitcoin'] - lda
-            #dt_pd_google_daily_un = dt_pd_google_daily_un.append(dt_pd_google_tmp)
-            print('ix overlap bad')
-        else:
-            pass
     else:
         print('y = 0')
-        #dt_pd_google_daily_un = dt_pd_google_daily_un.append(dt_pd_google_tmp)
+        dt_pd_google_daily_un = dt_pd_google_daily_un.append(dt_pd_google_tmp)
     print('retrieve', x, 'done')
     y = y + 1
 

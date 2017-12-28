@@ -30,7 +30,7 @@ def main():
     dt_pd_google_daily_idx = pd.read_pickle('dt_pd_google_daily.pickle')
 
     # drop unused / outdated columns
-    dt_pd_google_daily_idx.drop(['google_tr_fd', 'google_tr_MAVG30'], axis=1, level=None, inplace=True, errors='raise')
+    # dt_pd_google_daily_idx.drop(['google_tr_fd', 'google_tr_MAVG30'], axis=1, level=None, inplace=True, errors='raise')
 
     # 'normalize' index to 100
     dt_pd_google_daily_idx['google_tr'] = dt_pd_google_daily_idx / dt_pd_google_daily_idx.loc[dt_pd_google_daily_idx['google_tr'].idxmax()]['google_tr'] * 100

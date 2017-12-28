@@ -88,7 +88,6 @@ def main():
 
     dt_pd_wiki = dt_pd_wiki.append(dt_pd_wiki_grep)
 
-
     # aggreagation
     dt_pd_wiki.sort_values('tstamp', ascending=True)
     dt_pd_wiki = dt_pd_wiki.groupby(dt_pd_wiki.tstamp).first()
@@ -101,7 +100,13 @@ def main():
     # dt_pd_wiki_csv['wikipedia_MAVG30'] = round(dt_pd_wiki['wikipedia'].rolling(window=30).mean(),0)
     # dt_pd_wiki.sort_index(inplace=True, ascending=False)
 
-    # Store pickle to disk
+    # outliers & number formatting
+    mask = dt_pd_wiki.wikipedia > 150000
+    column_name = 'wikipedia'
+    dt_pd_wiki.loc[mask, column_name] = 150000
+    dt_pd_wiki['wikipedia'].fillna(value=0, inplace=True)
+
+    # store pickle to disk
     os.chdir('..' + sl + '..' + sl + '..' + sl + 'P_Python' + sl)
     dt_pd_wiki.to_pickle('dt_pd_wiki.pickle')
 
