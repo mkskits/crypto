@@ -81,8 +81,10 @@ for x in single_frames:
     z = z + 1
 
 # drop overlapping points
-dt_pd_google_segments = dt_pd_google_segments[dt_pd_google_segments.index.duplicated(keep='first')]
-# dt_pd_google_segments.index.drop_duplicates(keep='last')
+# dt_pd_google_segments = dt_pd_google_segments[dt_pd_google_segments.index.duplicated(keep='first')]
+dt_pd_google_segments['dd'] = dt_pd_google_segments.index
+dt_pd_google_segments.drop_duplicates(subset='dd', keep='last', inplace=True)
+dt_pd_google_segments.drop(['dd'], axis=1, inplace=True)
 
 # rename column
 dt_pd_google_segments.rename(columns={'Bitcoin': 'google_tr'}, inplace=True)

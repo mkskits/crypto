@@ -37,12 +37,10 @@ def main():
     dt_pd_fin = pd.read_csv(os.path.abspath(os.curdir) + sl + "D_Data" + sl + "B_Bloomberg" + sl + dt_csv_fin)
     # Code to rename single column
     dt_pd_fin.rename(columns={'Unnamed: 0': 'Date'}, inplace=True)
-    dt_pd_fin['Date'] = pd.to_datetime(dt_pd_fin['Date'], errors='raise', format='%Y-%m-%d', exact='True')
+    dt_pd_fin['Date'] = pd.to_datetime(dt_pd_fin['Date'], errors='raise', exact='True') # format='%d.%m.%y'
     dt_pd_fin.set_index('Date', inplace=True, drop=True, append=False, verify_integrity=True)
     dt_pd_fin.index.name = 'date'
     # dt_pd_xbt_com.columns = ['price_usd']
-    # dt_pd_xbt_com['price_usd_fd'] = dt_pd_xbt_com['price_usd'].diff(periods=1)
-    # dt_pd_xbt_com['price_usd_MAVG30'] = round(dt_pd_xbt_com['price_usd'].rolling(window=30).mean(),0)
 
     # dt_pd_wiki.sort_index(inplace=True, ascending=False)
 

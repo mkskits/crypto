@@ -17,7 +17,7 @@ library('xts')
   setwd('..')
   setwd('./D_Data/B_Bloomberg/')
 
-# read input
+# read input (fin-assets.csv dump saved from bloomberg linked xls file)
   dt.fin.assets <- read.csv(file=paste(getwd(), '/fin-assets.csv', sep=''), header=TRUE, sep=",")
   dt.fin.assets <- subset(dt.fin.assets, select=c('Date',
                                                   'DXY.Curncy',
@@ -96,7 +96,7 @@ library('xts')
   dt.fin.assets$US.Govt.pct <- dt.fin.assets$US.Govt / lag(dt.fin.assets$US.Govt, 1) - 1
   
 # calculate 30day annualized volatility
-  dt.fin.assets <- as.xts(dt.fin.assets, order.by=as.Date(dt.fin.assets$Date, format='%d.%m.%Y'))
+  dt.fin.assets <- as.xts(dt.fin.assets, order.by=as.Date(dt.fin.assets$Date, format='%d.%m.%y'))
   dt.fin.assets <- dt.fin.assets[, colnames(dt.fin.assets) != 'Date']
   storage.mode(dt.fin.assets) <- "numeric"
   

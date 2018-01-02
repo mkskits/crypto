@@ -33,7 +33,7 @@ def main():
     dt_pd_xbt_com = pd.read_csv(os.path.abspath(os.curdir) + sl + "D_Data" + sl + "B_Bitcoin_com" + sl + dt_csv_xbt_com)
     # Code to rename single column
     # dt_pd_xbt_bbg.rename(columns={'date': 'Date'}, inplace=True)
-    dt_pd_xbt_com['Date'] = pd.to_datetime(dt_pd_xbt_com['Date'], errors='raise', format='%d-%m-%y', exact='True')
+    dt_pd_xbt_com['Date'] = pd.to_datetime(dt_pd_xbt_com['Date'], errors='raise', format='%d.%m.%y', exact='True')
     dt_pd_xbt_com.set_index('Date', inplace=True, drop=True, append=False, verify_integrity=True)
     dt_pd_xbt_com.index.name = 'date'
     dt_pd_xbt_com.columns = ['price_usd']
@@ -46,7 +46,7 @@ def main():
     os.chdir(os.path.abspath(os.curdir) + sl + "P_Python" + sl)
     dt_pd_xbt_com.to_pickle('dt_pd_xbt_com.pickle')
 
-    print('btc price index pd done')
+    print(os.path.basename(__file__), 'executed')
 
 if __name__ == '__main__':
 

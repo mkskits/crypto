@@ -34,7 +34,7 @@ pytrends = TrendReq(hl='en-US', tz=360)
 kw_list = ["Bitcoin"]
 
 single_frames = {
-    0: '2010-07-17 2011-04-03',
+    0: '2010-07-16 2011-04-03',
     1: '2010-11-25 2011-08-12',
     2: '2011-04-04 2011-12-20',
     3: '2011-08-12 2012-04-28',
@@ -64,16 +64,16 @@ z = 1
 dt_pd_google_segments = pd.DataFrame(columns = ['Bitcoin', 'segment', 'google_tr_rtn'])
 for x in single_frames:
     pytrends.build_payload(kw_list, cat=0, timeframe=single_frames[x], geo='', gprop='')
+    #dt_pd_google_tmp.iloc[0:0]
     dt_pd_google_tmp = pytrends.interest_over_time()
-    mask = dt_pd_google_tmp.Bitcoin == 0
-    column_name = 'Bitcoin'
-    dt_pd_google_tmp.loc[mask, column_name] = 1
-    dt_pd_google_tmp['google_tr_rtn'] = dt_pd_google_tmp['Bitcoin'] / dt_pd_google_tmp['Bitcoin'].shift(1) - 1
-    dt_pd_google_segments = dt_pd_google_segments.append(dt_pd_google_tmp)
+    #mask = dt_pd_google_tmp.Bitcoin == 0
+    #column_name = 'Bitcoin'
+    #dt_pd_google_tmp.loc[mask, column_name] = 1
+    # dt_pd_google_tmp['google_tr_rtn'] = dt_pd_google_tmp['Bitcoin'] / dt_pd_google_tmp['Bitcoin'].shift(1) - 1
     if x > 0:
         print('x>0')
         dt_pd_google_tmp['segment'] = x
-        lda = dt_pd_google_tmp['google_tr_rtn'] - dt_pd_google_segments['google_tr_rtn']
+        # lda = dt_pd_google_tmp['google_tr_rtn'] - dt_pd_google_segments['google_tr_rtn']
         # dt_pd_google_tmp['Bitcoin'] = dt_pd_google_tmp['Bitcoin'] - lda.mean(skipna=True)
         # dt_pd_google_tmp['Bitcoin'] = dt_pd_google_tmp['Bitcoin'] - 10 * lda.mean(skipna=True)
         # dt_pd_google_tmp['Bitcoin'] = dt_pd_google_tmp.subtract(lda.mean(skipna=True), fill_value=0)['Bitcoin']
@@ -86,7 +86,9 @@ for x in single_frames:
     z = z + 1
 
 # drop overlapping points
-dt_pd_google_segments = dt_pd_google_segments[dt_pd_google_segments.index.duplicated(keep='first')]
+# dt_pd_google_segments.sort_index(ascending=True, inplace=True)
+# dt_pd_google_segments.drop_duplicates(keep='first', inplace=True)
+# dt_pd_google_segments = dt_pd_google_segments[dt_pd_google_segments.index.duplicated(keep='first')]
 # dt_pd_google_segments.index.drop_duplicates(keep='last')
 
 # rename column
@@ -97,12 +99,8 @@ dt_pd_google_segments.rename(columns={'Bitcoin': 'google_tr'}, inplace=True)
 #                                      dt_pd_google_segments.loc[dt_pd_google_segments['google_tr'].idxmax()][
 #                                          'google_tr'] * 100
 
-# fd & mavg calculations
-# dt_pd_google_segments['google_tr_fd'] = dt_pd_google_segments['google_tr'].diff(periods=1)
-# dt_pd_google_segments['google_tr_MAVG30'] = round(dt_pd_google_segments['google_tr'].rolling(window=30).mean(), 0)
-
 # store to pickle
-dt_pd_google_segments.to_pickle('dt_pd_google_segments_adj.pickle')
+dt_pd_google_segments.to_pickle('dt_pd_google_segments_rconx.pickle')
 
 print(os.path.basename(__file__), 'executed')
 

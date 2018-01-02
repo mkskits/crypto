@@ -32,19 +32,16 @@ def main():
 # timezone 360 = US CST
 pytrends = TrendReq(hl='en-US', tz=360)
 kw_list = ["Bitcoin"]
-# pytrends.build_payload(kw_list, cat=0, timeframe='today 5-y', geo='', gprop='')
 # Specific time is UTC
-# pytrends.build_payload(kw_list, cat=0, timeframe='2017-02-06T10 2017-02-12T07', geo='', gprop='')
 # date format YYYY-DD-MM
 pytrends.build_payload(kw_list, cat=0, timeframe='2010-06-01 2017-11-30', geo='', gprop='')
 dt_pd_google_monthly = pytrends.interest_over_time()
 
 dt_pd_google_monthly.rename(columns={'Bitcoin': 'google_tr'}, inplace=True)
 dt_pd_google_monthly = dt_pd_google_monthly.drop('isPartial', 1)
-# dt_pd_google['google_tr_fd'] = dt_pd_google['google_tr'].diff(periods=1)
-# dt_pd_google['google_tr_MAVG30'] = round(dt_pd_google['google_tr'].rolling(window=30).mean(), 0)
+dt_pd_google_monthly.index = dt_pd_google_monthly.index + pd.offsets.MonthEnd()
 
-dt_pd_google_monthly.to_pickle('dt_pd_google_monthly.pickle')
+dt_pd_google_monthly.to_pickle('dt_pd_google_btc_monthly.pickle')
 
 print(os.path.basename(__file__), 'executed')
 
