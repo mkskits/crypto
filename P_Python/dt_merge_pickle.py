@@ -44,17 +44,6 @@ def main():
     c2 = pd.read_pickle('dt_pd_wiki_legacy_2014-07b.pickle')
     c1c = pd.DataFrame(columns=['tstamp'])
 
-    # z=0
-    # for x in c1['tstamp']:
-    #     # print(x)
-    #     try:
-    #         x = pd.to_datetime(x)
-    #         c1['tstamp'].iloc[z] = x
-    #         z = z + 1
-    #         # c1c = c1c.append({'tstamp':x}, ignore_index=True)
-    #     except Exception:
-    #         print('error in: ', x)
-
     c1 = c1.append(c2)
     c1.to_pickle('dt_pd_wiki_legacy_2014-07.pickle')
 

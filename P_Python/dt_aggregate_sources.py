@@ -27,8 +27,8 @@ def main():
     dt_pd_xbt_com = pd.read_pickle('dt_pd_xbt_com.pickle')
     dt_pd_google = pd.read_pickle('dt_pd_google_btc_daily.pickle')
     dt_pd_wiki = pd.read_pickle('dt_pd_wiki.pickle')
-    dt_pd_fin = pd.read_pickle('dt_pd_fin.pickle')
     dt_pd_bitcoin_talk = pd.read_pickle('dt_pd_bitcoin_talk.pickle')
+    dt_pd_fin = pd.read_pickle('dt_pd_fin.pickle')
 
     dt_pd_aggr = dt_pd_xbt_com.merge(dt_pd_wiki, left_index=True, right_index=True, how='inner').merge(dt_pd_google,
         left_index=True, right_index=True, how='inner')
@@ -37,8 +37,11 @@ def main():
     dt_pd_aggr = dt_pd_aggr.merge(dt_pd_bitcoin_talk, left_index=True, right_index=True, how='inner')
     dt_pd_aggr.index.name = 'date'
 
-    # store aggr data as pickle
+    # store aggr data as pickle and CSV file
     dt_pd_aggr.to_pickle('dt_pd_aggregated.pickle')
+    os.chdir('..')
+    os.chdir(os.path.abspath(os.curdir) + sl + 'D_Data')
+    dt_pd_aggr.to_csv('dt_aggregated.csv', sep=',')
 
     print(os.path.basename(__file__), 'executed')
 

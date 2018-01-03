@@ -37,14 +37,19 @@ def main():
     dt_pd_bitcoin_talk.rename(columns={'Date': 'date'}, inplace=True)
     dt_pd_bitcoin_talk.rename(columns={'New Topics': 'new_topics', 'New Posts' : 'new_posts',
                                        'New Members' : 'new_members'}, inplace=True)
-    # pd.to_datetime(dt_pd_bitcoin_talk['date'], errors='raise', format='%d.%m.%y', exact='True')
+
     dt_pd_bitcoin_talk.set_index(pd.to_datetime(dt_pd_bitcoin_talk['date'], errors='raise', format='%d.%m.%y', exact='True')
-                                 , inplace=True, drop=True, append=False, verify_integrity=True)
+                                 , inplace=True, verify_integrity=True)
+
+    dt_pd_bitcoin_talk = dt_pd_bitcoin_talk.drop('date', 1)
+
+    dt_pd_bitcoin_talk.sort_index(inplace=True, ascending=True)
+
     dt_pd_bitcoin_talk['new_posts_fd'] = dt_pd_bitcoin_talk['new_posts'].diff(periods=1)
     dt_pd_bitcoin_talk['new_posts_MAVG30'] = round(dt_pd_bitcoin_talk['new_posts'].rolling(window=30).mean(),0)
 
     dt_pd_bitcoin_talk.sort_index(inplace=True, ascending=True)
-    dt_pd_bitcoin_talk['log_new_posts'] = np.log(dt_pd_bitcoin_talk['new_posts'] /
+    dt_pd_bitcoin_talk['log_rtn_new_posts'] = np.log(dt_pd_bitcoin_talk['new_posts'] /
                                                  dt_pd_bitcoin_talk['new_posts'].shift() )
 
     # Store pickle to disk

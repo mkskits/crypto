@@ -35,7 +35,6 @@ def main():
     # name of the data file
     dt_csv_fin = 'dt_fin_assets.csv'
     dt_pd_fin = pd.read_csv(os.path.abspath(os.curdir) + sl + "D_Data" + sl + "B_Bloomberg" + sl + dt_csv_fin)
-    # Code to rename single column
     dt_pd_fin.rename(columns={'Unnamed: 0': 'Date'}, inplace=True)
     dt_pd_fin['Date'] = pd.to_datetime(dt_pd_fin['Date'], errors='raise', exact='True') # format='%d.%m.%y'
     dt_pd_fin.set_index('Date', inplace=True, drop=True, append=False, verify_integrity=True)

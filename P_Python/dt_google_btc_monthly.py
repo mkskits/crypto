@@ -37,7 +37,7 @@ kw_list = ["Bitcoin"]
 pytrends.build_payload(kw_list, cat=0, timeframe='2010-06-01 2017-11-30', geo='', gprop='')
 dt_pd_google_monthly = pytrends.interest_over_time()
 
-dt_pd_google_monthly.rename(columns={'Bitcoin': 'google_tr'}, inplace=True)
+dt_pd_google_monthly.rename(columns={'Bitcoin': 'google_tr_btc'}, inplace=True)
 dt_pd_google_monthly = dt_pd_google_monthly.drop('isPartial', 1)
 dt_pd_google_monthly.index = dt_pd_google_monthly.index + pd.offsets.MonthEnd()
 
