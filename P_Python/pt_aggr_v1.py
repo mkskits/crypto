@@ -31,12 +31,14 @@ def main():
         for sp in ax.spines.values():
             sp.set_visible(False)
 
+    matplotlib.rcParams.update({'font.size': 16})
+
     # data source: first level aggregation created py dt_aggr.py
-    dt_pd_aggr = pd.read_pickle('dt_pd_aggr.pickle')
+    dt_pd_aggr = pd.read_pickle('dt_pd_aggregated.pickle')
 
     # index google trend value starting point to 100
-    dt_pd_aggr['google_tr'] = dt_pd_aggr['google_tr']\
-                              / dt_pd_aggr['google_tr'].iloc[0] * 100
+    dt_pd_aggr['google_tr_btc'] = dt_pd_aggr['google_tr_btc']\
+                              / dt_pd_aggr['google_tr_btc'].iloc[0] * 100
 
     fig = plt.figure()
 
@@ -59,7 +61,7 @@ def main():
     # p1, = host.plot(dt_pd_aggr.index, dt_pd_aggr['price_usd'], "b-", label="Price_USD")
     p1, = host.plot(dt_pd_aggr.index, dt_pd_aggr['price_usd'], "b-", label="Price_USD")
     p2, = par1.plot(dt_pd_aggr.index, dt_pd_aggr['wikipedia'], "r-", label="Wikipedia")
-    p3, = par2.plot(dt_pd_aggr.index, dt_pd_aggr['google_tr'], "g-", label="Google")
+    p3, = par2.plot(dt_pd_aggr.index, dt_pd_aggr['google_tr_btc'], "g-", label="Google")
 
     # host.set_xlim(0, 2)
     # host.set_ylim(0, 2)
@@ -67,9 +69,9 @@ def main():
     # par2.set_ylim(1, 65)
 
     host.set_xlabel('')
-    host.set_ylabel('Price (USD)')
-    par1.set_ylabel('Wikipedia')
-    par2.set_ylabel('Google Trend')
+    #host.set_ylabel('Price (USD)')
+    #par1.set_ylabel('Wikipedia')
+    #par2.set_ylabel('Google Trend')
 
     host.yaxis.label.set_color(p1.get_color())
     par1.yaxis.label.set_color(p2.get_color())
@@ -90,19 +92,18 @@ def main():
     # top.plot(dt_pd_aggr.index, dt_pd_aggr['wikipedia'])
 
     # top.legend(loc='best')
-    # plt.gcf().set_size_inches(8, 8)
     # no title, provided in TeX environment
     # plt.title('Social and Economic Time Series')
     plt.gcf().set_size_inches(15, 8)
 
     os.chdir('..')
     os.chdir(os.path.abspath(os.curdir) + sl + "F_Figs" + sl)
-    plt.tight_layout(pad=3)
+    plt.tight_layout(pad=2)
     plt.savefig('pt_aggr_v2.pdf') # bbox_inches='tight'
 
     # plt.show()
 
-    print('plotting social and economic time series daily done')
+    print(os.path.basename(__file__), 'executed')
 
 if __name__ == '__main__':
     main()
