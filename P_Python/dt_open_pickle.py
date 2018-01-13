@@ -18,7 +18,7 @@ def main():
     elif os.name == 'nt':
         sl = '\\'
 
-    pp = pd.read_pickle('dt_pd_fin.pickle')
+    pp = pd.read_pickle('dt_pd_google_btc_daily.pickle')
 
     plt.show()
 
