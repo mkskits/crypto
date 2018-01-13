@@ -26,7 +26,7 @@ def main():
     elif os.name == 'nt':
         sl = '\\'
 
-    # 1) Open legacy pickle files aggregated through dt_pd_wiki_legacy.py (stored in D_Data/W_Wikipedia/L_legacy_pickles
+    # 1) Open legacy pickle files aggregated through dt_pd_wiki_legacy_slow.py (stored in D_Data/W_Wikipedia/L_legacy_pickles
     os.chdir(os.path.abspath(os.curdir) + sl + 'D_Data' + sl + 'W_Wikipedia' + sl + 'L_legay-pickles' + sl)
 
     dt_pickles = []
@@ -50,7 +50,7 @@ def main():
     # 2) Open CSV dump and append to pandas dataframe (source: https://tools.wmflabs.org/pageviews/)
     # Name of Data File (WIKIPEDIA)
     # import of the csv data dump from https://tools.wmflabs.org/pageviews (available from 1st July 2015 onwards)
-    dt_csv_wiki = 'pageviews-20150701-20171130.csv'
+    dt_csv_wiki = 'pageviews-20150701-20180112.csv'
     os.chdir('..')
     dt_pd_wiki_csv = pd.read_csv(os.path.abspath(os.curdir) + sl + dt_csv_wiki)
     dt_pd_wiki_csv.rename(columns={'Date': 'tstamp'}, inplace=True)
@@ -74,7 +74,6 @@ def main():
     dt_pd_wiki_grep = pd.DataFrame(columns=['tstamp', 'page_title', 'counter', 'rsize'])
     for dt_grep_file in dt_wiki_grep:
         print("dt_grep:", dt_grep_file)
-        # dt_pd_wiki_grep = pd.read_csv(dt_grep_file, sep=' ')
         dt_pd_wiki_grep = dt_pd_wiki_grep.append(pd.read_table(dt_grep_file, sep=' ', usecols=[0, 1, 2, 3],
                                         names=['tstamp', 'page_title', 'counter', 'rsize']))
     dt_pd_wiki_grep['tstamp'] = dt_pd_wiki_grep['tstamp'].str.slice(13, 26)
@@ -88,17 +87,13 @@ def main():
 
     dt_pd_wiki = dt_pd_wiki.append(dt_pd_wiki_grep)
 
-    # aggreagation
+    # aggregation
     dt_pd_wiki.sort_values('tstamp', ascending=True)
     dt_pd_wiki = dt_pd_wiki.groupby(dt_pd_wiki.tstamp).first()
     dt_pd_wiki = dt_pd_wiki.astype(float)
     dt_pd_wiki = dt_pd_wiki.resample('D').sum()
 
     dt_pd_wiki.columns = ['wikipedia']
-    # dt_pd_wiki.plot()
-    # dt_pd_wiki_csv['wikipedia_fd'] = dt_pd_wiki['wikipedia'].diff(periods=1)
-    # dt_pd_wiki_csv['wikipedia_MAVG30'] = round(dt_pd_wiki['wikipedia'].rolling(window=30).mean(),0)
-    # dt_pd_wiki.sort_index(inplace=True, ascending=False)
 
     # outliers & number formatting
     mask = dt_pd_wiki.wikipedia > 150000
@@ -110,6 +105,7 @@ def main():
     os.chdir('..' + sl + '..' + sl + '..' + sl + 'P_Python' + sl)
     dt_pd_wiki.to_pickle('dt_pd_wiki.pickle')
 
+    # test plot
     dt_pd_wiki.plot()
 
     print(os.path.basename(__file__), 'executed')

@@ -44,7 +44,7 @@ def main():
     os.chdir(os.path.abspath(os.curdir) + sl +"P_Python" + sl)
     dt_pd_fin.to_pickle('dt_pd_fin.pickle')
 
-    print('dt_pd_fin done')
+    print(os.path.basename(__file__), 'executed')
 
 if __name__ == '__main__':
     main()

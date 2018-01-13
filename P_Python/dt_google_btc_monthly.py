@@ -34,7 +34,7 @@ pytrends = TrendReq(hl='en-US', tz=360)
 kw_list = ["Bitcoin"]
 # Specific time is UTC
 # date format YYYY-DD-MM
-pytrends.build_payload(kw_list, cat=0, timeframe='2010-06-01 2017-11-30', geo='', gprop='')
+pytrends.build_payload(kw_list, cat=0, timeframe='2010-06-01 2017-12-31', geo='', gprop='')
 dt_pd_google_monthly = pytrends.interest_over_time()
 
 dt_pd_google_monthly.rename(columns={'Bitcoin': 'google_tr_btc'}, inplace=True)
