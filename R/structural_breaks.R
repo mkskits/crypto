@@ -31,3 +31,16 @@ bp.Price=breakpoints(Price_ts~1) # further specifications:  h=0.15, breaks=3
 ci.Price=confint(bp.Price,breaks=1)
 lines(ci.Price)
 
+# serial.test(fit, lags.pt=10) # Portmanteau test, combined over all components. This function computes the multivariate Portmanteau- 
+# and Breusch-Godfrey test for serially correlatederrors.
+
+# Granger-Causality test ##
+# causality(fit, cause = NULL, vcov.=vcovHC(fit), boot=TRUE, boot.runs=1000) # Computes the test statistics for Granger- and Instantaneous causality for a VAR(p). 
+# The Granger causality test is a statistical hypothesis test for determining 
+# whether one time series is useful in forecasting another. This test might help you to detect
+# the "best" predictors for Price of a bitcoin
+
+# Computing forecasts and prediction intervals
+# Forecasts=predict(fit, n.ahead=12, ci=0.95) # 12 periods forecast together with 95% conf. intervals
+
+# plot(Forecasts, xlab="Year")  #plot(predict)pos originally, but didnt work

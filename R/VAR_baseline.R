@@ -10,78 +10,73 @@ library('xts')
 
 # start
   print(paste('start: ', Sys.time()))
+  rm(list=ls())
+  while (!is.null(dev.list()))  dev.off()
   
 # directories 
   # setwd('..')
   print(getwd())
-  # setwd(script.dir <- dirname(sys.frame(1)$ofile))
+  setwd(script.dir <- dirname(sys.frame(1)$ofile))
   setwd('..')
   setwd('./D_Data/')
   wd <- getwd()
 
 # data input 
-  data <- read.csv(paste(getwd(), '/dt_aggregated.csv', sep=''), header=TRUE, sep=",")
-  dates <- as.Date(data$date, format = '%d.%m.%y')
-  cols <- names(data) %in% c('price_usd', 'google_tr_btc', 'wikipedia', 'no_users', 'new_posts') 
-  data <- data[cols]
-  xts.data <- as.xts(data, order.by = dates)
+  sc.data <- read.csv(paste(getwd(), '/dt_aggregated.csv', sep=''), header=TRUE, sep=",")
+  dates <- as.Date(sc.data$date, tryformats = c('%d.%m.%y', '%Y-%m-%d'))
+  cols <- names(sc.data) %in% c('price_usd', 'google_tr_btc', 'wikipedia', 'tweets', 'no_users'
+                                , 'nTweets', 'new_users')
+    # 'new_posts' 'tweets'
+  sc.data <- sc.data[cols]
+  xts.data <- as.xts(sc.data, order.by = dates)
+  xts.data$date <- NULL
   rm(cols)
   
   xts.data$price.log.rtn <- diff(log(xts.data$price_usd),lag = 1)
   xts.data$google.log.rtn <- diff(log(xts.data$google_tr_btc),lag = 1)
+  # xts.data$btctalk.log.rtn <- diff(log(xts.data$new_posts),lag = 1)
+  # xts.data$users.log.rtn <- diff(log(xts.data$no_users),lag = 1)
+  # xts.data$users.log.rtn <- diff(log(xts.data$users.log.rtn),lag = 1)
   # xts.data$wikipedia.log.rtn <- diff(log(xts.data$wikipedia),lag = 1)
+  xts.data$tweets.log.rtn <- diff(log(xts.data$nTweets),lag = 1)
+  xts.data$new_users.log.rtn <- diff(log(xts.data$new_users),lag = 1)
   
   xts.data$price.log.rtn[!is.finite(xts.data$price.log.rtn)] <- NA
   xts.data$google.log.rtn[!is.finite(xts.data$google.log.rtn)] <- NA
+  # xts.data$btctalk.log.rtn[!is.finite(xts.data$btctalk.log.rtn)] <- NA
   # xts.data$wikipedia.log.rtn[!is.finite(xts.data$wikipedia.log.rtn)] <- NA
+  xts.data$tweets.log.rtn[!is.finite(xts.data$tweets.log.rtn)] <- NA
+  xts.data$new_users.log.rtn[!is.finite(xts.data$new_users.log.rtn)] <- NA
 
 # simple plots - data review
-  plot(xts.data$price.log.rtn)
-  plot(xts.data$google.log.rtn)
-  plot(xts.data$wikipedia.log.rtn)
-
-## Correlograms
-#acf(x, 5)
-#values=acf(x)
-#values # to see the exact numerical value of the autocorrelations
-
+  pdf('pt_dt_plot.pdf')
+  par(mfrow=c(2,2))
+  # plot(xts.data$price.log.rtn)
+  # plot(xts.data$google.log.rtn)
+  # plot(xts.data$btctalk.log.rtn)
+  # plot(xts.data$users.log.rtn)
+  # plot(xts.data$tweets.log.rtn)
+  while (!is.null(dev.list()))  dev.off()
+  
 # VAR estimation
-xts.VAR <- xts.data
-xts.VAR <- xts.data[, setdiff(colnames(xts.data),c('price_usd','wikipedia','google_tr_btc')) ]
-xts.VAR <- na.omit(xts.VAR)
+  xts.VAR <- xts.data
+  xts.VAR <- xts.data[, setdiff(colnames(xts.data),c('price_usd','wikipedia',
+                                                   'google_tr_btc',
+                                                   'tweets',  'no_users', 'new_posts',
+                                                   'nTweets', 'new_users'))]
+  xts.VAR <- na.omit(xts.VAR)
+  xts.VAR <- xts.VAR['2010-01::2018-10']
 
-VAR(xts.VAR, p = 1) # p stands for number of lags one wants to implement
+  fit <- VAR(xts.VAR, type = 'both', ic="SC", lag.max=1, p = 1)
+  VAR_estimation <- summary(fit)
+  while (!is.null(dev.list()))  dev.off()
+  # plot(fit)
 
-fit = VAR(Bitcoin, type = "both", ic="SC", lag.max=1) 
-  # type both uses intercept and linear trend 
-  # for VAR, ic takes BIC as criterion for best model
-VAR_estimation=summary(fit)
-VAR_estimation
-plot(fit)
+# Impulse response functions for fitted VAR model
+  ir1 <- irf(fit, ortho = F, n.ahead=12, boot=T, ci=0.95, runs = 5) # basic IR functions
+  while (!is.null(dev.list()))  dev.off()
+  plot(ir1)
 
-serial.test(fit, lags.pt=10) # Portmanteau test, combined over all components. This function computes the multivariate Portmanteau- 
-                             # and Breusch-Godfrey test for serially correlatederrors.
-
-
-## Granger-Causality test ##
-causality(fit, cause = NULL, vcov.=vcovHC(fit), boot=TRUE, boot.runs=1000) # Computes the test statistics for Granger- and Instantaneous causality for a VAR(p). 
-                                                                           # The Granger causality test is a statistical hypothesis test for determining 
-                                                                           # whether one time series is useful in forecasting another. This test might help you to detect
-                                                                           # the "best" predictors for Price of a bitcoin
-
-### Impulse response functions for fitted VAR model ###
-Impulse_Responses=irf(fit, ortho = F, n.ahead=12, boot=T) # basic IR functions
-
-irf.ortho(fit, ortho = T, n.ahead = 12, boot = T) # orthogonalized IR functions
+  #ir2 <- irf(fit, ortho = T, n.ahead = 12, boot = F) # orthogonalized IR functions
                                                   # boot=T gives bootstrap confidence intervals, if you don't want them -> boot=F
-plot(Impulse_Responses)
-plot(irf.ortho)
-
-
-### Computing forecasts and prediction intervals ###
-Forecasts=predict(fit, n.ahead=12, ci=0.95) # 12 periods forecast together with 95% conf. intervals
-
-plot(Forecasts, xlab="Year")  #plot(predict)pos originally, but didnt work
-
-
-
+  #plot(ir2)

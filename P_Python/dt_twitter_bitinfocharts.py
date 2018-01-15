@@ -57,7 +57,8 @@ def main():
         #print(line)
 
     dt_pd_twitter_bitinfo = pd.DataFrame.from_records(df, columns = labels)
-    dt_pd_twitter_bitinfo.set_index('date', inplace=True, drop=True, append=False, verify_integrity=True)
+    dt_pd_twitter_bitinfo.set_index(pd.to_datetime(dt_pd_twitter_bitinfo['date']), inplace=True,
+                                                   drop=True, append=False, verify_integrity=True)
 
     # Store pickle to disk
     os.chdir(os.path.abspath(os.curdir) + sl + "P_Python" + sl)

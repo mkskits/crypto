@@ -101,6 +101,9 @@ def main():
     dt_pd_wiki.loc[mask, column_name] = 150000
     dt_pd_wiki['wikipedia'].fillna(value=0, inplace=True)
 
+
+
+
     # store pickle to disk
     os.chdir('..' + sl + '..' + sl + '..' + sl + 'P_Python' + sl)
     dt_pd_wiki.to_pickle('dt_pd_wiki.pickle')
