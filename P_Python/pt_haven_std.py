@@ -33,7 +33,7 @@ def main():
     dt_pd_fin.index.name = ''
 
     f, (ax1, ax2) = plt.subplots(2, 1, sharex=True, sharey=False)
-    ax1.plot(dt_pd_fin[['Wikipedia']], color='blue', label='XAU')
+    ax1.plot(dt_pd_fin[['Global.Govt']], color='blue', label='XAU')
     ax1.legend(loc='upper left')
     ax1b = ax1.twinx()
     ax1b.plot(dt_pd_fin[['Global.Govt']], color='red', label='GA Treasuries')

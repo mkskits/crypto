@@ -65,7 +65,7 @@ library('xts')
                                                    'tweets',  'no_users', 'new_posts',
                                                    'nTweets', 'new_users'))]
   xts.VAR <- na.omit(xts.VAR)
-  xts.VAR <- xts.VAR['2010-01::2018-10']
+  xts.VAR <- xts.VAR['2010-01::2013-10']
 
   fit <- VAR(xts.VAR, type = 'both', ic="SC", lag.max=1, p = 1)
   VAR_estimation <- summary(fit)
