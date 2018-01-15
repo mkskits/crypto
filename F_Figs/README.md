@@ -7,7 +7,7 @@ test `test`
 
 ![test](/pt_aggr_v2.pdf "Description goes here")
 
-[embed]/pt_aggr_v2.pdf[/embed]
+[embed]https://github.com/mkskits/crypto/raw/master/F_Figs/pt_aggr_v1.pdf[/embed]
 
 ```
 sdfsdf
