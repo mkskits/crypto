@@ -25,6 +25,26 @@ def main():
     elif os.name == 'nt':
         sl = '\\'
 
+    if os.name == 'posix':
+        sl = '/'
+    elif os.name == 'nt':
+        sl = '\\'
+
+    dt_pd_xbt_com = pd.read_pickle('dt_pd_xbt_com.pickle')
+    dt_pd_google = pd.read_pickle('dt_pd_google_btc_daily.pickle')
+    dt_pd_wiki = pd.read_pickle('dt_pd_wiki.pickle')
+
+    dt_pd_aggr = dt_pd_xbt_com.merge(dt_pd_wiki, left_index=True, right_index=True, how='inner').merge(dt_pd_google,
+        left_index=True, right_index=True, how='inner')
+
+    dt_pd_aggr.index.name = 'date'
+
+    # subsetting date range for plot
+    start_date = '1/1/2016'
+    end_date = '1/1/2018'
+    mask = (dt_pd_aggr.index > start_date) & (dt_pd_aggr.index <= end_date)
+    dt_pd_aggr = dt_pd_aggr[mask]
+
     def make_patch_spines_invisible(ax):
         ax.set_frame_on(True)
         ax.patch.set_visible(False)
@@ -32,9 +52,6 @@ def main():
             sp.set_visible(False)
 
     matplotlib.rcParams.update({'font.size': 16})
-
-    # data source: first level aggregation created py dt_aggr.py
-    dt_pd_aggr = pd.read_pickle('dt_pd_aggregated.pickle')
 
     # index google trend value starting point to 100
     dt_pd_aggr['google_tr_btc'] = dt_pd_aggr['google_tr_btc']\
@@ -59,7 +76,7 @@ def main():
     par2.spines["right"].set_visible(True)
 
     # p1, = host.plot(dt_pd_aggr.index, dt_pd_aggr['price_usd'], "b-", label="Price_USD")
-    p1, = host.plot(dt_pd_aggr.index, dt_pd_aggr['price_usd'], "b-", label="Price_USD")
+    p1, = host.plot(dt_pd_aggr.index, dt_pd_aggr['price_usd'], "b-", label="Price (USD)")
     p2, = par1.plot(dt_pd_aggr.index, dt_pd_aggr['wikipedia'], "r-", label="Wikipedia")
     p3, = par2.plot(dt_pd_aggr.index, dt_pd_aggr['google_tr_btc'], "g-", label="Google")
 
@@ -98,8 +115,8 @@ def main():
 
     os.chdir('..')
     os.chdir(os.path.abspath(os.curdir) + sl + "F_Figs" + sl)
-    plt.tight_layout(pad=2)
-    plt.savefig('pt_aggr_v2.pdf') # bbox_inches='tight'
+    plt.tight_layout(pad=1.8)
+    plt.savefig('pt_evolution.pdf') # bbox_inches='tight'
 
     # plt.show()
 

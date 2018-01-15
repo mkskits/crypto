@@ -1,13 +1,9 @@
 figures & mapping
 -----------------
 
-test `test`
+pt_evolution.pdf `pt_evolution.py`
 
-[[https://github.com/mkskits/crypto/raw/master/F_Figs/pt_aggr_v2.pdf|alt=octocat]]
-
-![test](/pt_aggr_v2.pdf "Description goes here")
-
-[embed]https://github.com/mkskits/crypto/raw/master/F_Figs/pt_aggr_v1.pdf[/embed]
+![test](/S_Screenshots/pt_evolution.pdf "Description goes here")
 
 ```
 sdfsdf
