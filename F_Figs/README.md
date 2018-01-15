@@ -3,7 +3,7 @@ figures & mapping
 
 pt_evolution.pdf `pt_evolution.py`
 
-![test](/F_Figs/S_Screenshots/pt_evolution.pdf "Description goes here")
+![test](/F_Figs/S_Screenshots/pt_evolution.png "Description goes here")
 
 ```
 sdfsdf
