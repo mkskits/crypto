@@ -1,0 +1,350 @@
+% Encoding: UTF-8
+
+@Article{Aitkin1985,
+  author  = {M. Aitkin and D. B. Rubin},
+  title   = {Estimation and hypothesis testing in finite mixture distributions},
+  journal = {Journal of Royal Statistical Society B},
+  year    = {1985},
+  volume  = {B 47},
+  pages   = {67-75},
+}
+
+@Article{Akaike1974,
+  author  = {H. Akaike},
+  title   = {A new look at statistical model identification},
+  journal = {IEEE Transactions on Automatic Control AC-19},
+  year    = {1974},
+  pages   = {716-723},
+}
+
+@Article{2014,
+  author  = {A. Braun and H. Schmeiser and F. Schreiber},
+  title   = {On consumer preferences and the willingness to pay for term life insurance},
+  journal = {European Journal of Operational Research},
+  year    = {2014},
+  volume  = {253},
+  number  = {3},
+  pages   = {761-776},
+}
+
+@Article{Breidert2006,
+  author  = {C. Breidert and M. Hahsler and T. Reutterer},
+  title   = {A Review of Methods for Measuring Willingness to Pay},
+  journal = {Innovative Marketing},
+  year    = {2006},
+  volume  = {2},
+  number  = {4},
+  pages   = {8-32},
+}
+
+@Article{Burnett1984,
+  author  = {J. Burnett and B. A. Palmer},
+  title   = {Examining Life Insurance Ownership through Demographic and Psychographic Characteristics},
+  journal = {The Journal of Risk and Insurance},
+  year    = {1984},
+  volume  = {51},
+  number  = {3},
+  pages   = {453-467},
+  month   = {09},
+}
+
+@Article{Chang2011,
+  author  = {J. B. Chang and J. L. Lusk},
+  title   = {Mixed logit models: accuracy and software choice},
+  journal = {Journal of Applied Econometrics},
+  year    = {2011},
+  volume  = {26},
+  number  = {1},
+  pages   = {167-172},
+}
+
+@Article{Chiou2007,
+  author  = {L. Chiou and J. L. Walker},
+  title   = {Masking identification of discrete choice models under simulation methods},
+  journal = {Journal of Econometrics},
+  year    = {2007},
+  volume  = {141},
+  number  = {2},
+  pages   = {683-703},
+}
+
+@Article{Costa-Font2009,
+  author  = {J. Costa-Font and M. Font},
+  title   = {Does ’Early Purchase’ Improve the Willingness to Pay for Long-Term Care Insurance?},
+  journal = {Applied Economics Letters},
+  year    = {2009},
+  volume  = {16},
+  number  = {13},
+  pages   = {1301-1305},
+}
+
+@Article{2013,
+  author  = {M. Curak and I. Dzaja},
+  title   = {The Effect of Social and Demographic Factors on Life Insurance Demand in Croatia},
+  journal = {International Journal of Business and Social Science},
+  year    = {2013},
+  volume  = {4},
+  number  = {9},
+  pages   = {65-72},
+  month   = {08},
+}
+
+@InBook{DeSarbo2005,
+  chapter   = {19},
+  title     = {Latent structure regression, In R},
+  publisher = {Sage Publications},
+  year      = {2005},
+  author    = {W. DeSarbo and W. Kamakura and M. Wedel},
+  editor    = {Grover and M. Vriens},
+}
+
+@Article{Green1971,
+  author  = {P. E. Green and V. R. Rao},
+  title   = {Conjoint Measurement for Quantifying Judgmental Data},
+  journal = {Journal of Marketing Research},
+  year    = {1971},
+  volume  = {8},
+  number  = {3},
+  pages   = {355-363},
+}
+
+@Article{Gruen2008,
+  author  = {B. Grün and F. Leisch},
+  title   = {FlexMix Version 2: Finite Mixtures with Concomitant Variables and Varying and Constant Parameters},
+  journal = {Journal of Statistical Software},
+  year    = {2008},
+  volume  = {28},
+  number  = {4},
+  pages   = {1-35},
+}
+
+@Article{Jacobs-Lawson2010,
+  author  = {J. M. Jacobs-Lawson and A. K. Webb and M. Schumacher and C. C. Gayer},
+  title   = {Age, Income, Health, and Willingness to Pay for Health Insurance in Late-Life.},
+  journal = {Financial Services Review},
+  year    = {2010},
+  volume  = {19},
+  number  = {3},
+  pages   = {265-274},
+}
+
+@InBook{Jedidi2009,
+  pages     = {37-60},
+  title     = {Willingness to Pay: Measurement and Managerial Implications},
+  publisher = {Edward Elgar Publishing, Cheltenham, Uk},
+  year      = {2009},
+  author    = {K. Jedidi and S. Jagpal},
+  journal   = {Handbook of Pricing Research in Marketing},
+}
+
+@Article{Kamakura1994,
+  author  = {W. Kamakura and M. Wedel and J. Agrawal},
+  title   = {Concomitant variable latent class models for conjoint analysis},
+  journal = {International Journal of Research in Marketing},
+  year    = {1994},
+  volume  = {11},
+  pages   = {451-464},
+}
+
+@Book{Boes2009,
+  title     = {Analysis of Microdata},
+  publisher = {Springer Verlag Berlin Heidelberg},
+  year      = {2009},
+  author    = {S. Boes and R. Winkelmann},
+  edition   = {2nd},
+}
+
+@Article{Ahmed2009,
+  author  = {A. Khwaja},
+  title   = {Estimating willingness to pay for medicare using a dynamic life-cycle model of demand for health insurance},
+  journal = {Journal of Econometrics},
+  year    = {2009},
+  volume  = {156},
+  pages   = {130-147},
+}
+
+@Book{Louviere2000,
+  title     = {Stated Choice Methods: Analysis and Application},
+  publisher = {Cambridge University Press, UK},
+  year      = {2000},
+  author    = {J. Louviere and D. A. Hensher and J. D. Swait},
+}
+
+@Article{Nylund2007,
+  author  = {K. L. Nylund and T. Asparouhov and B. O. Muthén},
+  title   = {Deciding on the Number of Classes in Latent Class Analysis and Growth Mixture Modeling: A Monte Carlo Simulation Study},
+  journal = {University of California},
+  year    = {2007},
+  volume  = {14},
+  number  = {4},
+  pages   = {535-569},
+  chapter = {14},
+}
+
+@Article{Orme2009,
+  author  = {B. K. Orme},
+  title   = {Which conjoint method should I use?},
+  journal = {Sawtooth Software Research Paper},
+  year    = {2009},
+}
+
+@Article{Orme2002,
+  author  = {B. K. Orme},
+  title   = {Formulating Attributes and Levels in Conjoint Analysis},
+  journal = {Sawtooth Software Research Paper Series},
+  year    = {2002},
+}
+
+@Article{Rischatsch2016,
+  author  = {M. Rischatsch and M. H. Puttaiah},
+  title   = {Critical Illness insurance in China – Understanding customer preferences},
+  journal = {Swiss Re Center for Global Dialogue},
+  year    = {2016},
+  pages   = {10},
+}
+
+@Article{SawtoothSoftwareInc.2013,
+  author  = {SawtoothSoftwareInc.},
+  title   = {The CBC System for Choice-Based Conjoint Analysis},
+  journal = {Technical Paper Series},
+  year    = {2013},
+}
+
+@Article{Schwarz1978,
+  author  = {G. Schwarz},
+  title   = {Estimating the Dimension of a Model},
+  journal = {Annals of Statistics},
+  year    = {1978},
+  volume  = {6},
+  number  = {2},
+  pages   = {461-464},
+  month   = {03},
+}
+
+@Article{Sherrick2003,
+  author  = {B. J. Sherrick and P. J. Barry and G. D. Schnitkey and P. N. Ellilnger and B. Wansink},
+  title   = {Farmers’ Preferences for Crop Insurance Attributes},
+  journal = {Review of Agricultural Economics},
+  year    = {2003},
+  volume  = {25},
+  number  = {2},
+  pages   = {415-429},
+}
+
+@Article{Braun2014,
+  author  = {A. Braun and L. Steinmann},
+  title   = {Term Life insurance in Germany: The consumer's perspective - a need for preferences-orientated product design?},
+  journal = {Swiss Re Ltd Economic Research \& Consulting, Zurich},
+  year    = {2014},
+}
+
+@Article{Thurstone1927,
+  author  = {L. Thurstone},
+  title   = {A Law of Comparative Judgment},
+  journal = {Psychological Review},
+  year    = {1927},
+  volume  = {34},
+  number  = {4},
+  pages   = {273-286},
+}
+
+@Book{Train2003,
+  title     = {Discrete choice methods with simulation},
+  publisher = {Cambridge University Press, Cambridge},
+  year      = {2003},
+  author    = {K. E. Train},
+}
+
+@Article{S.C.Lai2010,
+  author  = {C. H. Wen and S. C. Lai},
+  title   = {Latent class models of international air carrier choice},
+  journal = {Elsevier Ltd.},
+  year    = {2010},
+  volume  = {Part E 46},
+  number  = {100},
+  pages   = {211-221},
+}
+
+@Misc{GDV2017,
+  author       = {GDV},
+  title        = {Risikolebensversicherung für Nichtraucher häufig günstiger},
+  howpublished = {https://www.GDV.de, March 06, 2017.},
+  year         = {2017},
+  url          = {https://www.GDV.de, 06.03.2017},
+}
+
+@Misc{GablerWirtschaftslexikon2017,
+  author       = {GablerWirtschaftslexikon},
+  title        = {Stichwort: Risikolebensversicherung},
+  howpublished = {http://wirtschaftslexikon.gabler.de/Archiv/4361493/35/risikolebensversicherung-1-v2.html, March 06, 2017},
+  year         = {2017},
+  url          = {https://www.GDV.de, 06.03.2017},
+}
+
+@Misc{ABI2017,
+  author       = {ABI},
+  title        = {A Guide to Life Insurance},
+  howpublished = {http://www.abi.org.uk/, February 8, 2017},
+  year         = {2017},
+}
+
+@Article{Kjaer2005,
+  author  = {Trine Kjaer},
+  title   = {A review of the discrete choice experiment - with emphasis on its application in health care},
+  journal = {University of Southern Denmark},
+  year    = {2005},
+  pages   = {23},
+  month   = {01},
+}
+
+@Article{Kirova2013,
+  author  = {M. Kirova and L. Steinmann},
+  title   = {Life insurance: Focusing on the consumer},
+  journal = {Swiss Re Ltd Economic Research \& Consulting, Zurich},
+  year    = {2013},
+}
+
+@Article{Louviere1983,
+  author  = {J. J. Louviere and G. Woodworth},
+  title   = {Design and Analysis of Simulated Consumer Choice or Allocation Experiments: An Approach Based on Aggregate Data},
+  journal = {Journal of Marketing Research},
+  year    = {1983},
+  volume  = {20},
+  number  = {4},
+  pages   = {350-367},
+  month   = {11},
+}
+
+@Article{Green1990,
+  author  = {Paul E. Green and V. Srinivasan},
+  title   = {Conjoint Analysis in Marketing: New Developments with Implications for Research and Practice},
+  journal = {Journal of Marketing},
+  year    = {1990},
+  volume  = {54},
+  number  = {4},
+  pages   = {3-19},
+  month   = {10},
+}
+
+@Article{Hausman1984,
+  author  = {J. Hausman and D. Mcfadden},
+  title   = {Specification Tests for the Multinomial Logit Model},
+  journal = {Econometrica},
+  year    = {1984},
+  volume  = {52},
+  number  = {5},
+  pages   = {1219-1240},
+}
+
+@Article{Anthonisen1994,
+  author  = {N. R. Anthonisen and J. E. Connett and J. P. Kiley},
+  title   = {Effects of Smoking Intervention and the Use of an Inhaled Anticholinergic Bronchodilator on the Rate of Decline of FEV1},
+  journal = {The Lung Health Study},
+  year    = {1994},
+  volume  = {272},
+  number  = {19},
+  pages   = {1497-1505},
+  month   = {11},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

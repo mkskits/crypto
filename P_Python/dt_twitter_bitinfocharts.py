@@ -20,8 +20,7 @@ import io
 print(os.getcwd())
 
 # script description
-# this script imports the financial data from the R-pre-processed csv file and stores
-# the python pickle object
+# reads / formats data from bitinfo twitter data dump
 
 def main():
     print("First Module's Name: {}".format(__name__))
@@ -39,7 +38,6 @@ def main():
     dt_twitter_bitinfo_file = 'source_bitinfocharts.txt'
     dt_twitter_bitinfo = open(os.path.abspath(os.curdir) + sl + "D_Data" + sl + "T_Twitter" + sl
                               + dt_twitter_bitinfo_file, 'r').read()
-    # dt_twitter_bitinfo_sp = str.splitlines(dt_twitter_bitinfo)
 
     df = []
     labels = ['date', 'tweets']
@@ -59,6 +57,7 @@ def main():
     dt_pd_twitter_bitinfo = pd.DataFrame.from_records(df, columns = labels)
     dt_pd_twitter_bitinfo.set_index(pd.to_datetime(dt_pd_twitter_bitinfo['date']), inplace=True,
                                                    drop=True, append=False, verify_integrity=True)
+    dt_pd_twitter_bitinfo = dt_pd_twitter_bitinfo.drop('date', 1)
 
     # Store pickle to disk
     os.chdir(os.path.abspath(os.curdir) + sl + "P_Python" + sl)

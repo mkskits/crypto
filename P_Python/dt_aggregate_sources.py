@@ -42,6 +42,7 @@ def main():
     dt_pd_aggr = dt_pd_aggr.merge(dt_pd_userstats, left_index=True, right_index=True, how='inner')
     # dt_pd_aggr = dt_pd_aggr.merge(dt_pd_twitter_bitinfo, left_index=True, right_index=True, how='inner')
     # dt_pd_aggr = dt_pd_aggr.merge(dt_pd_cts_twitter, left_index=True, right_index=True, how='inner')
+    # append twitter to aggregate
     dt_pd_aggr = dt_pd_aggr.merge(dt_pd_twitter_aggr, left_index=True, right_index=True, how='inner')
     dt_pd_aggr.index.name = 'date'
 

@@ -37,19 +37,22 @@ library('xts')
   
     # 'new_posts' 'tweets'          These 5 lines are used to delete unnecessary columns
   #sc.data <- sc.data[cols]
+  sc.data$date <- NULL
   xts.data <- as.xts(sc.data, order.by = dates)
-  #xts.data$date <- NULL
+  xts.data$date <- NULL
+  xts.data.num <- as.numeric(xts.data)
   #rm(cols)
   
-  xts.data$price.rtn <- diff(xts.data$WeightedPrice,lag = 1)
-  xts.data$google.rtn <- diff(xts.data$googleSearch,lag = 1)
+  xts.data$price.rtn <- diff(xts.data$Close,lag = 1)/lag(xts.data$Close)
+  xts.data$google.rtn <- diff(xts.data$googleSearch,lag = 1)/lag(xts.data$googleSearch, k=1)
   # xts.data$btctalk.rtn <- diff(xts.data$new_posts,lag = 1)
   # xts.data$users.rtn <- diff(xts.data$no_users,lag = 1)
   # xts.data$users.rtn <- diff(xts.data$users.rtn,lag = 1)
   # xts.data$wikipedia.rtn <- diff(xts.data$wikipedia,lag = 1)
-  WeightedTweets <- (xts.data$nTweets/xts.data$totalTweets)
-  xts.data$tweets.rtn <- diff(WeightedTweets,lag = 1)
-  xts.data$new_users.rtn <- diff(xts.data$nUsersFilteredNet,lag = 1)
+  WeightedTweets <- (xts.data$nTweets/xts.data$totalTweets*1000000)
+  xts.data$tweets.rtn <- diff(WeightedTweets,lag = 1)/lag(WeightedTweets, k=1)
+  xts.data$nUsersFilteredNet <- diff(xts.data$nUsersFilteredNet, lag = 1)
+  xts.data$new_users.rtn <- diff(xts.data$nUsersFilteredNet,lag = 1)/lag(xts.data$nUsersFilteredNet, k=1)
   
   xts.data$price.rtn[!is.finite(xts.data$price.rtn)] <- NA
   xts.data$google.rtn[!is.finite(xts.data$google.rtn)] <- NA
@@ -88,12 +91,12 @@ library('xts')
   
 # VAR estimation
   xts.VAR <- xts.data
-  xts.VAR <- xts.data[, setdiff(colnames(xts.data),c('price_usd','wikipedia',
+  xts.VAR <- xts.data[, setdiff(colnames(xts.data),c('price_usd',
                                                    'google_tr_btc',
-                                                   'tweets',  'no_users', 'new_posts',
-                                                   'nTweets', 'new_users'))]
+                                                   'tweets','new_users'))]
   xts.VAR <- na.omit(xts.VAR)
-  xts.VAR <- xts.VAR['2010-01::2013-10']
+  xts.VAR <- -xts.VAR[,-c(1:15)]          # Run only once, or else all columns of matrix will be gone
+  xts.VAR <- xts.VAR['2010-07-18::2013-10-31']
 
   fit <- VAR(xts.VAR, type = 'both', ic="SC", lag.max=1, p = 1)
   VAR_estimation <- summary(fit)

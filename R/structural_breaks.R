@@ -44,3 +44,6 @@ lines(ci.Price)
 # Forecasts=predict(fit, n.ahead=12, ci=0.95) # 12 periods forecast together with 95% conf. intervals
 
 # plot(Forecasts, xlab="Year")  #plot(predict)pos originally, but didnt work
+#ir2 <- irf(fit, ortho = T, n.ahead = 12, boot = F) # orthogonalized IR functions
+# boot=T gives bootstrap confidence intervals, if you don't want them -> boot=F
+#plot(ir2)
