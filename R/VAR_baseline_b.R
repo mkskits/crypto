@@ -28,14 +28,11 @@ library('xtable')
   dates <- as.Date(sc.data$date, tryformats = c('%d.%m.%y', '%Y-%m-%d'))
   cols <- names(sc.data) %in% 
     c('price',
-      'wikipedia',
+      'google',
+      # 'wikipedia', 
       'tweets',
-      'new_users'
-      # addition to baseline_a
-      # 'google',
-      # 'new_topics'
-      # 'new_posts'
-      )
+      'no_users',
+      'new_users')
     
   # 'new_posts' 'tweets'
   sc.data <- sc.data[cols]
@@ -44,17 +41,14 @@ library('xtable')
   rm(cols)
   
   xts.data$price.log.rtn <- diff(log(xts.data$price),lag = 1)
-  # xts.data$google.log.rtn <- diff(log(xts.data$google),lag = 1)
-  xts.data$wikipedia.log.rtn <- diff(log(xts.data$wikipedia),lag = 1)
+  xts.data$google.log.rtn <- diff(log(xts.data$google),lag = 1)
   xts.data$tweets.log.rtn <- diff(log(xts.data$tweets),lag = 1)
   xts.data$new_users.log.rtn <- diff(log(xts.data$new_users),lag = 1)
-  # addition to baseline_a
-  # xts.data$new_topcis.log.rtn <- diff(log(xts.data$new_topics),lag = 1)
-  # xts.data$new_posts.log.rtn <- diff(log(xts.data$new_posts),lag = 1)
   
-  # replace inf / -inf log-returns with NA (case for 4 points out of 793)
-    # xts.data$new_topcis.log.rtn[!is.finite(xts.data$new_topcis.log.rtn)] <- NA
-    # xts.data$new_posts.log.rtn[!is.finite(xts.data$new_posts.log.rtn)] <- NA
+  #xts.data$price.log.rtn[!is.finite(xts.data$price.log.rtn)] <- NA
+  #xts.data$google.log.rtn[!is.finite(xts.data$google.log.rtn)] <- NA
+  #xts.data$tweets.log.rtn[!is.finite(xts.data$tweets.log.rtn)] <- NA
+  #xts.data$new_users.log.rtn[!is.finite(xts.data$new_users.log.rtn)] <- NA
 
 # simple plots - data review
   pdf('pt_dt_plot.pdf')
@@ -69,26 +63,21 @@ library('xtable')
 # VAR estimation
   xts.VAR <- xts.data
   xts.VAR <- xts.data[, setdiff(colnames(xts.data),c('price',
-                                                   # 'google',
-                                                   'wikipedia',
+                                                   'google',
                                                    'tweets',
-                                                   'new_users'
-                                                   # addition to baseline_a
-                                                   # 'new_topics'
-                                                   #'new_posts'
-                                                   ))]
+                                                   'new_users'))]
                                                    
   xts.VAR <- na.omit(xts.VAR)
   xts.VAR <- xts.VAR['2014-01::2018-10']
 
   # xts.VAR <- ts(xts.VAR)
-  fit <- VAR(xts.VAR, type = 'none', ic="SC", lag.max=1, p = 1)
+  fit <- VAR(xts.VAR, type = 'both', ic="SC", lag.max=1, p = 1)
   VAR_estimation <- summary(fit)
   while (!is.null(dev.list()))  dev.off()
   # plot(fit)
   
   print(xtable(VAR_estimation$varresult$price.log.rtn))
-  print(xtable(VAR_estimation$varresult$wikipedia.log.rtn))
+  print(xtable(VAR_estimation$varresult$google.log.rtn))
   print(xtable(VAR_estimation$varresult$tweets.log.rtn))
   print(xtable(VAR_estimation$varresult$new_users.log.rtn))
   

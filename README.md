@@ -1,10 +1,15 @@
-# Project Name
+# The effects of social interactions, financial asset prices and transactions inside the bitcoin economy on price
 
-TODO: Write a project description
+Data includes:
+Bitcoin prices
+Google Trend indices
+Wikipedia Article Views
+Financial Asset Prices
+Blockchain analyis
 
 ## Installation
 
-TODO: Describe the installation process
+All analysis done in Python & R
 
 ## Usage
 

@@ -29,7 +29,7 @@ library('xtable')
   cols <- names(sc.data) %in% 
     c('price',
       'wikipedia',
-      'tweets',
+      'new_topics',
       'new_users'
       # addition to baseline_a
       # 'google',
@@ -43,18 +43,20 @@ library('xtable')
   xts.data$date <- NULL
   rm(cols)
   
+# Generate log-return series from data input
   xts.data$price.log.rtn <- diff(log(xts.data$price),lag = 1)
   # xts.data$google.log.rtn <- diff(log(xts.data$google),lag = 1)
   xts.data$wikipedia.log.rtn <- diff(log(xts.data$wikipedia),lag = 1)
-  xts.data$tweets.log.rtn <- diff(log(xts.data$tweets),lag = 1)
+  xts.data$new_topcis.log.rtn <- diff(log(xts.data$new_topics),lag = 1)
+  # xts.data$tweets.log.rtn <- diff(log(xts.data$tweets),lag = 1)
   xts.data$new_users.log.rtn <- diff(log(xts.data$new_users),lag = 1)
   # addition to baseline_a
   # xts.data$new_topcis.log.rtn <- diff(log(xts.data$new_topics),lag = 1)
   # xts.data$new_posts.log.rtn <- diff(log(xts.data$new_posts),lag = 1)
   
-  # replace inf / -inf log-returns with NA (case for 4 points out of 793)
-    # xts.data$new_topcis.log.rtn[!is.finite(xts.data$new_topcis.log.rtn)] <- NA
-    # xts.data$new_posts.log.rtn[!is.finite(xts.data$new_posts.log.rtn)] <- NA
+# replace inf / -inf log-returns with NA (case for 4 points out of 793)
+  xts.data$new_topcis.log.rtn[!is.finite(xts.data$new_topcis.log.rtn)] <- NA
+  # xts.data$new_posts.log.rtn[!is.finite(xts.data$new_posts.log.rtn)] <- NA
 
 # simple plots - data review
   pdf('pt_dt_plot.pdf')
@@ -71,7 +73,7 @@ library('xtable')
   xts.VAR <- xts.data[, setdiff(colnames(xts.data),c('price',
                                                    # 'google',
                                                    'wikipedia',
-                                                   'tweets',
+                                                   'new_topics',
                                                    'new_users'
                                                    # addition to baseline_a
                                                    # 'new_topics'
@@ -89,7 +91,7 @@ library('xtable')
   
   print(xtable(VAR_estimation$varresult$price.log.rtn))
   print(xtable(VAR_estimation$varresult$wikipedia.log.rtn))
-  print(xtable(VAR_estimation$varresult$tweets.log.rtn))
+  print(xtable(VAR_estimation$varresult$new_topics.log.rtn))
   print(xtable(VAR_estimation$varresult$new_users.log.rtn))
   
 # Impulse response functions for fitted VAR model
