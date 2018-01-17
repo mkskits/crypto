@@ -93,24 +93,82 @@ library('xtable')
   print(xtable(VAR_estimation$varresult$new_users.log.rtn))
   
 # Impulse response functions for fitted VAR model
-  # information sharing
-    # ir_sharing <- irf(fit, impulse = c('wikipedia.log.rtn'), response = c('tweets.log.rtn'),
-    #            ortho = T, n.ahead=12, boot=T, ci=0.95, runs = 10) # basic IR functions
-    # while (!is.null(dev.list()))  dev.off()
-    # # ir1$irf$wikipedia.log.rtn = 100 * ir1$irf$wikipedia.log.rtn
-    # plot(ir_sharing, main='', ylab='Information Sharing Response', xlab="", label = FALSE,
-    #      cex.axis = 1.3, cex.main = 1.3, cex.sub = 1.3, cex.lab = 1.3,
-    #      legend='', sub = '',
-    #      oma=c(2,0,0.3,0), mar=c(0,4,0,0.1), xlim=c(1, 10))
-
-  # price
-  ir_price <- irf(fit, impulse = c('tweets.log.rtn'), response = c('price.log.rtn'),
-                    ortho = T, n.ahead=12, boot=T, ci=0.95, runs = 10) # basic IR functions
-  while (!is.null(dev.list()))  dev.off()
-  # ir1$irf$wikipedia.log.rtn = 100 * ir1$irf$wikipedia.log.rtn
-  plot(ir_price, main='', ylab='Price Response', xlab="", label = FALSE,
-       cex.axis = 1.3, cex.main = 1.3, cex.sub = 1.3, cex.lab = 1.3,
-       legend='', sub = '',
-       oma=c(2,0,0.3,0), mar=c(0,4,0,0.1), xlim=c(1, 10))
-    
+# Social Feedback Cycle
+  # information search (impulse: price - respone: search)
+    ir_search <- irf(fit, impulse = c('price.log.rtn'), response = c('wikipedia.log.rtn'),
+                      ortho = T, n.ahead=12, boot=T, ci=0.95, runs = 100) # basic IR functions
+    while (!is.null(dev.list()))  dev.off()
+    # ir1$irf$wikipedia.log.rtn = 100 * ir1$irf$wikipedia.log.rtn
+    pdf('../F_Figs/pt_fit_baseline_a_search.pdf')
+    plot(ir_search, main='', xlab='', ylab='Information Search Response',
+         sub='t (days)', xlim=c(1, 10),
+         cex.axis = 2, cex.main = 2, cex=2, cex.lab = 2,
+         oma=c(5.5,0,0.3,0), mar=c(0,5,2,0.1))
+    dev.off()
+    print('information search (impulse: price - respone: search)')
   
+  # information sharing (impulse: search - respone: sharing)
+    ir_sharing <- irf(fit, impulse = c('wikipedia.log.rtn'), response = c('tweets.log.rtn'),
+               ortho = T, n.ahead=12, boot=T, ci=0.95, runs = 100) # basic IR functions
+    while (!is.null(dev.list()))  dev.off()
+    # ir1$irf$wikipedia.log.rtn = 100 * ir1$irf$wikipedia.log.rtn
+    pdf('../F_Figs/pt_fit_baseline_a_sharing.pdf')
+    plot(ir_sharing, main='', xlab='', ylab='Information Sharing Response',
+         sub='t (days)', xlim=c(1, 10),
+         cex.axis = 2, cex.main = 2, cex=2, cex.lab = 2,
+         oma=c(5.5,0,0.3,0), mar=c(0,5,2,0.1))
+    dev.off()
+    print('information sharing (impulse: search - respone: sharing)')
+    
+  # Price (impulse: sharing - respone: price)
+    ir_price_s <- irf(fit, impulse = c('tweets.log.rtn'), response = c('price.log.rtn'),
+                      ortho = T, n.ahead=12, boot=T, ci=0.95, runs = 100) # basic IR functions
+    while (!is.null(dev.list()))  dev.off()
+    # ir1$irf$wikipedia.log.rtn = 100 * ir1$irf$wikipedia.log.rtn
+    pdf('../F_Figs/pt_fit_baseline_a_price_s.pdf')
+    plot(ir_price_s, main='', xlab='', ylab='Price Response',
+         sub='t (days)', xlim=c(1, 10),
+         cex.axis = 2, cex.main = 2, cex=2, cex.lab = 2,
+         oma=c(5.5,0,0.3,0), mar=c(0,5,2,0.1))
+    dev.off()
+    print('Price (impulse: sharing - respone: price)')
+    
+# User adoption Cycle  
+  # Adoption (impulse: search - respone: users)
+    ir_adoption <- irf(fit, impulse = c('wikipedia.log.rtn'), response = c('new_users.log.rtn'),
+                    ortho = T, n.ahead=12, boot=T, ci=0.95, runs = 100) # basic IR functions
+    while (!is.null(dev.list()))  dev.off()
+    # ir1$irf$wikipedia.log.rtn = 100 * ir1$irf$wikipedia.log.rtn
+    pdf('../F_Figs/pt_fit_baseline_a_adoption.pdf')
+    plot(ir_adoption, main='', xlab='', ylab='New Users Response',
+         sub='t (days)', xlim=c(1, 10),
+         cex.axis = 2, cex.main = 2, cex=2, cex.lab = 2,
+         oma=c(5.5,0,0.3,0), mar=c(0,5,2,0.1))
+    dev.off()  
+    print('Adoption (impulse: search - respone: users)')
+    
+  #  Price (from adoption) (impulse: users - respone: price)
+    ir_price_a <- irf(fit, impulse = c('new_users.log.rtn'), response = c('price.log.rtn'),
+                       ortho = T, n.ahead=12, boot=T, ci=0.95, runs = 100) # basic IR functions
+    while (!is.null(dev.list()))  dev.off()
+    # ir1$irf$wikipedia.log.rtn = 100 * ir1$irf$wikipedia.log.rtn
+    pdf('../F_Figs/pt_fit_baseline_a_price_a.pdf')
+    plot(ir_price_a, main='', xlab='', ylab='New Users Response',
+         sub='t (days)', xlim=c(1, 10),
+         cex.axis = 2, cex.main = 2, cex=2, cex.lab = 2,
+         oma=c(5.5,0,0.3,0), mar=c(0,5,2,0.1))
+    dev.off()  
+    print('Price (from adoption) (impulse: users - respone: price)')
+    
+  #  Price (impulse: seach - respone: price)
+    ir_price_d <- irf(fit, impulse = c('wikipedia.log.rtn'), response = c('price.log.rtn'),
+                      ortho = T, n.ahead=12, boot=T, ci=0.95, runs = 100) # basic IR functions
+    while (!is.null(dev.list()))  dev.off()
+    # ir1$irf$wikipedia.log.rtn = 100 * ir1$irf$wikipedia.log.rtn
+    pdf('../F_Figs/pt_fit_baseline_a_price_d.pdf')
+    plot(ir_price_d, main='', xlab='', ylab='Price Response',
+         sub='t (days)', xlim=c(1, 10),
+         cex.axis = 2, cex.main = 2, cex=2, cex.lab = 2,
+         oma=c(5.5,0,0.3,0), mar=c(0,5,2,0.1))
+    dev.off()  
+    print('Price (direct - from search) (impulse: seach - respone: price)')
