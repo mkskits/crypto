@@ -93,8 +93,24 @@ library('xtable')
   print(xtable(VAR_estimation$varresult$new_users.log.rtn))
   
 # Impulse response functions for fitted VAR model
-  ir1 <- irf(fit, ortho = T, n.ahead=12, boot=T, ci=0.95, runs = 5) # basic IR functions
-  while (!is.null(dev.list()))  dev.off()
-  # plot(ir1)
+  # information sharing
+    # ir_sharing <- irf(fit, impulse = c('wikipedia.log.rtn'), response = c('tweets.log.rtn'),
+    #            ortho = T, n.ahead=12, boot=T, ci=0.95, runs = 10) # basic IR functions
+    # while (!is.null(dev.list()))  dev.off()
+    # # ir1$irf$wikipedia.log.rtn = 100 * ir1$irf$wikipedia.log.rtn
+    # plot(ir_sharing, main='', ylab='Information Sharing Response', xlab="", label = FALSE,
+    #      cex.axis = 1.3, cex.main = 1.3, cex.sub = 1.3, cex.lab = 1.3,
+    #      legend='', sub = '',
+    #      oma=c(2,0,0.3,0), mar=c(0,4,0,0.1), xlim=c(1, 10))
 
+  # price
+  ir_price <- irf(fit, impulse = c('tweets.log.rtn'), response = c('price.log.rtn'),
+                    ortho = T, n.ahead=12, boot=T, ci=0.95, runs = 10) # basic IR functions
+  while (!is.null(dev.list()))  dev.off()
+  # ir1$irf$wikipedia.log.rtn = 100 * ir1$irf$wikipedia.log.rtn
+  plot(ir_price, main='', ylab='Price Response', xlab="", label = FALSE,
+       cex.axis = 1.3, cex.main = 1.3, cex.sub = 1.3, cex.lab = 1.3,
+       legend='', sub = '',
+       oma=c(2,0,0.3,0), mar=c(0,4,0,0.1), xlim=c(1, 10))
+    
   

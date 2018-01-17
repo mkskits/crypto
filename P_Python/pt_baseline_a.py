@@ -65,13 +65,15 @@ def main():
                                      dt_pd_baseline_a.iloc[0]['new_members']
 
     f, (ax1) = plt.subplots(1, 1, sharex=True, sharey=True)
+    ax2 = ax1.twinx()
     ax1.plot(dt_pd_baseline_a[['price']], color='blue', label='Price', alpha = 0.9)
-    ax1.plot(dt_pd_baseline_a[['google']], color='red', label='Google', alpha = 0.9)
-    ax1.plot(dt_pd_baseline_a[['tweets']], color='green', label='Tweets', alpha = 0.9)
-    ax1.plot(dt_pd_baseline_a[['new_users']], color='orange', label='New Users', alpha = 0.9)
-    # ax1.plot(dt_pd_baseline_a[['wikipedia']], color='magenta', label='Wikipedia', alpha=0.9)
+    ax1.plot(dt_pd_baseline_a[['google']], color='red', label='Google', alpha = 0.9, ls = ':')
+    ax2.plot(dt_pd_baseline_a[['tweets']], color='green', label='Tweets', alpha = 0.9, ls = '-')
+    ax2.plot(dt_pd_baseline_a[['new_users']], color='orange', label='New Users', alpha = 0.9, ls = '--')
+    ax1.plot(dt_pd_baseline_a[['wikipedia']], color='darkslategrey', label='Wikipedia', alpha=0.9, ls = ':')
     # ax1.plot(dt_pd_baseline_a[['new_posts']], color='black', label='New Posts', alpha=0.9)
     ax1.legend(loc='upper left')
+    ax2.legend(loc='upper right')
 
     # ax1.yaxis.set_major_formatter(FuncFormatter(lambda y, _: '{:.0%}'.format(y)))
 
