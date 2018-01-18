@@ -9,26 +9,26 @@ Blockchain analyis
 
 ## Installation
 
-All analysis done in Python & R
+All analysis done in Python & R  
 
-Package requirements:
+Package requirements:  
 
-Python:
-os
-numpy
-almighty matplotlib
-almighty pandas
-datetime
-import pickle
+Python:  
+os  
+numpy  
+almighty matplotlib  
+almighty pandas  
+datetime  
+import pickle  
 
-R:
-tseries
-forecast
-vars
-strucchange
-xts
-stargazer
-xtable
+R:  
+tseries  
+forecast  
+vars  
+strucchange  
+xts  
+stargazer  
+xtable  
 
 ## Usage
 

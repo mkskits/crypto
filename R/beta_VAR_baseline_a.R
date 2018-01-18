@@ -2,7 +2,7 @@
 
 # package requirements: vars, tseries, forecast, strucchange, xts
 
-library('tseries')
+library('tseries') 
 library('forecast')
 library('vars')
 library('strucchange')
