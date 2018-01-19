@@ -82,7 +82,7 @@ library('xtable')
   xts.VAR <- xts.VAR['2014-01::2018-10']
 
   # xts.VAR <- ts(xts.VAR)
-  fit <- VAR(xts.VAR, type = 'none', ic="SC", lag.max=1, p = 1)
+  fit <- VAR(xts.VAR, type = 'both', ic="SC", lag.max=1, p = 1)
   VAR_estimation <- summary(fit)
   while (!is.null(dev.list()))  dev.off()
   # plot(fit)
