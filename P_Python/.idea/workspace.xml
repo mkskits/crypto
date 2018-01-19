@@ -17,7 +17,7 @@
       <file leaf-file-name="dt_aggregate_baseline_a.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dt_aggregate_baseline_a.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="-301">
               <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -26,11 +26,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dt_fin.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dt_fin.py">
+      <file leaf-file-name="dt_aggregate_fin_assets.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dt_aggregate_fin_assets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state relative-caret-position="447">
+              <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dt_google_btc_monthly.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dt_google_btc_monthly.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -68,7 +80,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dt_wikipedia_legacy_slow.py" />
         <option value="$PROJECT_DIR$/v_test.py" />
         <option value="$PROJECT_DIR$/dt_wikipedia_legacy_helper2.py" />
         <option value="$PROJECT_DIR$/pt_google_segments_adj.py" />
@@ -101,8 +112,6 @@
         <option value="$PROJECT_DIR$/dt_bbg_fin.py" />
         <option value="$PROJECT_DIR$/dt_xbt_com.py" />
         <option value="$PROJECT_DIR$/dt_wiki.py" />
-        <option value="$PROJECT_DIR$/dt_google_btc_monthly.py" />
-        <option value="$PROJECT_DIR$/dt_google_btc_daily.py" />
         <option value="$PROJECT_DIR$/dt_open_pickle.py" />
         <option value="$PROJECT_DIR$/dt_google_btc_core.py" />
         <option value="$PROJECT_DIR$/dt_tc_economy.py" />
@@ -119,6 +128,9 @@
         <option value="$PROJECT_DIR$/dt_aggregate_baseline_a.py" />
         <option value="$PROJECT_DIR$/pt_baseline_a.py" />
         <option value="$PROJECT_DIR$/dt_fin.py" />
+        <option value="$PROJECT_DIR$/dt_google_btc_daily.py" />
+        <option value="$PROJECT_DIR$/dt_google_btc_monthly.py" />
+        <option value="$PROJECT_DIR$/dt_aggregate_fin_assets.py" />
       </list>
     </option>
   </component>
@@ -200,8 +212,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.dt_fin">
-    <configuration name="dt_aggregate_baseline_a" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.dt_aggregate_fin_assets">
+    <configuration name="dt_aggregate_fin_assets" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -213,7 +225,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="P_Python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dt_aggregate_baseline_a.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dt_aggregate_fin_assets.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -237,7 +249,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="dt_twitter_aggr" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="dt_google_btc_daily" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -249,13 +261,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="P_Python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dt_twitter_aggr.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dt_google_btc_daily.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="dt_twitter_bitinfocharts" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="dt_google_btc_monthly" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -267,7 +279,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="P_Python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dt_twitter_bitinfocharts.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dt_google_btc_monthly.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -292,19 +304,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.dt_twitter_aggr" />
-      <item index="1" class="java.lang.String" itemvalue="Python.dt_twitter_bitinfocharts" />
-      <item index="2" class="java.lang.String" itemvalue="Python.dt_aggregate_baseline_a" />
-      <item index="3" class="java.lang.String" itemvalue="Python.pt_baseline_a" />
-      <item index="4" class="java.lang.String" itemvalue="Python.dt_fin" />
+      <item index="0" class="java.lang.String" itemvalue="Python.pt_baseline_a" />
+      <item index="1" class="java.lang.String" itemvalue="Python.dt_fin" />
+      <item index="2" class="java.lang.String" itemvalue="Python.dt_aggregate_fin_assets" />
+      <item index="3" class="java.lang.String" itemvalue="Python.dt_google_btc_daily" />
+      <item index="4" class="java.lang.String" itemvalue="Python.dt_google_btc_monthly" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.dt_fin" />
-        <item index="1" class="java.lang.String" itemvalue="Python.pt_baseline_a" />
-        <item index="2" class="java.lang.String" itemvalue="Python.dt_aggregate_baseline_a" />
-        <item index="3" class="java.lang.String" itemvalue="Python.dt_twitter_bitinfocharts" />
-        <item index="4" class="java.lang.String" itemvalue="Python.dt_twitter_aggr" />
+        <item index="0" class="java.lang.String" itemvalue="Python.dt_aggregate_fin_assets" />
+        <item index="1" class="java.lang.String" itemvalue="Python.dt_google_btc_daily" />
+        <item index="2" class="java.lang.String" itemvalue="Python.dt_google_btc_monthly" />
+        <item index="3" class="java.lang.String" itemvalue="Python.dt_fin" />
+        <item index="4" class="java.lang.String" itemvalue="Python.pt_baseline_a" />
       </list>
     </recent_temporary>
   </component>
@@ -335,7 +347,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20969023" sideWeight="0.48081264" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -345,7 +356,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2837633" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36115327" sideWeight="0.49245432" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36115327" sideWeight="0.49245432" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1985703" sideWeight="0.51918733" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -433,6 +444,26 @@
           <line>91</line>
           <option name="timeStamp" value="176" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dt_fin.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="181" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dt_aggregate_fin_assets.py</url>
+          <line>94</line>
+          <option name="timeStamp" value="182" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dt_google_btc_monthly.py</url>
+          <line>43</line>
+          <option name="timeStamp" value="183" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dt_google_btc_daily.py</url>
+          <line>93</line>
+          <option name="timeStamp" value="184" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -444,12 +475,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="181" />
+      <option name="time" value="186" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dt_google_monthly.py" />
     <entry file="file://$PROJECT_DIR$/pt_wiki_std.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="518">
@@ -591,21 +621,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dt_google_btc_monthly.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dt_google_btc_core.py" />
-    <entry file="file://$PROJECT_DIR$/dt_google_btc_daily.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1094">
-          <caret line="90" column="67" lean-forward="false" selection-start-line="90" selection-start-column="36" selection-end-line="90" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dt_bitcoin_talk.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="344">
@@ -761,7 +777,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dt_aggregate_baseline_a.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="-301">
           <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
@@ -771,9 +787,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dt_fin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state relative-caret-position="372">
+          <caret line="47" column="24" lean-forward="false" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="42" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dt_google_btc_daily.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dt_google_btc_monthly.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dt_aggregate_fin_assets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
