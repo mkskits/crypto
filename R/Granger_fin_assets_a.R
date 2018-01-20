@@ -47,6 +47,9 @@ library('lmtest')
       )
   sc.data <- sc.data[cols]
   
+  # Define lag order for Granger Causality Tests
+  k <- 4
+  
   xts.data <- as.xts(sc.data, order.by = dates)
   xts.data$date <- NULL
   rm(cols)
@@ -112,93 +115,93 @@ library('lmtest')
 
 # Granger Casuality Tests ("xy granger-cause price")
   granger.price.xau <- grangertest(xts.granger$price.log.rtn ~ xts.granger$xau.log.rtn,
-                              order = 1)
+                              order = k)
   granger.price.dxy <- grangertest(xts.granger$price.log.rtn ~ xts.granger$dxy.log.rtn,
-                              order = 1)
+                              order = k)
   granger.price.spx <- grangertest(xts.granger$price.log.rtn ~ xts.granger$spx.log.rtn,
-                              order = 1)
+                              order = k)
   granger.price.nvda <- grangertest(xts.granger$price.log.rtn ~ xts.granger$nvda.log.rtn,
-                              order = 1)
+                              order = k)
   granger.price.qcom <- grangertest(xts.granger$price.log.rtn ~ xts.granger$qcom.log.rtn,
-                              order = 1)
+                              order = k)
   granger.price.tsm <- grangertest(xts.granger$price.log.rtn ~ xts.granger$tsm.log.rtn,
-                              order = 1)
+                              order = k)
   granger.price.amd <- grangertest(xts.granger$price.log.rtn ~ xts.granger$amd.log.rtn,
-                              order = 1)
+                              order = k)
   granger.price.high.yield <- grangertest(xts.granger$price.log.rtn ~ xts.granger$high.yield.log.rtn,
-                              order = 1)
+                              order = k)
   granger.price.global.govt <- grangertest(xts.granger$price.log.rtn ~ xts.granger$global.govt.log.rtn,
-                              order = 1)
+                              order = k)
   granger.price.us.govt <- grangertest(xts.granger$price.log.rtn ~ xts.granger$us.govt.log.rtn,
-                              order = 1)
+                              order = k)
   
 # Granger Casuality Tests ("xy granger-cause Wikipedia")
   granger.wikipedia.xau <- grangertest(xts.granger$wikipedia.log.rtn ~ xts.granger$xau.log.rtn,
-                                   order = 1)
+                                   order = k)
   granger.wikipedia.dxy <- grangertest(xts.granger$wikipedia.log.rtn ~ xts.granger$dxy.log.rtn,
-                                   order = 1)
+                                   order = k)
   granger.wikipedia.spx <- grangertest(xts.granger$wikipedia.log.rtn ~ xts.granger$spx.log.rtn,
-                                   order = 1)
+                                   order = k)
   granger.wikipedia.nvda <- grangertest(xts.granger$wikipedia.log.rtn ~ xts.granger$nvda.log.rtn,
-                                    order = 1)
+                                    order = k)
   granger.wikipedia.qcom <- grangertest(xts.granger$wikipedia.log.rtn ~ xts.granger$qcom.log.rtn,
-                                    order = 1)
+                                    order = k)
   granger.wikipedia.tsm <- grangertest(xts.granger$wikipedia.log.rtn ~ xts.granger$tsm.log.rtn,
-                                   order = 1)
+                                   order = k)
   granger.wikipedia.amd <- grangertest(xts.granger$wikipedia.log.rtn ~ xts.granger$amd.log.rtn,
-                                   order = 1)
+                                   order = k)
   granger.wikipedia.high.yield <- grangertest(xts.granger$wikipedia.log.rtn ~ xts.granger$high.yield.log.rtn,
-                                   order = 1)
+                                   order = k)
   granger.wikipedia.global.govt <- grangertest(xts.granger$wikipedia.log.rtn ~ xts.granger$global.govt.log.rtn,
-                                           order = 1)
+                                           order = k)
   granger.wikipedia.us.govt <- grangertest(xts.granger$wikipedia.log.rtn ~ xts.granger$us.govt.log.rtn,
-                                       order = 1)
+                                       order = k)
   
 # Granger Casuality Tests ("xy granger-cause Google")
   granger.google.xau <- grangertest(xts.granger$google.log.rtn ~ xts.granger$xau.log.rtn,
-                                       order = 1)
+                                       order = k)
   granger.google.dxy <- grangertest(xts.granger$google.log.rtn ~ xts.granger$dxy.log.rtn,
-                                       order = 1)
+                                       order = k)
   granger.google.spx <- grangertest(xts.granger$google.log.rtn ~ xts.granger$spx.log.rtn,
-                                       order = 1)
+                                       order = k)
   granger.google.nvda <- grangertest(xts.granger$google.log.rtn ~ xts.granger$nvda.log.rtn,
-                                        order = 1)
+                                        order = k)
   granger.google.qcom <- grangertest(xts.granger$google.log.rtn ~ xts.granger$qcom.log.rtn,
-                                        order = 1)
+                                        order = k)
   granger.google.tsm <- grangertest(xts.granger$google.log.rtn ~ xts.granger$tsm.log.rtn,
-                                       order = 1)
+                                       order = k)
   granger.google.amd <- grangertest(xts.granger$google.log.rtn ~ xts.granger$amd.log.rtn,
-                                       order = 1)
+                                       order = k)
   granger.google.high.yield <- grangertest(xts.granger$google.log.rtn ~ xts.granger$high.yield.log.rtn,
-                                              order = 1)
+                                              order = k)
   granger.google.global.govt <- grangertest(xts.granger$google.log.rtn ~ xts.granger$global.govt.log.rtn,
-                                               order = 1)
+                                               order = k)
   granger.google.us.govt <- grangertest(xts.granger$google.log.rtn ~ xts.granger$us.govt.log.rtn,
-                                           order = 1)
+                                           order = k)
 
 # Granger Casuality Tests ("xy granger-cause Twitter")
   granger.tweets.xau <- grangertest(xts.granger$tweets.log.rtn ~ xts.granger$xau.log.rtn,
-                                    order = 1)
+                                    order = k)
   granger.tweets.dxy <- grangertest(xts.granger$tweets.log.rtn ~ xts.granger$dxy.log.rtn,
-                                    order = 1)
+                                    order = k)
   granger.tweets.spx <- grangertest(xts.granger$tweets.log.rtn ~ xts.granger$spx.log.rtn,
-                                    order = 1)
+                                    order = k)
   granger.tweets.nvda <- grangertest(xts.granger$tweets.log.rtn ~ xts.granger$nvda.log.rtn,
-                                     order = 1)
+                                     order = k)
   granger.tweets.qcom <- grangertest(xts.granger$tweets.log.rtn ~ xts.granger$qcom.log.rtn,
-                                     order = 1)
+                                     order = k)
   granger.tweets.tsm <- grangertest(xts.granger$tweets.log.rtn ~ xts.granger$tsm.log.rtn,
-                                    order = 1)
+                                    order = k)
   granger.tweets.amd <- grangertest(xts.granger$tweets.log.rtn ~ xts.granger$amd.log.rtn,
-                                    order = 1)
+                                    order = k)
   granger.tweets.high.yield <- grangertest(xts.granger$tweets.log.rtn ~ xts.granger$high.yield.log.rtn,
-                                           order = 1)
+                                           order = k)
   granger.tweets.global.govt <- grangertest(xts.granger$tweets.log.rtn ~ xts.granger$global.govt.log.rtn,
-                                            order = 1)
+                                            order = k)
   granger.tweets.us.govt <- grangertest(xts.granger$tweets.log.rtn ~ xts.granger$us.govt.log.rtn,
-                                        order = 1)
+                                        order = k)
   granger.tweets.wikipedia <- grangertest(xts.granger$tweets.log.rtn ~ xts.granger$wikipedia.log.rtn,
-                                        order = 1)
+                                        order = k)
   
   series <- c('XAU', 'DXY', 'SPX', 'NVDA', 'QCOM', 'TSM', 'AMD', 
               'High Yield', 'Global Gov', 'US Gov')
@@ -297,8 +300,11 @@ library('lmtest')
 # combine granger test results into data-frame
     granger.results <- data.frame(series, price.f, price.p, wikipedia.f, wikipedia.p,
                                   google.f, google.p, tweets.f, tweets.p)
-    
-  
+  # copy results table to clipboard
+    clip <- pipe("pbcopy", "w")                       
+    write.table(granger.results, file=clip)                               
+    close(clip)
+
   while (!is.null(dev.list()))  dev.off()
   # plot(fit)
   

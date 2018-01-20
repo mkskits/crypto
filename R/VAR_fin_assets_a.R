@@ -33,15 +33,7 @@ library('xtable')
       'new_users',
       # fin assets
       'xau',
-      'dxy',
-      'spx',
-      'nvda',
-      'qcom',
-      'tsm',
-      'amd',
-      'high.yield',
-      'global.govt',
-      'us.govt'
+      'dxy'
       )
   sc.data <- sc.data[cols]
   
@@ -57,22 +49,14 @@ library('xtable')
   # fin assets
   xts.data$xau.log.rtn <- diff(log(xts.data$xau),lag = 1)
   xts.data$dxy.log.rtn <- diff(log(xts.data$dxy),lag = 1)
-  xts.data$spx.log.rtn <- diff(log(xts.data$spx),lag = 1)
-  xts.data$nvda.log.rtn <- diff(log(xts.data$nvda),lag = 1)
-  xts.data$qcom.log.rtn <- diff(log(xts.data$qcom),lag = 1)
-  xts.data$tsm.log.rtn <- diff(log(xts.data$tsm),lag = 1)
-  xts.data$amd.log.rtn <- diff(log(xts.data$amd),lag = 1)
-  xts.data$high.yield.log.rtn <- diff(log(xts.data$high.yield),lag = 1)
-  xts.data$global.govt.log.rtn <- diff(log(xts.data$global.govt),lag = 1)
-  xts.data$us.govt.log.rtn <- diff(log(xts.data$us.govt),lag = 1)
   
-  # replace inf / -inf log-returns with NA (case for 4 points out of 793)
+  # replace inf / -inf log-returns with NA
     # xts.data$new_topcis.log.rtn[!is.finite(xts.data$new_topcis.log.rtn)] <- NA
     # xts.data$new_posts.log.rtn[!is.finite(xts.data$new_posts.log.rtn)] <- NA
 
 # simple plots - data review
   # pdf('pt_dt_plot.pdf')
-  par(mfrow=c(2,2))
+  # par(mfrow=c(2,2))
   # plot(xts.data$price.log.rtn)
   # plot(xts.data$google.log.rtn)
   # plot(xts.data$btctalk.log.rtn)
@@ -88,15 +72,7 @@ library('xtable')
                                                    'tweets',
                                                    # fin assets
                                                    'xau',
-                                                   'dxy',
-                                                   'spx',
-                                                   'nvda',
-                                                   'qcom',
-                                                   'tsm',
-                                                   'amd',
-                                                   'high.yield',
-                                                   'global.govt',
-                                                   'us.govt'
+                                                   'dxy'
                                                    ))]
                                                    
   xts.VAR <- na.omit(xts.VAR)
@@ -105,8 +81,6 @@ library('xtable')
   # xts.VAR <- ts(xts.VAR)
   fit <- VAR(xts.VAR, type = 'both', ic="SC", lag.max=1, p = 1)
   VAR_estimation <- summary(fit)
-  granger <- causality(fit, cause = NULL, boot=TRUE, boot.runs=1000) 
-  # Computes the test statistics for granger- and Instantaneous causality for a VAR(p).
   while (!is.null(dev.list()))  dev.off()
   # plot(fit)
   
