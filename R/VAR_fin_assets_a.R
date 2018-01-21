@@ -28,12 +28,13 @@ library('xtable')
   dates <- as.Date(sc.data$date, tryformats = c('%d.%m.%y', '%Y-%m-%d'))
   cols <- names(sc.data) %in% 
     c('price',
+      # 'google',
       'wikipedia',
       'tweets',
       'new_users',
       # fin assets
-      'xau',
-      'dxy'
+      'xau'
+      # 'dxy'
       )
   sc.data <- sc.data[cols]
   
@@ -48,7 +49,7 @@ library('xtable')
   # xts.data$new_users.log.rtn <- diff(log(xts.data$new_users),lag = 1)
   # fin assets
   xts.data$xau.log.rtn <- diff(log(xts.data$xau),lag = 1)
-  xts.data$dxy.log.rtn <- diff(log(xts.data$dxy),lag = 1)
+  # xts.data$dxy.log.rtn <- diff(log(xts.data$dxy),lag = 1)
   
   # replace inf / -inf log-returns with NA
     # xts.data$new_topcis.log.rtn[!is.finite(xts.data$new_topcis.log.rtn)] <- NA
@@ -71,12 +72,12 @@ library('xtable')
                                                    'wikipedia',
                                                    'tweets',
                                                    # fin assets
-                                                   'xau',
-                                                   'dxy'
+                                                   'xau'
+                                                   # 'dxy'
                                                    ))]
                                                    
   xts.VAR <- na.omit(xts.VAR)
-  # xts.VAR <- xts.VAR['2014-01::2018-10']
+  xts.VAR <- xts.VAR['2014-01::2017-12']
 
   # xts.VAR <- ts(xts.VAR)
   fit <- VAR(xts.VAR, type = 'both', ic="SC", lag.max=1, p = 1)
@@ -84,10 +85,39 @@ library('xtable')
   while (!is.null(dev.list()))  dev.off()
   # plot(fit)
   
-  # print(xtable(VAR_estimation$varresult$price.log.rtn))
-  # print(xtable(VAR_estimation$varresult$wikipedia.log.rtn))
-  # print(xtable(VAR_estimation$varresult$tweets.log.rtn))
-  # print(xtable(VAR_estimation$varresult$new_users.log.rtn))
+  # xtable(VAR_estimation$varresult$price.log.rtn)
+  # xtable(VAR_estimation$varresult$wikipedia.log.rtn)
+  # xtable(VAR_estimation$varresult$tweets.log.rtn)
+  # xtable(VAR_estimation$varresult$xau.log.rtn)
+  
+# store estimation result summary into data frame
+  coef <- coef(fit)
+  Pt1 <- c(as.numeric(fit$varresult$price.log.rtn$coefficients[1]), coef$price.log.rtn[1,4],
+           as.numeric(fit$varresult$price.log.rtn$coefficients[2]), coef$price.log.rtn[2,4],
+           as.numeric(fit$varresult$price.log.rtn$coefficients[3]), coef$price.log.rtn[3,4],
+           as.numeric(fit$varresult$price.log.rtn$coefficients[4]), coef$price.log.rtn[4,4]
+           )
+  St1 <- c(as.numeric(fit$varresult$wikipedia.log.rtn$coefficients[1]), coef$wikipedia.log.rtn[1,4],
+           as.numeric(fit$varresult$wikipedia.log.rtn$coefficients[2]), coef$wikipedia.log.rtn[2,4],
+           as.numeric(fit$varresult$wikipedia.log.rtn$coefficients[3]), coef$wikipedia.log.rtn[3,4],
+           as.numeric(fit$varresult$wikipedia.log.rtn$coefficients[4]), coef$wikipedia.log.rtn[4,4]
+           )
+  Wt1 <- c(as.numeric(fit$varresult$tweets.log.rtn$coefficients[1]), coef$tweets.log.rtn[1,4],
+           as.numeric(fit$varresult$tweets.log.rtn$coefficients[2]), coef$tweets.log.rtn[2,4],
+           as.numeric(fit$varresult$tweets.log.rtn$coefficients[3]), coef$tweets.log.rtn[3,4],
+           as.numeric(fit$varresult$tweets.log.rtn$coefficients[4]), coef$tweets.log.rtn[4,4]
+           )
+  Xt1 <- c(as.numeric(fit$varresult$xau.log.rtn$coefficients[1]), coef$xau.log.rtn[1,4],
+           as.numeric(fit$varresult$xau.log.rtn$coefficients[2]), coef$xau.log.rtn[2,4],
+           as.numeric(fit$varresult$xau.log.rtn$coefficients[3]), coef$xau.log.rtn[3,4],
+           as.numeric(fit$varresult$xau.log.rtn$coefficients[4]), coef$xau.log.rtn[4,4]
+  )
+  res <- data.frame(rbind(Pt1, St1, Wt1, Xt1))
+  # copy results table to clipboard
+  res <- xtable(res, digits = c(0, 4, 4, 4, 4, 4, 4, 4, 4))
+  clip <- pipe("pbcopy", "w")                       
+  write.table(res, file=clip)                               
+  close(clip)
   
   ir = irf(fit, ortho = T, n.ahead = 12, boot = 12, ci = 0.95, runs = 10)
 # Impulse response functions for fitted VAR model

@@ -19,7 +19,7 @@ numpy
 almighty matplotlib  
 almighty pandas  
 datetime  
-import pickle  
+pickle  
 
 R:  
 tseries  
@@ -29,6 +29,7 @@ strucchange
 xts  
 stargazer  
 xtable  
+lmtest
 
 ## Usage
 

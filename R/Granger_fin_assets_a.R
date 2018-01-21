@@ -1,6 +1,6 @@
 # Granger Causality Tests for the Financial Asset serie
 
-# package requirements: vars, tseries, forecast, strucchange, xts
+# package requirements: vars, tseries, forecast, strucchange, xts, lmtest
 
 library('tseries')
 library('forecast')
@@ -48,7 +48,7 @@ library('lmtest')
   sc.data <- sc.data[cols]
   
   # Define lag order for Granger Causality Tests
-  k <- 4
+  k <- 5
   
   xts.data <- as.xts(sc.data, order.by = dates)
   xts.data$date <- NULL
