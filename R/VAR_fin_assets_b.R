@@ -16,7 +16,7 @@ library('xtable')
   while (!is.null(dev.list()))  dev.off()
   
 # define bootstrap for IR bands
-  cl <- 1000
+  cl <- 50
   
 # directories 
   # setwd('..')
@@ -34,7 +34,7 @@ library('xtable')
       # 'google',
       'wikipedia',
       'tweets',
-      'new_users',
+      # 'new_users'
       # fin assets
       'xau'
       # 'dxy'
@@ -83,7 +83,7 @@ library('xtable')
   xts.VAR <- xts.VAR['2014-01::2017-12']
 
   # xts.VAR <- ts(xts.VAR)
-  fit <- VAR(xts.VAR, type = 'both', ic="SC", lag.max=1, p = 1)
+  fit <- VAR(xts.VAR, type = 'both', ic="AIC", lag.max=20)
   VAR_estimation <- summary(fit)
   while (!is.null(dev.list()))  dev.off()
   # plot(fit)
@@ -122,18 +122,18 @@ library('xtable')
   write.table(res, file=clip)                               
   close(clip)
   
-  ir = irf(fit, ortho = T, n.ahead = 12, boot = 12, ci = 0.95, runs = cl)
+  ir = irf(fit, ortho = T, n.ahead = 12, boot = TRUE, ci = 0.95, runs = cl)
   # Impulse response functions for fitted VAR model
   # Social Feedback Cycle
   
   # information search (impulse: price - respone: search)
   ir_search <- irf(fit, impulse = c('price.log.rtn'), response = c('wikipedia.log.rtn'),
-                   ortho = T, n.ahead=12, boot=T, ci=0.95, runs = cl) # basic IR functions
+                   ortho = T, n.ahead=24, boot=T, ci=0.95, runs = cl) # basic IR functions
   while (!is.null(dev.list()))  dev.off()
   # ir1$irf$wikipedia.log.rtn = 100 * ir1$irf$wikipedia.log.rtn
-  pdf('../F_Figs/pt_fit_fin_a_price_wiki.pdf')
+  pdf('../F_Figs/pt_fit_fin_b_price_wiki.pdf')
   plot(ir_search, main='', xlab='', ylab='Information Search Response',
-       sub='t (days)', xlim=c(1, 10),
+       sub='t (days)', xlim=c(1, 24),
        cex.axis = 2, cex.main = 2, cex=2, cex.lab = 2,
        oma=c(5.5,0,0.3,0), mar=c(0,5,2,0.1))
   dev.off()
@@ -141,12 +141,12 @@ library('xtable')
   
   # information sharing (impulse: search - respone: sharing)
   ir_sharing <- irf(fit, impulse = c('wikipedia.log.rtn'), response = c('tweets.log.rtn'),
-                    ortho = T, n.ahead=12, boot=T, ci=0.95, runs = cl) # basic IR functions
+                    ortho = T, n.ahead=24, boot=T, ci=0.95, runs = cl) # basic IR functions
   while (!is.null(dev.list()))  dev.off()
   # ir1$irf$wikipedia.log.rtn = 100 * ir1$irf$wikipedia.log.rtn
-  pdf('../F_Figs/pt_fit_fin_a_wiki_tweets.pdf')
+  pdf('../F_Figs/pt_fit_fin_b_wiki_tweets.pdf')
   plot(ir_sharing, main='', xlab='', ylab='Information Sharing Response',
-       sub='t (days)', xlim=c(1, 10),
+       sub='t (days)', xlim=c(1, 24),
        cex.axis = 2, cex.main = 2, cex=2, cex.lab = 2,
        oma=c(5.5,0,0.3,0), mar=c(0,5,2,0.1))
   dev.off()
@@ -154,12 +154,12 @@ library('xtable')
   
   # Price (impulse: sharing - respone: price)
   ir_price_s <- irf(fit, impulse = c('tweets.log.rtn'), response = c('price.log.rtn'),
-                    ortho = T, n.ahead=12, boot=T, ci=0.95, runs = cl) # basic IR functions
+                    ortho = T, n.ahead=24, boot=T, ci=0.95, runs = cl) # basic IR functions
   while (!is.null(dev.list()))  dev.off()
   # ir1$irf$wikipedia.log.rtn = 100 * ir1$irf$wikipedia.log.rtn
-  pdf('../F_Figs/pt_fit_fin_a_tweets_price.pdf')
+  pdf('../F_Figs/pt_fit_fin_b_tweets_price.pdf')
   plot(ir_price_s, main='', xlab='', ylab='Price Response',
-       sub='t (days)', xlim=c(1, 10),
+       sub='t (days)', xlim=c(1, 24),
        cex.axis = 2, cex.main = 2, cex=2, cex.lab = 2,
        oma=c(5.5,0,0.3,0), mar=c(0,5,2,0.1))
   dev.off()
@@ -167,12 +167,12 @@ library('xtable')
   
   # Search2 (impulse: XAU - respone: Search)
   ir_price_s <- irf(fit, impulse = c('xau.log.rtn'), response = c('wikipedia.log.rtn'),
-                    ortho = T, n.ahead=12, boot=T, ci=0.95, runs = cl) # basic IR functions
+                    ortho = T, n.ahead=24, boot=T, ci=0.95, runs = cl) # basic IR functions
   while (!is.null(dev.list()))  dev.off()
   # ir1$irf$wikipedia.log.rtn = 100 * ir1$irf$wikipedia.log.rtn
-  pdf('../F_Figs/pt_fit_fin_a_xau_wiki.pdf')
+  pdf('../F_Figs/pt_fit_fin_b_xau_wiki.pdf')
   plot(ir_price_s, main='', xlab='', ylab='Price Response',
-       sub='t (days)', xlim=c(1, 10),
+       sub='t (days)', xlim=c(1, 24),
        cex.axis = 2, cex.main = 2, cex=2, cex.lab = 2,
        oma=c(5.5,0,0.3,0), mar=c(0,5,2,0.1))
   dev.off()
@@ -180,12 +180,12 @@ library('xtable')
   
   # Price2 (impulse: XAU - respone: Price)
   ir_price_s <- irf(fit, impulse = c('xau.log.rtn'), response = c('price.log.rtn'),
-                    ortho = T, n.ahead=12, boot=T, ci=0.95, runs = cl) # basic IR functions
+                    ortho = T, n.ahead=24, boot=T, ci=0.95, runs = cl) # basic IR functions
   while (!is.null(dev.list()))  dev.off()
   # ir1$irf$wikipedia.log.rtn = 100 * ir1$irf$wikipedia.log.rtn
-  pdf('../F_Figs/pt_fit_fin_a_xau_price.pdf')
+  pdf('../F_Figs/pt_fit_fin_b_xau_price.pdf')
   plot(ir_price_s, main='', xlab='', ylab='Price Response',
-       sub='t (days)', xlim=c(1, 10),
+       sub='t (days)', xlim=c(1, 24),
        cex.axis = 2, cex.main = 2, cex=2, cex.lab = 2,
        oma=c(5.5,0,0.3,0), mar=c(0,5,2,0.1))
   dev.off()
@@ -193,12 +193,12 @@ library('xtable')
   
   # tweets (impulse: XAU - respone: Tweets)
   ir_price_s <- irf(fit, impulse = c('xau.log.rtn'), response = c('tweets.log.rtn'),
-                    ortho = T, n.ahead=12, boot=T, ci=0.95, runs = cl) # basic IR functions
+                    ortho = T, n.ahead=24, boot=T, ci=0.95, runs = cl) # basic IR functions
   while (!is.null(dev.list()))  dev.off()
   # ir1$irf$wikipedia.log.rtn = 100 * ir1$irf$wikipedia.log.rtn
-  pdf('../F_Figs/pt_fit_fin_a_xau_tweets.pdf')
+  pdf('../F_Figs/pt_fit_fin_b_xau_tweets.pdf')
   plot(ir_price_s, main='', xlab='', ylab='Price Response',
-       sub='t (days)', xlim=c(1, 10),
+       sub='t (days)', xlim=c(1, 24),
        cex.axis = 2, cex.main = 2, cex=2, cex.lab = 2,
        oma=c(5.5,0,0.3,0), mar=c(0,5,2,0.1))
   dev.off()
