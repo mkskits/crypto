@@ -96,10 +96,12 @@ def main():
     dt_pd_wiki.columns = ['wikipedia']
 
     # outliers & number formatting
-    mask = dt_pd_wiki.wikipedia > 150000
+    mask = dt_pd_wiki.wikipedia > 140000
     column_name = 'wikipedia'
-    dt_pd_wiki.loc[mask, column_name] = 150000
-    dt_pd_wiki['wikipedia'].fillna(value=0, inplace=True)
+    dt_pd_wiki.loc[mask, column_name] = np.nan
+    dt_pd_wiki.replace(r'\s+', np.nan, inplace=True)
+    dt_pd_wiki['wikipedia'].fillna(inplace=True, value = np.nan)
+    # dt_pd_wiki['wikipedia'].fillna(inplace=True, method = 'bfill')
 
     # store pickle to disk
     os.chdir('..' + sl + '..' + sl + '..' + sl + 'P_Python' + sl)
