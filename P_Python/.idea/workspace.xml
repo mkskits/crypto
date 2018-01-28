@@ -14,43 +14,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dt_aggregate_baseline_a.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dt_aggregate_baseline_a.py">
+      <file leaf-file-name="pt_google_comp.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pt_google_comp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dt_aggregate_ext.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dt_aggregate_ext.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="97" column="53" lean-forward="true" selection-start-line="97" selection-start-column="26" selection-end-line="97" selection-end-column="53" />
+            <state relative-caret-position="209">
+              <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pt_economy.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pt_economy.py">
+      <file leaf-file-name="dt_google_btc_monthly.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dt_google_btc_monthly.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="670">
-              <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+            <state relative-caret-position="179">
+              <caret line="41" column="64" lean-forward="false" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dt_wiki_aggr.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dt_wiki_aggr.py">
+      <file leaf-file-name="dt_google_btc_daily.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dt_google_btc_daily.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="106" column="63" lean-forward="false" selection-start-line="106" selection-start-column="63" selection-end-line="106" selection-end-column="63" />
+            <state relative-caret-position="209">
+              <caret line="91" column="4" lean-forward="false" selection-start-line="91" selection-start-column="4" selection-end-line="91" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -92,10 +80,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pt_xbt_com_std.py" />
-        <option value="$PROJECT_DIR$/pt_fin_std.py" />
-        <option value="$PROJECT_DIR$/pt_dxy_fd.py" />
-        <option value="$PROJECT_DIR$/pt_xbt_com_fd.py" />
         <option value="$PROJECT_DIR$/pt_haven_fd.py" />
         <option value="$PROJECT_DIR$/pt_eq_index_std.py" />
         <option value="$PROJECT_DIR$/pt_eq_index_fd.py" />
@@ -143,6 +127,10 @@
         <option value="$PROJECT_DIR$/pt_financial_ext.py" />
         <option value="$PROJECT_DIR$/dt_wiki_aggr.py" />
         <option value="$PROJECT_DIR$/pt_economy.py" />
+        <option value="$PROJECT_DIR$/pt_xbt_com_std.py" />
+        <option value="$PROJECT_DIR$/pt_xbt_com_fd.py" />
+        <option value="$PROJECT_DIR$/pt_breaks.py" />
+        <option value="$PROJECT_DIR$/pt_google_comp.py" />
       </list>
     </option>
   </component>
@@ -224,8 +212,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.pt_economy">
-    <configuration name="dt_aggregate_ext" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.pt_google_comp">
+    <configuration name="pt_breaks" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -237,13 +225,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="P_Python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dt_aggregate_ext.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pt_breaks.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="dt_wiki_aggr" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pt_evolution" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -255,13 +243,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="P_Python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dt_wiki_aggr.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pt_evolution.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="pt_economy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pt_google_comp" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -273,13 +261,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="P_Python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pt_economy.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pt_google_comp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="pt_financial_XAU" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pt_xbt_com_fd" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -291,13 +279,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="P_Python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pt_financial_XAU.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pt_xbt_com_fd.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="pt_financial_ext" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pt_xbt_com_std" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -309,26 +297,26 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="P_Python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pt_financial_ext.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pt_xbt_com_std.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.pt_financial_XAU" />
-      <item index="1" class="java.lang.String" itemvalue="Python.dt_aggregate_ext" />
-      <item index="2" class="java.lang.String" itemvalue="Python.pt_financial_ext" />
-      <item index="3" class="java.lang.String" itemvalue="Python.dt_wiki_aggr" />
-      <item index="4" class="java.lang.String" itemvalue="Python.pt_economy" />
+      <item index="0" class="java.lang.String" itemvalue="Python.pt_evolution" />
+      <item index="1" class="java.lang.String" itemvalue="Python.pt_xbt_com_std" />
+      <item index="2" class="java.lang.String" itemvalue="Python.pt_xbt_com_fd" />
+      <item index="3" class="java.lang.String" itemvalue="Python.pt_breaks" />
+      <item index="4" class="java.lang.String" itemvalue="Python.pt_google_comp" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.pt_economy" />
-        <item index="1" class="java.lang.String" itemvalue="Python.pt_financial_ext" />
-        <item index="2" class="java.lang.String" itemvalue="Python.pt_financial_XAU" />
-        <item index="3" class="java.lang.String" itemvalue="Python.dt_wiki_aggr" />
-        <item index="4" class="java.lang.String" itemvalue="Python.dt_aggregate_ext" />
+        <item index="0" class="java.lang.String" itemvalue="Python.pt_google_comp" />
+        <item index="1" class="java.lang.String" itemvalue="Python.pt_breaks" />
+        <item index="2" class="java.lang.String" itemvalue="Python.pt_xbt_com_fd" />
+        <item index="3" class="java.lang.String" itemvalue="Python.pt_xbt_com_std" />
+        <item index="4" class="java.lang.String" itemvalue="Python.pt_evolution" />
       </list>
     </recent_temporary>
   </component>
@@ -358,8 +346,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="24" width="1280" height="777" extended-state="6" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16600476" sideWeight="0.48081264" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -369,7 +356,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2837633" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36115327" sideWeight="0.49245432" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36115327" sideWeight="0.49245432" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1985703" sideWeight="0.51918733" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -492,6 +479,26 @@
           <line>80</line>
           <option name="timeStamp" value="193" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pt_xbt_com_std.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="194" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pt_xbt_com_fd.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="195" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pt_breaks.py</url>
+          <line>76</line>
+          <option name="timeStamp" value="196" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pt_google_comp.py</url>
+          <line>79</line>
+          <option name="timeStamp" value="200" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -503,20 +510,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="194" />
+      <option name="time" value="201" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dt_google_twnngs.py" />
-    <entry file="file://$PROJECT_DIR$/A_Archive/dt_google_segments_adj.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="91" column="26" lean-forward="true" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dt_aggregate_pickles.py" />
     <entry file="file://$PROJECT_DIR$/A_Archive/dt_xbt_bbg.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -684,13 +682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pt_xbt_com_std.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="33" selection-end-column="121" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pt_dxy_std.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-84">
@@ -756,42 +747,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dt_google_btc_daily.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dt_google_btc_monthly.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pt_google.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-244">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pt_evolution.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="108" column="28" lean-forward="true" selection-start-line="108" selection-start-column="28" selection-end-line="108" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pt_hist_volatility.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -818,16 +777,8 @@
         <state relative-caret-position="0">
           <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dt_wiki_aggr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="106" column="63" lean-forward="false" selection-start-line="106" selection-start-column="63" selection-end-line="106" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -861,6 +812,84 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="670">
           <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dt_wiki_aggr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="106" column="63" lean-forward="false" selection-start-line="106" selection-start-column="63" selection-end-line="106" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pt_evolution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="117" column="4" lean-forward="false" selection-start-line="117" selection-start-column="4" selection-end-line="117" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pt_xbt_com_std.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pt_xbt_com_fd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="51" column="26" lean-forward="true" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pt_hist_volatility.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="56" column="77" lean-forward="true" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pt_breaks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dt_google_btc_daily.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="91" column="4" lean-forward="false" selection-start-line="91" selection-start-column="4" selection-end-line="91" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dt_google_btc_monthly.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="41" column="64" lean-forward="false" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pt_google_comp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -36,7 +36,8 @@ def main():
     matplotlib.rcParams.update({'font.size': 16})
 
     dt_pd_xbt_com.index.name = ''
-    dt_pd_xbt_com[['price_usd', 'xbt_vol_30d_ann']].plot(subplots=True, color='blue', figsize=(8, 6), legend=True)
+    dt_pd_xbt_com.rename(columns={'price_usd': 'Price (USD)', 'xbt_vol_30d_ann' : '$\sigma_{30D}$' }, inplace=True)
+    dt_pd_xbt_com[['Price (USD)', '$\sigma_{30D}$']].plot(subplots=True, color='blue', figsize=(8, 6), legend=True)
     dt_pd_xbt_com.index.name = 'date'
 
     plt.gcf().set_size_inches(9, 8)
