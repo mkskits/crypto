@@ -26,28 +26,29 @@ def main():
         sl = '\\'
 
     # data source - financial asset price series from bloomberg / processed with R / stored as pickle by dt_fin.py
-    dt_pd_wiki = pd.read_pickle('dt_pd_wiki.pickle')
+    dt_pd_twitter = pd.read_pickle('dt_pd_twitter_bitinfo.pickle')
 
-    dt_pd_wiki['wiki_log_ret'] = np.log(dt_pd_wiki['wikipedia'] / dt_pd_wiki['wikipedia'].shift(1))
+    dt_pd_twitter['twitter_log_ret'] = np.log(dt_pd_twitter['tweets'] / dt_pd_twitter['tweets'].shift(1))
     # calculate annualized volatility based on 30day rolling window
-    dt_pd_wiki['wiki_vol_30d_ann'] = dt_pd_wiki['wiki_log_ret'].rolling(window=30, center=False).std() * np.sqrt(365)
+    dt_pd_twitter['twitter_fd'] = dt_pd_twitter['tweets'] - dt_pd_twitter['tweets'].shift(1)
 
     matplotlib.rcParams.update({'font.size': 16})
 
-    dt_pd_wiki.index.name = ''
+    dt_pd_twitter.index.name = ''
 
     f, (ax1, ax2) = plt.subplots(2, 1, sharex=True, sharey=False)
-    ax1.plot(dt_pd_wiki[['wikipedia']], color='blue', label='Wikipedia')
+    ax1.plot(dt_pd_twitter[['twitter_fd']], color='blue', label='First Differences (abs)')
     ax1.legend(loc='upper left')
     # ax1b = ax1.twinx()
     # ax1b.plot(dt_pd_fin[['Global.Govt']], color='red', label='GA Treasuries')
     # ax1b.legend(loc='upper right')
-    ax2.plot(dt_pd_wiki[['wiki_vol_30d_ann']], color='blue', label='$\sigma_{Wikipedia}$')
+    ax2.plot(dt_pd_twitter[['twitter_log_ret']], color='blue', label='First Differences (Log)')
     ax2.legend(loc='upper right')
+    # ax2.legend(loc='upper left')
     # ax2b = ax2.twinx()
     # ax2b.plot(dt_pd_fin[['Global.Govt.vol']], color='red', label='$\sigma_{GA Treasuries}$')
     # ax2b.legend(loc='upper right')
-    dt_pd_wiki.index.name = 'date'
+    dt_pd_twitter.index.name = 'date'
 
     # set size of overall figure not needed here
     plt.gcf().set_size_inches(9, 8)
@@ -58,7 +59,7 @@ def main():
     os.chdir(os.path.abspath(os.curdir) + sl + "F_Figs" + sl)
     # layout = plt.tight_layout(pad=0.01)
     f.tight_layout(pad=0.01)
-    plt.savefig('pt_wiki_std.pdf')
+    plt.savefig('pt_twitter_fd.pdf')
 
     # plt.show() not needed due to global variable setting in pyCharm
 

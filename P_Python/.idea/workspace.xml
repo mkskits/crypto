@@ -14,22 +14,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pt_google_comp.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pt_google_comp.py">
+      <file leaf-file-name="pt_wiki_fd.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pt_wiki_fd.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+            <state relative-caret-position="150">
+              <caret line="60" column="26" lean-forward="false" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dt_google_btc_monthly.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dt_google_btc_monthly.py">
+      <file leaf-file-name="pt_twitter_fd.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pt_twitter_fd.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pt_twitter_std.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pt_twitter_std.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="179">
-              <caret line="41" column="64" lean-forward="false" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="64" />
+              <caret line="28" column="54" lean-forward="false" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="64" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dt_twitter_bitinfocharts.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dt_twitter_bitinfocharts.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="592">
+              <caret line="63" column="65" lean-forward="false" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pt_wiki_std.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pt_wiki_std.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="28" column="42" lean-forward="true" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pt_xbt_com_fd.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pt_xbt_com_fd.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="129">
+              <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="94" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -37,9 +81,11 @@
       <file leaf-file-name="dt_google_btc_daily.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dt_google_btc_daily.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="91" column="4" lean-forward="false" selection-start-line="91" selection-start-column="4" selection-end-line="91" selection-end-column="68" />
-              <folding />
+            <state relative-caret-position="299">
+              <caret line="86" column="4" lean-forward="false" selection-start-line="86" selection-start-column="4" selection-end-line="88" selection-end-column="64" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -69,23 +115,20 @@
       <find>bitcoin_economy</find>
       <find>np</find>
       <find>dt_pd_financial</find>
+      <find>twitterpedia</find>
     </findStrings>
     <replaceStrings>
       <replace>bitcoin_economy</replace>
       <replace>cts_twitter</replace>
       <replace>dt_pd_ext</replace>
       <replace>dt_pd_economy</replace>
+      <replace>twitter</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pt_haven_fd.py" />
-        <option value="$PROJECT_DIR$/pt_eq_index_std.py" />
-        <option value="$PROJECT_DIR$/pt_eq_index_fd.py" />
-        <option value="$PROJECT_DIR$/dt_wikipedia_legacy_grep.py" />
         <option value="$PROJECT_DIR$/dt_xbt_bbg.py" />
-        <option value="$PROJECT_DIR$/pt_wiki_std.py" />
         <option value="$PROJECT_DIR$/dt_google_daily.py" />
         <option value="$PROJECT_DIR$/dt_google_daily_v2.py" />
         <option value="$PROJECT_DIR$/dt_google_daily_idx.py" />
@@ -97,11 +140,9 @@
         <option value="$PROJECT_DIR$/dt_aggr.py" />
         <option value="$PROJECT_DIR$/dt_aggregate_pickles.py" />
         <option value="$PROJECT_DIR$/dt_merge_pickle.py" />
-        <option value="$PROJECT_DIR$/dt_bitcoin_talk.py" />
         <option value="$PROJECT_DIR$/dt_google_btc_core_monthly.py" />
         <option value="$PROJECT_DIR$/dt_google_btc_core_daily.py" />
         <option value="$PROJECT_DIR$/pt_aggr_v1.py" />
-        <option value="$PROJECT_DIR$/dt_bbg_fin.py" />
         <option value="$PROJECT_DIR$/dt_xbt_com.py" />
         <option value="$PROJECT_DIR$/dt_wiki.py" />
         <option value="$PROJECT_DIR$/dt_open_pickle.py" />
@@ -115,22 +156,29 @@
         <option value="$PROJECT_DIR$/pt_hist_volatility_v2.py" />
         <option value="$PROJECT_DIR$/pt_hist_volatility.py" />
         <option value="$PROJECT_DIR$/dt_aggregate_sources.py" />
-        <option value="$PROJECT_DIR$/dt_twitter_bitinfocharts.py" />
         <option value="$PROJECT_DIR$/dt_aggregate_baseline_a.py" />
         <option value="$PROJECT_DIR$/pt_baseline_a.py" />
-        <option value="$PROJECT_DIR$/dt_fin.py" />
-        <option value="$PROJECT_DIR$/dt_google_btc_daily.py" />
         <option value="$PROJECT_DIR$/dt_google_btc_monthly.py" />
         <option value="$PROJECT_DIR$/dt_aggregate_fin_assets.py" />
         <option value="$PROJECT_DIR$/pt_financial_XAU.py" />
         <option value="$PROJECT_DIR$/dt_aggregate_ext.py" />
         <option value="$PROJECT_DIR$/pt_financial_ext.py" />
-        <option value="$PROJECT_DIR$/dt_wiki_aggr.py" />
         <option value="$PROJECT_DIR$/pt_economy.py" />
         <option value="$PROJECT_DIR$/pt_xbt_com_std.py" />
         <option value="$PROJECT_DIR$/pt_xbt_com_fd.py" />
         <option value="$PROJECT_DIR$/pt_breaks.py" />
         <option value="$PROJECT_DIR$/pt_google_comp.py" />
+        <option value="$PROJECT_DIR$/dt_fin.py" />
+        <option value="$PROJECT_DIR$/dt_bbg_fin.py" />
+        <option value="$PROJECT_DIR$/dt_bitcoin_talk.py" />
+        <option value="$PROJECT_DIR$/dt_google_btc_daily.py" />
+        <option value="$PROJECT_DIR$/pt_google_std.py" />
+        <option value="$PROJECT_DIR$/dt_wiki_aggr.py" />
+        <option value="$PROJECT_DIR$/pt_wiki_std.py" />
+        <option value="$PROJECT_DIR$/pt_wiki_fd.py" />
+        <option value="$PROJECT_DIR$/dt_twitter_bitinfocharts.py" />
+        <option value="$PROJECT_DIR$/pt_twitter_std.py" />
+        <option value="$PROJECT_DIR$/pt_twitter_fd.py" />
       </list>
     </option>
   </component>
@@ -212,8 +260,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.pt_google_comp">
-    <configuration name="pt_breaks" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.pt_twitter_fd">
+    <configuration name="dt_twitter_bitinfocharts" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -225,13 +273,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="P_Python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pt_breaks.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dt_twitter_bitinfocharts.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="pt_evolution" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pt_twitter_fd" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -243,13 +291,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="P_Python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pt_evolution.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pt_twitter_fd.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="pt_google_comp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pt_twitter_std" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -261,13 +309,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="P_Python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pt_google_comp.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pt_twitter_std.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="pt_xbt_com_fd" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pt_wiki_fd" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -279,13 +327,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="P_Python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pt_xbt_com_fd.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pt_wiki_fd.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="pt_xbt_com_std" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pt_wiki_std" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -297,26 +345,26 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="P_Python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pt_xbt_com_std.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pt_wiki_std.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.pt_evolution" />
-      <item index="1" class="java.lang.String" itemvalue="Python.pt_xbt_com_std" />
-      <item index="2" class="java.lang.String" itemvalue="Python.pt_xbt_com_fd" />
-      <item index="3" class="java.lang.String" itemvalue="Python.pt_breaks" />
-      <item index="4" class="java.lang.String" itemvalue="Python.pt_google_comp" />
+      <item index="0" class="java.lang.String" itemvalue="Python.pt_wiki_std" />
+      <item index="1" class="java.lang.String" itemvalue="Python.pt_wiki_fd" />
+      <item index="2" class="java.lang.String" itemvalue="Python.dt_twitter_bitinfocharts" />
+      <item index="3" class="java.lang.String" itemvalue="Python.pt_twitter_std" />
+      <item index="4" class="java.lang.String" itemvalue="Python.pt_twitter_fd" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.pt_google_comp" />
-        <item index="1" class="java.lang.String" itemvalue="Python.pt_breaks" />
-        <item index="2" class="java.lang.String" itemvalue="Python.pt_xbt_com_fd" />
-        <item index="3" class="java.lang.String" itemvalue="Python.pt_xbt_com_std" />
-        <item index="4" class="java.lang.String" itemvalue="Python.pt_evolution" />
+        <item index="0" class="java.lang.String" itemvalue="Python.pt_twitter_fd" />
+        <item index="1" class="java.lang.String" itemvalue="Python.pt_twitter_std" />
+        <item index="2" class="java.lang.String" itemvalue="Python.dt_twitter_bitinfocharts" />
+        <item index="3" class="java.lang.String" itemvalue="Python.pt_wiki_fd" />
+        <item index="4" class="java.lang.String" itemvalue="Python.pt_wiki_std" />
       </list>
     </recent_temporary>
   </component>
@@ -346,7 +394,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1280" height="777" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16600476" sideWeight="0.48081264" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -376,7 +424,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dt_bitcoin_talk.py</url>
-          <line>58</line>
+          <line>57</line>
           <option name="timeStamp" value="151" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -396,7 +444,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dt_twitter_bitinfocharts.py</url>
-          <line>65</line>
+          <line>68</line>
           <option name="timeStamp" value="156" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -411,7 +459,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dt_wiki_aggr.py</url>
-          <line>112</line>
+          <line>115</line>
           <option name="timeStamp" value="163" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -446,7 +494,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dt_fin.py</url>
-          <line>49</line>
+          <line>48</line>
           <option name="timeStamp" value="181" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -461,7 +509,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dt_google_btc_daily.py</url>
-          <line>93</line>
+          <line>90</line>
           <option name="timeStamp" value="184" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -499,6 +547,31 @@
           <line>79</line>
           <option name="timeStamp" value="200" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pt_google_std.py</url>
+          <line>50</line>
+          <option name="timeStamp" value="202" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pt_wiki_std.py</url>
+          <line>64</line>
+          <option name="timeStamp" value="203" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pt_wiki_fd.py</url>
+          <line>65</line>
+          <option name="timeStamp" value="205" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pt_twitter_std.py</url>
+          <line>64</line>
+          <option name="timeStamp" value="208" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pt_twitter_fd.py</url>
+          <line>65</line>
+          <option name="timeStamp" value="209" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -510,47 +583,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="201" />
+      <option name="time" value="210" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/A_Archive/dt_xbt_bbg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="47" column="26" lean-forward="false" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../C_chain/AA_V1/base_plot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-31">
-          <caret line="29" column="31" lean-forward="true" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../C_chain/AA_V1/blockchain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="92" column="19" lean-forward="true" selection-start-line="92" selection-start-column="19" selection-end-line="92" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../C_chain/AA_V1/block.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1231">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/A_Archive/dt_aggr_csv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dt_google_btc_core_monthly.py" />
     <entry file="file://$PROJECT_DIR$/dt_google_btc_core_daily.py" />
     <entry file="file://$PROJECT_DIR$/A_Archive/st_google_segments_adj.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -563,13 +600,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dt_bbg_fin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="46" column="49" lean-forward="false" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -631,36 +661,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dt_google_btc_core.py" />
-    <entry file="file://$PROJECT_DIR$/dt_bitcoin_talk.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/mk_conda/anaconda3/lib/python3.6/site-packages/pandas/io/pickle.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dt_open_pickle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dt_tc_economy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="37" column="4" lean-forward="false" selection-start-line="37" selection-start-column="4" selection-end-line="38" selection-end-column="71" />
-          <folding>
-            <element signature="e#0#9#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -723,26 +727,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dt_twitter_bitinfocharts.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="59" column="4" lean-forward="false" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dt_twitter_cts.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
           <caret line="46" column="4" lean-forward="false" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dt_fin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="47" column="24" lean-forward="false" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -768,16 +756,6 @@
           <caret line="89" column="26" lean-forward="false" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="60" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dt_aggregate_baseline_a.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#9#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -816,39 +794,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dt_wiki_aggr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="106" column="63" lean-forward="false" selection-start-line="106" selection-start-column="63" selection-end-line="106" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pt_evolution.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="117" column="4" lean-forward="false" selection-start-line="117" selection-start-column="4" selection-end-line="117" selection-end-column="29" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pt_xbt_com_std.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pt_xbt_com_fd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="51" column="26" lean-forward="true" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -870,10 +820,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dt_google_btc_daily.py">
+    <entry file="file://$PROJECT_DIR$/pt_google_comp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="91" column="4" lean-forward="false" selection-start-line="91" selection-start-column="4" selection-end-line="91" selection-end-column="68" />
+        <state relative-caret-position="858">
+          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dt_fin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dt_bbg_fin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dt_bitcoin_talk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dt_open_pickle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dt_tc_economy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="45" column="24" lean-forward="false" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dt_aggregate_baseline_a.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="98" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -881,15 +879,105 @@
     <entry file="file://$PROJECT_DIR$/dt_google_btc_monthly.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
-          <caret line="41" column="64" lean-forward="false" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="64" />
+          <caret line="41" column="39" lean-forward="true" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pt_google_comp.py">
+    <entry file="file://$PROJECT_DIR$/pt_wiki.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-346">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pt_google_std.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pt_xbt_com_std.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="33" selection-end-column="121" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dt_wiki_aggr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1255">
+          <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pt_xbt_com_fd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="94" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dt_google_btc_daily.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="86" column="4" lean-forward="false" selection-start-line="86" selection-start-column="4" selection-end-line="88" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pt_wiki_fd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="60" column="26" lean-forward="false" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dt_twitter_bitinfocharts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="63" column="65" lean-forward="false" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pt_wiki_std.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="28" column="42" lean-forward="true" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pt_twitter_std.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="28" column="54" lean-forward="false" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pt_twitter_fd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding />
         </state>
       </provider>

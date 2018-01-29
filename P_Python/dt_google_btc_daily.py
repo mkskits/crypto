@@ -8,8 +8,6 @@ print('matplotlib: %s' % matplotlib.__version__)
 import matplotlib.pyplot as plt
 import pandas as pd
 print('pandas: %s' % pd.__version__)
-import sklearn
-# import statsmodels
 from pandas import Series
 import datetime as dt
 import pickle
@@ -50,10 +48,6 @@ def main():
     }
 
     z = 1
-    # documentation:
-        # dt_pd_google_segments: final pd containing trend data
-        # dt_pd_google_tmp: temporary set contatining one single frame, that is appended to pd_google_segments
-        # lda = adjustment coefficient
     dt_pd_google_segments = pd.DataFrame(columns = ['Bitcoin', 'segment'])
     for x in single_frames:
         pytrends.build_payload(kw_list, cat=0, timeframe=single_frames[x], geo='', gprop='')
@@ -90,6 +84,9 @@ def main():
     # store to pickle
     os.chdir(os.getcwd() + sl + 'P_Python')
     dt_pd_google_segments.to_pickle('dt_pd_google_btc_daily.pickle')
+    os.chdir('..')
+    os.chdir(os.path.abspath(os.curdir) + sl + 'D_Data')
+    dt_pd_google_segments.to_csv('dt_google_daily.csv', sep=',')
 
     print(os.path.basename(__file__), 'executed')
 

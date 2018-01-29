@@ -106,9 +106,12 @@ def main():
     # store pickle to disk
     os.chdir('..' + sl + '..' + sl + '..' + sl + 'P_Python' + sl)
     dt_pd_wiki.to_pickle('dt_pd_wiki.pickle')
+    os.chdir('..')
+    os.chdir(os.path.abspath(os.curdir) + sl + 'D_Data')
+    dt_pd_wiki.to_csv('dt_wiki.csv', sep=',')
 
     # test plot
-    dt_pd_wiki.plot()
+    # dt_pd_wiki.plot()
 
     print(os.path.basename(__file__), 'executed')
 

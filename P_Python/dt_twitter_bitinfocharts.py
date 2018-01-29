@@ -62,6 +62,9 @@ def main():
     # Store pickle to disk
     os.chdir(os.path.abspath(os.curdir) + sl + "P_Python" + sl)
     dt_pd_twitter_bitinfo.to_pickle('dt_pd_twitter_bitinfo.pickle')
+    os.chdir('..')
+    os.chdir(os.path.abspath(os.curdir) + sl + 'D_Data')
+    dt_pd_twitter_bitinfo.to_csv('dt_twitter.csv', sep=',')
 
     print(os.path.basename(__file__), 'executed')
 
