@@ -16,7 +16,7 @@ library('xtable')
   while (!is.null(dev.list()))  dev.off()
   
 # define bootstrap for IR bands
-  cl <- 1000
+  cl <- 500
   
 # directories 
   # setwd('..')
@@ -171,7 +171,7 @@ library('xtable')
   while (!is.null(dev.list()))  dev.off()
   # ir1$irf$wikipedia.log.rtn = 100 * ir1$irf$wikipedia.log.rtn
   pdf('../F_Figs/pt_fit_fin_a_xau_wiki.pdf')
-  plot(ir_price_s, main='', xlab='', ylab='Price Response',
+  plot(ir_price_s, main='', xlab='', ylab='Information Search Response',
        sub='t (days)', xlim=c(1, 10),
        cex.axis = 2, cex.main = 2, cex=2, cex.lab = 2,
        oma=c(5.5,0,0.3,0), mar=c(0,5,2,0.1))
@@ -197,7 +197,7 @@ library('xtable')
   while (!is.null(dev.list()))  dev.off()
   # ir1$irf$wikipedia.log.rtn = 100 * ir1$irf$wikipedia.log.rtn
   pdf('../F_Figs/pt_fit_fin_a_xau_tweets.pdf')
-  plot(ir_price_s, main='', xlab='', ylab='Price Response',
+  plot(ir_price_s, main='', xlab='', ylab='Information Sharing Response',
        sub='t (days)', xlim=c(1, 10),
        cex.axis = 2, cex.main = 2, cex=2, cex.lab = 2,
        oma=c(5.5,0,0.3,0), mar=c(0,5,2,0.1))

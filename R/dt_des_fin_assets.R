@@ -115,28 +115,32 @@ library('xts')
   storage.mode(dt.fin.assets) <- "numeric"
   
   stg.input <- data.frame(date = index(dt.fin.assets), 
-                          dt.fin.assets$DXY,
-                          dt.fin.assets$log.DXY,
                           dt.fin.assets$XAU,
-                          dt.fin.assets$log.XAU,
+                          dt.fin.assets$DXY,
                           dt.fin.assets$SPX,
-                          dt.fin.assets$log.SPX,
-                          dt.fin.assets$MXWO,
-                          dt.fin.assets$log.MXWO,
-                          dt.fin.assets$Global.Govt,
-                          dt.fin.assets$log.Global.Govt,
-                          dt.fin.assets$US.Govt,
-                          dt.fin.assets$log.US.Govt,
-                          dt.fin.assets$High.Yield,
-                          dt.fin.assets$log.High.Yield,
-                          dt.fin.assets$QCOM,
-                          dt.fin.assets$log.QCOM,
-                          dt.fin.assets$TSM,
-                          dt.fin.assets$log.TSM,
-                          dt.fin.assets$AMD,
-                          dt.fin.assets$log.AMD,
+                          
                           dt.fin.assets$NVDA,
+                          dt.fin.assets$QCOM,
+                          dt.fin.assets$TSM,
+                          dt.fin.assets$AMD,
+                          
+                          dt.fin.assets$High.Yield,
+                          dt.fin.assets$Global.Govt,
+                          dt.fin.assets$US.Govt,
+                          
+                          dt.fin.assets$log.XAU,
+                          dt.fin.assets$log.DXY,
+                          dt.fin.assets$log.SPX,
+                          
                           dt.fin.assets$log.NVDA,
+                          dt.fin.assets$log.QCOM,
+                          dt.fin.assets$log.TSM,
+                          dt.fin.assets$log.AMD,
+                          
+                          dt.fin.assets$log.High.Yield,
+                          dt.fin.assets$log.Global.Govt,
+                          dt.fin.assets$log.US.Govt,
+                          
                           row.names = NULL)
   
   write.csv(dt.fin.assets, file = 'dt_fin_assets.csv', row.names=index(dt.fin.assets))

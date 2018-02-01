@@ -58,7 +58,7 @@ def main():
     ax1.plot(dt_pd_economy[['price']], color='blue', label='Price', alpha = 0.9)
     ax2.plot(dt_pd_economy[['new_transactions']], color='red', label='Transactions', alpha = 0.9, ls = '-')
     ax2.plot(dt_pd_economy[['new_curr_transacted']], color='green', label='Transaction Volume', alpha=0.9, ls='-')
-    # ax1.plot(dt_pd_economy[['tweets']], color='green', label='Tweets', alpha = 0.9, ls = '-')
+    ax1.plot(dt_pd_economy[['tweets']], color='purple', label='Tweets', alpha = 0.9, ls = '-')
     ax1.plot(dt_pd_economy[['wikipedia']], color='darkslategrey', label='Wikipedia', alpha=0.9, ls = '-')
     # ax1.plot(dt_pd_economy[['new_posts']], color='black', label='New Posts', alpha=0.9)
     ax1.legend(loc='upper left')

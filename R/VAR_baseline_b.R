@@ -153,7 +153,7 @@ library('xtable')
     while (!is.null(dev.list()))  dev.off()
     # ir1$irf$wikipedia.log.rtn = 100 * ir1$irf$wikipedia.log.rtn
     pdf('../F_Figs/pt_fit_baseline_b_price_a.pdf')
-    plot(ir_price_a, main='', xlab='', ylab='New Users Response',
+    plot(ir_price_a, main='', xlab='', ylab='Price Response',
          sub='t (days)', xlim=c(1, 10),
          cex.axis = 2, cex.main = 2, cex=2, cex.lab = 2,
          oma=c(5.5,0,0.3,0), mar=c(0,5,2,0.1))

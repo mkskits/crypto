@@ -16,7 +16,7 @@ library('xtable')
   while (!is.null(dev.list()))  dev.off()
   
 # define bootstrap for IR bands
-  cl <- 10000
+  cl <- 1000
   
 # directories 
   # setwd('..')
@@ -224,7 +224,7 @@ library('xtable')
   while (!is.null(dev.list()))  dev.off()
   # ir1$irf$wikipedia.log.rtn = 100 * ir1$irf$wikipedia.log.rtn
   pdf('../F_Figs/pt_fit_ext_transactions_price.pdf')
-  plot(ir_trans_price, main='', xlab='', ylab='Transactions Response',
+  plot(ir_trans_price, main='', xlab='', ylab='Price Response',
        sub='t (days)', xlim=c(1, 10),
        cex.axis = 2, cex.main = 2, cex=2, cex.lab = 2,
        oma=c(5.5,0,0.3,0), mar=c(0,5,2,0.1))
@@ -243,3 +243,16 @@ library('xtable')
        oma=c(5.5,0,0.3,0), mar=c(0,5,2,0.1))
   dev.off()
   print('impulse: value - respone: transactions')
+  
+  # price (impulse: price - respone: transactions)
+  ir_price_price <- irf(fit, response = c('new_transactions.log.rtn'), impulse = c('price.log.rtn'),
+                        ortho = T, n.ahead=12, boot=T, ci=0.95, runs = cl) # basic IR functions
+  while (!is.null(dev.list()))  dev.off()
+  # ir1$irf$wikipedia.log.rtn = 100 * ir1$irf$wikipedia.log.rtn
+  pdf('../F_Figs/pt_fit_ext_price_transactions.pdf')
+  plot(ir_trans_price, main='', xlab='', ylab='Transactions Response',
+       sub='t (days)', xlim=c(1, 10),
+       cex.axis = 2, cex.main = 2, cex=2, cex.lab = 2,
+       oma=c(5.5,0,0.3,0), mar=c(0,5,2,0.1))
+  dev.off()
+  print('Price (impulse: transactions - respone: price)')

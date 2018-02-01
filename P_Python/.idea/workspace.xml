@@ -14,17 +14,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pt_wiki_fd.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pt_wiki_fd.py">
+      <file leaf-file-name="dt_aggregate_baseline_a.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dt_aggregate_baseline_a.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="60" column="26" lean-forward="false" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
+            <state relative-caret-position="1124">
+              <caret line="98" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pt_twitter_fd.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dt_tc_economy.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dt_tc_economy.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="46" column="58" lean-forward="false" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pt_twitter_fd.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pt_twitter_fd.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
@@ -34,58 +44,74 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pt_twitter_std.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pt_twitter_std.py">
+      <file leaf-file-name="pt_financial_XAU.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pt_financial_XAU.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="28" column="54" lean-forward="false" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="64" />
+            <state relative-caret-position="209">
+              <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pt_dec_eco.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pt_dec_eco.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-228">
+              <caret line="27" column="46" lean-forward="false" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dt_twitter_bitinfocharts.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dt_twitter_bitinfocharts.py">
+      <file leaf-file-name="pt_evolution.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pt_evolution.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="592">
-              <caret line="63" column="65" lean-forward="false" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="65" />
+            <state relative-caret-position="168">
+              <caret line="117" column="4" lean-forward="false" selection-start-line="117" selection-start-column="4" selection-end-line="117" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pt_wiki_std.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pt_wiki_std.py">
+      <file leaf-file-name="pt_des_eco.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pt_des_eco.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="28" column="42" lean-forward="true" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1470">
+              <caret line="99" column="57" lean-forward="true" selection-start-line="99" selection-start-column="57" selection-end-line="99" selection-end-column="57" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pt_xbt_com_fd.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pt_xbt_com_fd.py">
+      <file leaf-file-name="pt_economy.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pt_economy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="94" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="209">
+              <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dt_google_btc_daily.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dt_google_btc_daily.py">
+      <file leaf-file-name="pt_baseline_a.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pt_baseline_a.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="86" column="4" lean-forward="false" selection-start-line="86" selection-start-column="4" selection-end-line="88" selection-end-column="64" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="254">
+              <caret line="27" column="63" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pt_financial.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pt_financial.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="559">
+              <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -114,8 +140,10 @@
       <find>bitcoin_talk</find>
       <find>bitcoin_economy</find>
       <find>np</find>
-      <find>dt_pd_financial</find>
       <find>twitterpedia</find>
+      <find>dt_pd_baseline_a</find>
+      <find>dt_pd_financial</find>
+      <find>tkw</find>
     </findStrings>
     <replaceStrings>
       <replace>bitcoin_economy</replace>
@@ -123,14 +151,13 @@
       <replace>dt_pd_ext</replace>
       <replace>dt_pd_economy</replace>
       <replace>twitter</replace>
+      <replace>dt_fin</replace>
+      <replace>dt_eco</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dt_xbt_bbg.py" />
-        <option value="$PROJECT_DIR$/dt_google_daily.py" />
-        <option value="$PROJECT_DIR$/dt_google_daily_v2.py" />
         <option value="$PROJECT_DIR$/dt_google_daily_idx.py" />
         <option value="$PROJECT_DIR$/dt_google_monthly.py" />
         <option value="$PROJECT_DIR$/dt_google_rconx_daily.py" />
@@ -160,10 +187,8 @@
         <option value="$PROJECT_DIR$/pt_baseline_a.py" />
         <option value="$PROJECT_DIR$/dt_google_btc_monthly.py" />
         <option value="$PROJECT_DIR$/dt_aggregate_fin_assets.py" />
-        <option value="$PROJECT_DIR$/pt_financial_XAU.py" />
         <option value="$PROJECT_DIR$/dt_aggregate_ext.py" />
         <option value="$PROJECT_DIR$/pt_financial_ext.py" />
-        <option value="$PROJECT_DIR$/pt_economy.py" />
         <option value="$PROJECT_DIR$/pt_xbt_com_std.py" />
         <option value="$PROJECT_DIR$/pt_xbt_com_fd.py" />
         <option value="$PROJECT_DIR$/pt_breaks.py" />
@@ -179,6 +204,11 @@
         <option value="$PROJECT_DIR$/dt_twitter_bitinfocharts.py" />
         <option value="$PROJECT_DIR$/pt_twitter_std.py" />
         <option value="$PROJECT_DIR$/pt_twitter_fd.py" />
+        <option value="$PROJECT_DIR$/pt_financial.py" />
+        <option value="$PROJECT_DIR$/pt_dec_eco.py" />
+        <option value="$PROJECT_DIR$/pt_des_eco.py" />
+        <option value="$PROJECT_DIR$/pt_economy.py" />
+        <option value="$PROJECT_DIR$/pt_financial_XAU.py" />
       </list>
     </option>
   </component>
@@ -260,8 +290,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.pt_twitter_fd">
-    <configuration name="dt_twitter_bitinfocharts" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.pt_financial_XAU">
+    <configuration name="pt_dec_eco" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -273,13 +303,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="P_Python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dt_twitter_bitinfocharts.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pt_dec_eco.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="pt_twitter_fd" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pt_des_eco" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -291,13 +321,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="P_Python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pt_twitter_fd.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pt_des_eco.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="pt_twitter_std" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pt_economy" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -309,13 +339,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="P_Python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pt_twitter_std.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pt_economy.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="pt_wiki_fd" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pt_financial" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -327,13 +357,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="P_Python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pt_wiki_fd.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pt_financial.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="pt_wiki_std" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pt_financial_XAU" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -345,26 +375,26 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="P_Python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pt_wiki_std.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pt_financial_XAU.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.pt_wiki_std" />
-      <item index="1" class="java.lang.String" itemvalue="Python.pt_wiki_fd" />
-      <item index="2" class="java.lang.String" itemvalue="Python.dt_twitter_bitinfocharts" />
-      <item index="3" class="java.lang.String" itemvalue="Python.pt_twitter_std" />
-      <item index="4" class="java.lang.String" itemvalue="Python.pt_twitter_fd" />
+      <item index="0" class="java.lang.String" itemvalue="Python.pt_financial" />
+      <item index="1" class="java.lang.String" itemvalue="Python.pt_financial_XAU" />
+      <item index="2" class="java.lang.String" itemvalue="Python.pt_dec_eco" />
+      <item index="3" class="java.lang.String" itemvalue="Python.pt_des_eco" />
+      <item index="4" class="java.lang.String" itemvalue="Python.pt_economy" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.pt_twitter_fd" />
-        <item index="1" class="java.lang.String" itemvalue="Python.pt_twitter_std" />
-        <item index="2" class="java.lang.String" itemvalue="Python.dt_twitter_bitinfocharts" />
-        <item index="3" class="java.lang.String" itemvalue="Python.pt_wiki_fd" />
-        <item index="4" class="java.lang.String" itemvalue="Python.pt_wiki_std" />
+        <item index="0" class="java.lang.String" itemvalue="Python.pt_financial_XAU" />
+        <item index="1" class="java.lang.String" itemvalue="Python.pt_economy" />
+        <item index="2" class="java.lang.String" itemvalue="Python.pt_des_eco" />
+        <item index="3" class="java.lang.String" itemvalue="Python.pt_dec_eco" />
+        <item index="4" class="java.lang.String" itemvalue="Python.pt_financial" />
       </list>
     </recent_temporary>
   </component>
@@ -394,7 +424,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
+    <frame x="-1" y="23" width="1280" height="777" extended-state="6" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16600476" sideWeight="0.48081264" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -572,6 +602,26 @@
           <line>65</line>
           <option name="timeStamp" value="209" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pt_financial.py</url>
+          <line>98</line>
+          <option name="timeStamp" value="211" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pt_dec_eco.py</url>
+          <line>63</line>
+          <option name="timeStamp" value="212" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pt_dec_eco.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="213" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pt_des_eco.py</url>
+          <line>113</line>
+          <option name="timeStamp" value="214" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -583,26 +633,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="210" />
+      <option name="time" value="215" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dt_google_btc_core_daily.py" />
-    <entry file="file://$PROJECT_DIR$/A_Archive/st_google_segments_adj.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/md5sums.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -742,14 +777,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pt_baseline_a.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="73" column="81" lean-forward="true" selection-start-line="73" selection-start-column="81" selection-end-line="73" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dt_aggregate_fin_assets.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
@@ -768,36 +795,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pt_financial_XAU.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pt_financial_ext.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pt_economy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pt_evolution.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="117" column="4" lean-forward="false" selection-start-line="117" selection-start-column="4" selection-end-line="117" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -828,14 +829,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dt_fin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dt_bbg_fin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -856,22 +849,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dt_tc_economy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="45" column="24" lean-forward="false" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dt_aggregate_baseline_a.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="98" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -979,6 +956,88 @@
         <state relative-caret-position="209">
           <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dt_aggregate_baseline_a.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1124">
+          <caret line="98" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dt_fin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="46" column="26" lean-forward="false" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pt_financial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pt_baseline_a.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="27" column="63" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dt_tc_economy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="46" column="58" lean-forward="false" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pt_evolution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="117" column="4" lean-forward="false" selection-start-line="117" selection-start-column="4" selection-end-line="117" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pt_economy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pt_dec_eco.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-228">
+          <caret line="27" column="46" lean-forward="false" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pt_des_eco.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="99" column="57" lean-forward="true" selection-start-line="99" selection-start-column="57" selection-end-line="99" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pt_financial_XAU.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
